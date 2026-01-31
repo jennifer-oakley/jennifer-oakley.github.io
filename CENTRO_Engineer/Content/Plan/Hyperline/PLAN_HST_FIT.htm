@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=App Properties.ToolsScreenName%] |HyperLine™ Toolbox" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Power section fit is probably the most critical factor that determines stator life. Optimum fit provides a balance between frictional losses, power section efficiency, and stator life. A proper power section assembly process involves selecting a fit at surface that will provide optimal stator life under expected downhole conditions. The fit predictor tool on the Planning &gt; HyperLine™ Toolbox ..." /><title>Fit predictor tool</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                    </ul>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">CENTRO® Engineer</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Fit predictor tool</h1>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About the fit predictor tool</a>
+                                                    </p>
+                                                    <p><a href="#Inputs" class="sectionLink MCXref xref xrefsectionLink">Inputs</a>
+                                                    </p>
+                                                    <p><a href="#Results" class="sectionLink MCXref xref xrefsectionLink">Results</a>
+                                                    </p>
+                                                    <p><a href="#UseTab" class="sectionLink MCXref xref xrefsectionLink">Using the FIT Predictor page</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2><a name="About"></a>About the fit predictor tool</h2>
+                                            <p>Power section fit is probably the most critical factor that determines stator life. Optimum fit provides a balance between frictional losses, power section efficiency, and stator life. A proper power section assembly process involves selecting a fit at surface that will provide optimal stator life under expected downhole conditions.</p>
+                                            <p class="right"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Plan/Hyperline/PLAN_HST_FIT.png" data-mc-popup-alt="Screenshot of the FIT Predictor screen"><img class="MCPopupThumbnail img imgthumb400px" data-mc-width="1537" data-mc-height="994" src="../../Images/Plan/Hyperline/PLAN_HST_FIT.png" alt="Screenshot of the FIT Predictor screen" title="Screenshot of the FIT Predictor screen" tabindex="" style="max-width: 400px;" /></a>
+                                            </p>
+                                            <p>The fit predictor tool on the <em><span class="mc-variable App_Properties.ToolsScreenName variable">Planning</span></em> &gt; <em>HyperLine™ Toolbox</em> &gt; <em>FIT Predictor</em> page is used to evaluate the rotor-stator fit on a drilling motor. Results have proven to be accurate in applications with both low and high downhole circulating temperatures, all elastomer types, different drilling fluids, and the widest range of operational conditions. The fit predictor tool accounts for the effects of downhole conditions, system hydraulics, chemical reactions, heat build-up, wear rates, time, among many others factors to predict the power section fit accurately.</p>
+                                            <p>If possible, enter the in-shop fit measurements. You can either use the direct measurements taken before the job started or the measurements taken after a reline maintenance procedure.</p>
+                                            <p>To use the motor fit predictor tool:</p>
+                                            <ol>
+                                                <li value="1">Go to the <em><span class="mc-variable App_Properties.ToolsScreenName variable">Planning</span></em> &gt; <em>HyperLine™ Toolbox</em> &gt;&#160;<em>FIT Predictor</em> page.</li>
+                                                <li value="2">Enter the drilling motor properties, well information, drilling parameters, fluid information, and differential pressure limits. <a href="#Inputs" class="MCXref xref">See "Inputs".</a></li>
+                                                <li value="3">Click the <em>Calculate</em> button.</li>
+                                            </ol>
+                                            <p>The fit predictor results will be calculated for the drilling motor. The results will appear on the right side of the screen. <a href="#Results" class="MCXref xref">See "Results".</a></p>
+                                            <h2><a name="Inputs"></a>Inputs</h2>
+                                            <p>The table below defines the calculation inputs on the <em><span class="mc-variable App_Properties.ToolsScreenName variable">Planning</span></em> &gt; <em>HyperLine™ Toolbox</em> &gt; <em>FIT Predictor</em> page.</p>
+                                            <table>
+                                                <caption>Calculation inputs for the motor fit predictor tool</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Section</th>
+                                                        <th>Field Name</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>--</td>
+                                                        <td>Power Section Size</td>
+                                                        <td>
+                                                            <p>Size of the power section on the drilling motor</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>--</td>
+                                                        <td>Power Section Model</td>
+                                                        <td>
+                                                            <p>Motor size and model, with the rotor-stator lobes ration and the number of stages</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>--</td>
+                                                        <td>Elastometer Type</td>
+                                                        <td>
+                                                            <p>Model of the elastometer on the drilling motor</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>--</td>
+                                                        <td>Rotor Coating Type</td>
+                                                        <td>Type of material used to coat the rotors</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>--</td>
+                                                        <td>Shop Temperature</td>
+                                                        <td>Temperature in the shop at the time the measurements were taken</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="8">Manufacturer Specifications</td>
+                                                        <td>On Shop Measurements</td>
+                                                        <td>
+                                                            <p>Source of the shop measurements</p>
+                                                            <ul>
+                                                                <li><em>Direct Measurements</em> — Direct measurements taken shortly before the job started.</li>
+                                                                <li><em>None</em> — No shop measurements are available.</li>
+                                                                <li><em>Reline Certificate</em> — Measurements were taken after a reline maintenance procedure.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>STD</td>
+                                                        <td>Indicates the motor is a standard size motor</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>OS</td>
+                                                        <td>Indicates the motor is an oversize motor. The <em>OS</em> option is not available for all models.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Stator Minor Diameter</td>
+                                                        <td>Diameter of the minor stator. This is a read-only value, populated from the <span class="mc-variable App_Properties.AppShort variable">CENTRO® Engineer</span> catalog.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rotor Mean Diameter</td>
+                                                        <td>Average diameter of the rotors. This is a read-only value, populated from the <span class="mc-variable App_Properties.AppShort variable">CENTRO® Engineer</span> catalog.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vector Tool Offset</td>
+                                                        <td>Difference between the minor stator diameter and the catalog value for the minor stator diameter</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Stator Minor Diameter</td>
+                                                        <td>Actual diameter of the minor stator. Only available when the <em>Direct Measurements</em> option or the <em>Reline Certificate</em> option is selected.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rotor Mean Diameter</td>
+                                                        <td>Actual average diameter of the rotors. Only available when the <em>Direct Measurements</em> option or the <em>Reline Certificate</em> option is selected.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4">Well Information - Start Depth</td>
+                                                        <td>Temperature</td>
+                                                        <td>Downhole temperature of the mud at the start of the run</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TVD</td>
+                                                        <td>True vertical depth of the well at the start of the run</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mud Weight</td>
+                                                        <td>Density of the mud at the start of the run</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Solid Content</td>
+                                                        <td>Percentage of solids in the mud at the start of the run</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4">Well Information - End Depth</td>
+                                                        <td>Temperature</td>
+                                                        <td>Downhole temperature of the mud at the end of the run</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TVD</td>
+                                                        <td>True vertical depth of the well at the end of the run</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mud Weight</td>
+                                                        <td>Density of the mud at the end of the run</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Solid Content</td>
+                                                        <td>Percentage of solids in the mud at the end of the run</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="6">Drilling Parameters</td>
+                                                        <td>Qty</td>
+                                                        <td>
+                                                            <p>Number of bit nozzles at the specified size</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Size</td>
+                                                        <td>
+                                                            <p>Size of each nozzle on the bit</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bit Nozzles TFA</td>
+                                                        <td>
+                                                            <p>Total flow area. TFA can be manually entered, or calculated from the size of each nozzle and the number of nozzles.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flow Rate</td>
+                                                        <td>
+                                                            <p>Expected flow rate during the run</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Expected SPP</td>
+                                                        <td>Expected standpipe pressure while on-bottom</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Expected Run Time</td>
+                                                        <td>Expected motor run time</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4">Fluid Information</td>
+                                                        <td>Fluid System Name</td>
+                                                        <td>Name of the fluid manufacturer and system</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fluid Type</td>
+                                                        <td>
+                                                            <p>Type of fluid used for the mud</p>
+                                                            <ul>
+                                                                <li><em>Air-based mud</em> is a fluid in which the continuous phase is compressed air or nitrogen.</li>
+                                                                <li><em>Oil-based mud</em> is a fluid in which the continuous phase is diesel oil or a synthetic fluid.</li>
+                                                                <li><em>Water-based mud</em> is a fluid in which the continuous phase is water or saltwater, such as fresh water, potassium, or silicate.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fluid Base</td>
+                                                        <td>Base used for the fluid</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Change of Volume</td>
+                                                        <td>Expected change of volume due to the fluid</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3">Differential Pressure</td>
+                                                        <td>Min Differential Pressure</td>
+                                                        <td>Minimum expected differential pressure through the motor</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Max Differential Pressure</td>
+                                                        <td>
+                                                            <p>Maximum expected differential pressure through the motor</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Avg Differential Pressure</td>
+                                                        <td>Average expected differential pressure through the motor</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="Results"></a>Results</h2>
+                                            <h3>Rotor-stator fit</h3>
+                                            <p>The <em>Rotor-Stator Fit</em> section includes the a table that shows the absolute fit of the rotor and stator at the start and end of the well, for each available size classification. Rotor-stator fit is determined by comparing the relative fit to lower and upper limits for the relative fit and the optimal relative fit. The relative fit is a percentage that represents the absolute fit divided by the thickness of the minor stator. The thickness of the minor is determined by the difference of the catalog tube ID of the stator and the shop dimensions of the stator minor diameter.</p>
+                                            <p>Rotor-stator fit is classified into the following categories:</p>
+                                            <ul>
+                                                <li><em>Loose Fit</em> – The relative fit is less than the lower limit of the relative fit.</li>
+                                                <li><em>Longer Lifetime</em> – The relative fit is less than the lower limit of the optimal relative fit.</li>
+                                                <li><em>Lifetime + Performance</em> – The relative fit is less than the upper limit of the optimal relative fit.</li>
+                                                <li><em>Max Performance</em> – The relative fit is less than the upper limit of the relative fit.</li>
+                                                <li><em>Tight Fit</em> – The relative fit exceeds the high limit of the relative fit.</li>
+                                            </ul>
+                                            <p>The <em>Rotor-Stator Fit</em> section also includes the <em>Power Section Evaluation</em> widget, which graphs where the absolute fit at the start and end of the well falls within the absolute limits for the rotor and stator. Each limit range is color coded on the graph.</p>
+                                            <ul>
+                                                <li>The dark blue area represents the lower range of the risky zone. The risky zone lower limit is based on the lower limit of the relative fit, adjusted to account for the thickness of the minor stator and the vector tool offset.</li>
+                                                <li>The light blue area represents the lower range of the acceptable zone. The acceptable zone lower limit is based on the lower limit of the relative fit, adjusted to account for the thickness of the minor stator and the vector tool offset.</li>
+                                                <li>The green area represents the optimal zone. The optimal zone limits are based on the limits of the optimal relative fit, adjusted to account for the thickness of the minor stator and the vector tool offset.</li>
+                                                <li>The yellow area represents the upper range of the acceptable zone. The acceptable zone upper limit is based on the upper limit of the relative fit, adjusted to account for the thickness of the minor stator and the vector tool offset.</li>
+                                                <li>The red area represents the upper range of the risky zone. The risky zone upper limit is based on the upper limit of the relative fit, adjusted to account for the thickness of the minor stator and the vector tool offset.</li>
+                                            </ul>
+                                            <h3>Details</h3>
+                                            <p>When you expand the <em>Details</em> section, there are additional results available. The <em>Change Of Fit</em> tables show the change in fit at the start depth and the end depth. </p>
+                                            <table style="width: 100%;">
+                                                <caption>Definitions for the <em>Change of Fit</em> tables</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Row Name</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Fit On Surface</td>
+                                                        <td>Theoretical minor surface fit of the elastomer. If direct measurements are available, this value is calculated using the shop temperature. If not, it is calculated at 20 °C.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thermal Expansion</td>
+                                                        <td>Change in minor fit due to thermal expansion. If direct measurements are available, this value is calculated using the shop temperature. If not, it is calculated at 20 °C.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hysteresis</td>
+                                                        <td>Change in fit due to the hysteresis effect, which is caused by heat generated by the flexing of the stator lobes and the pressurized fluids.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Elastomer Swelling</td>
+                                                        <td>Change in fit due to elastomer swelling, based on the change in volume. The swelling effect is assumed to be negligible at the start depth. If the change in volume is unavailable, a table value will be used instead.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hydraulics</td>
+                                                        <td>Change in fit due to the effects of hydraulics, including bit pressure drop, average flow velocity, and overall pressure.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rotor Wear</td>
+                                                        <td>Change in fit due to rotor wear, based on the rotor wear rate and the theoretical changes in minor and major fit due to thermal expansion. All wear effects are considered to be negligible at the start depth.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Stator Wear</td>
+                                                        <td>Change in fit due to stator wear, based on the average stator wear rate. All wear effects are considered to be negligible at the start depth.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Change Of Fit</td>
+                                                        <td>Total change in fit due to thermal expansion, elastomer swelling, hysteresis, hydraulics, rotor wear, and stator wear.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Absolute Fit</td>
+                                                        <td>Theoretical surface fit, plus the total change of fit</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Relative Fit</td>
+                                                        <td>
+                                                            <p>Percentage representing the absolute fit divided by the thickness of the minor stator. The thickness of the minor is determined by the difference of the catalog tube ID of the stator and the shop dimensions of the stator minor diameter.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Results summary</h3>
+                                            <p>The <em>Result Summary</em> section contains a table with an overall summary of the results.</p>
+                                            <table style="width: 100%;">
+                                                <caption>Definitions for the <em>Results Summary</em> table</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Row Name</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Fit On Surface</td>
+                                                        <td>Theoretical minor surface fit of the elastomer. If direct measurements are available, this value is calculated using the shop temperature. If not, it is calculated at 20 °C.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vector Tool Fit On Surface</td>
+                                                        <td>Theoretical minor fit on surface, minus the vector tool offset</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Initial Fit</td>
+                                                        <td>Theoretical surface fit at the start depth, plus the total change of fit</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vector Tool Initial Fit</td>
+                                                        <td>Absolute fit at the start depth, minus the vector tool offset</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Final Fit</td>
+                                                        <td>Theoretical surface fit at the end depth, plus the total change of fit</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vector Tool Final Fit</td>
+                                                        <td>Absolute fit at the end depth, minus the vector tool offset</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Initial Relative Fit</td>
+                                                        <td>Percentage representing the absolute fit at the start depth, divided by the thickness of the minor stator. The thickness of the minor is determined by the difference of the catalog tube ID of the stator and the shop dimensions of the stator minor diameter.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Final Relative Fit</td>
+                                                        <td>Percentage representing the absolute fit at the end depth, divided by the thickness of the minor stator. The thickness of the minor is determined by the difference of the catalog tube ID of the stator and the shop dimensions of the stator minor diameter.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="UseTab"></a>Using the FIT Predictor page</h2>
+                                            <p>The toolbar at the top of the <em>FIT Predictor</em> page is used to generate reports.</p>
+                                            <table>
+                                                <caption>Toolbar on the <em>FIT Predictor</em> page</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Button</th>
+                                                        <th>Function</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr data-mc-conditions="">
+                                                        <td alt="Pointer button" title="Pointer button">
+                                                            <img src="../../Images/Icons/Icon_save-pdf_21x20.png" title="Save Report button" alt="Save Report button" class="icon" style="width: 21;height: 20;" />
+                                                        </td>
+                                                        <td>
+                                                            <p>Generates a report of the <span class="lowerCase mc-variable Snippets.PLAN_CalcType variable">FIT predictor</span> calculation results. Only available after the analysis completes.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>The toolbar in the <em>Drilling Parameters</em> section of the input settings allows you to add and delete bit nozzles.</p>
+                                            <table>
+                                                <caption>Toolbar for the <em>Drilling Parameters</em> section</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Button</th>
+                                                        <th>Function</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_insert-table-item_20x20.png" title="Add Excitation button" alt="Add Excitation button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Adds a new bit nozzle</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_delete-item_20x20.png" title="Delete Excitation button" alt="Delete Excitation button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Deletes the selected bit nozzle</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../QuickStart/QS_About.htm" title="Quick Start Guide" alt="Quick Start Guide">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/KB/KB_About.htm" title="CENTRO® Engineer v.2.4.15 Knowledge Base" alt="CENTRO® Engineer v.2.4.15 Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../General/Videos/VID_About.htm" title="CENTRO® Engineer v.2.4.15 Video Library" alt="CENTRO® Engineer v.2.4.15 Video Library">Video Library</a>
+                                                </li>
+                                                <li><a href="../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

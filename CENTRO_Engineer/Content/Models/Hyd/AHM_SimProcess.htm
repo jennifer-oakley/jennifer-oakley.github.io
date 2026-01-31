@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Models|Hydraulics" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Within the hydraulics engine, the numerical framework uses process modules and a reference frame to simulate wellbore operations. The modules store data, coordinate simulations, and perform calculations. The reference frame is a coordinate system that uses a specially constructed data structure to represent the fluid flowing in the wellbore." /><title>Simulation process</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                    </ul>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">CENTRO® Engineer</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1><a name="kanchor74"></a>Simulation process</h1>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About the simulation process</a>
+                                                    </p>
+                                                    <p><a href="#RefFrames" class="sectionLink MCXref xref xrefsectionLink">Reference Frames</a>
+                                                    </p>
+                                                    <p><a href="#Discretization" class="sectionLink MCXref xref xrefsectionLink">Discretization</a>
+                                                    </p>
+                                                    <p><a href="#Processes" class="sectionLink MCXref xref xrefsectionLink">Processes &amp; Modules</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2 data-mc-conditions="Outputs.Online"><a name="About"></a>About the simulation process</h2>
+                                            <p>Within the hydraulics engine, the numerical framework uses process modules and a reference frame to simulate wellbore operations.</p>
+                                            <p>The modules store data, coordinate simulations, and perform calculations. The reference frame is a coordinate system that uses a specially constructed data structure to represent the fluid flowing in the wellbore.</p>
+                                            <p>The wellbore is divided into cells, using a process known as discretization. The reference frame holds these cells and uses them to track the fluid as it travels through the wellbore. Discretization also makes the calculations performed by the process modules more manageable.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_SimProcess.png" data-mc-popup-alt="Modules within the hydraulics engine"><img class="MCPopupThumbnail img imgthumb520px" data-mc-width="661" data-mc-height="481" src="../../Images/Models/Hyd/AHM_SimProcess.png" alt="Modules within the hydraulics engine" title="Modules within the hydraulics engine" tabindex="" style="max-width: 520px;" /></a>
+                                            </p>
+                                            <h2><a name="RefFrames"></a>Reference Frames</h2>
+                                            <p>The numerical framework uses a Lagrangian reference frame to represent the fluid in the wellbore, and a traditional Eulerian reference frame to calculate pressure and temperature. In a Lagrangian reference frame, the discretized cells move through the wellbore with the fluid. Each cell represents a specific segment of the drilling fluid and carries the properties of that fluid segment with it. This is different than an Eulerian reference frame, which uses fixed points at various depths to capture wellbore, fluid, pressure, and temperature properties.</p>
+                                            <p>Imagine a car driving around a race track. Cameras are placed ten feet apart around the track. When the car passes a camera, the camera records the car's passing. At the end of the race, the footage from the cameras is collected and analyzed. The snapshots taken of the car give a good approximation of the car's trip around the race track. However, it isn't a complete picture of the car's behavior because there is no record of the spaces between each camera.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_RefFrame_Eulerian.png" data-mc-popup-alt="Eulerian reference frame"><img class="MCPopupThumbnail img imgthumb640px" data-mc-width="721" data-mc-height="261" src="../../Images/Models/Hyd/AHM_RefFrame_Eulerian.png" alt="Eulerian reference frame" title="Eulerian reference frame" tabindex="" style="max-width: 640px;" /></a>
+                                            </p>
+                                            <p class="clear">When a second car drives around the track, a single camera is placed inside the car. The camera travels with the car and captures the car's entire trip around the race track. The resulting footage is an exact record of the car's entire trip around the race track. Because the camera traveled with the car, there are no gaps in the data.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_RefFrame_LaGrange.png" data-mc-popup-alt="Lagrangian reference frame"><img class="MCPopupThumbnail img imgthumb640px" data-mc-width="676" data-mc-height="264" src="../../Images/Models/Hyd/AHM_RefFrame_LaGrange.png" alt="Lagrangian reference frame" title="Lagrangian reference frame" tabindex="" style="max-width: 640px;" /></a>
+                                            </p>
+                                            <p>The cameras represent observers collecting data for each car, and the race track represents the fluid's path. The first car uses an Eulerian reference frame, where an observer collects data at fixed points along the fluid's path.  The second car uses a Lagrangian reference frame, where the observer moves with the fluid to collect data. In the example above, the camera placed inside the second car represents the observer.</p>
+                                            <p>When tracking fluid, the Lagrangian reference frame provides many advantages over an Eulerian reference frame. It allows the fluid to be tracked as it moves through the wellbore, which is not easily achieved with an Eulerian reference frame, and eliminates the need to re-discretize the wellbore when the drillstring moves.</p>
+                                            <p>The Lagrangian coordinate system also responds easily to drillstring movement. In an Eulerian system, geometric properties are stored in the nodes when the wellbore is discretized. When the drillstring moves, the wellbore has to be re-discretized. In the Lagrangian reference frame, however, the geometric properties of each node are mapped at each time-step. When the drillstring moves, node positions are adjusted without re-discretizing the wellbore.</p>
+                                            <p>The Eulerian framework is useful for solving pressure and temperature equations using finite difference schemes. Partial differential equations or ordinary differential equations can be discretized and arranged into the Eulerian structure. The Eulerian structure then can be used by integration schemes to solve for pressure and temperature.</p>
+                                            <h2><a name="Discretization"></a>Discretization</h2>
+                                            <p class="inset" data-mc-conditions="Outputs.Online"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_Discretize_ComponentTypes.png" data-mc-popup-alt="Discretizing components"><img class="MCPopupThumbnail img imgthumb400px" data-mc-width="672" data-mc-height="528" src="../../Images/Models/Hyd/AHM_Discretize_ComponentTypes.png" alt="Discretizing components" title="Discretizing components" tabindex="" style="max-width: 400px;" /></a>
+                                            </p>
+                                            <p>There are thousands of possible wellbore components, but they can be classified as simple, jet, or complex elements. Simple elements are pipe and annular sections, and they are used to represent most of the wellbore. Properties such as outside diameter, inside diameter, and length are used to characterize simple elements.</p>
+                                            <p>Jet elements, such as the bit, contain nozzles or ports. Flow is diverted inside these elements when fluid flows through a bit or out of a port. Jet cells are characterized by properties such as total flow area, nozzle sizes, and efficiency.</p>
+                                            <p>Complex elements represent regions of the wellbore, such as stabilizers and MWD tools, that cannot be classified as simple or jet elements. They have irregular geometry, which creates intricate flow paths. These elements require mathematical models, which will be included in a later development phase.</p>
+                                            <p class="inset"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_Discretize_WB.png" data-mc-popup-alt="Fluid volume represented as cells"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="454" data-mc-height="274" src="../../Images/Models/Hyd/AHM_Discretize_WB.png" alt="Fluid volume represented as cells" title="Fluid volume represented as cells" tabindex="" style="max-width: 340px;" /></a>
+                                            </p>
+                                            <p>Cells fill the wellbore's entire fluid volume without overlapping one another. They are connected end-to-end in the order they are encountered in the wellbore, creating a list which shows their progression along the fluid path.</p>
+                                            <p class="clear">The first cell on the list represents the fluid at the top of the drillstring and the last cell represents the top of the annulus.</p>
+                                            <p class="left"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_FlowDirection.png" data-mc-popup-alt="Cell movement in the wellbore"><img class="MCPopupThumbnail img imgthumb160px" data-mc-width="192" data-mc-height="278" src="../../Images/Models/Hyd/AHM_FlowDirection.png" alt="Cell movement in the wellbore" title="Cell movement in the wellbore" tabindex="" style="max-width: 160px;" /></a>
+                                            </p>
+                                            <p>As fluid is pumped into the wellbore, new cells are added at the top of drillstring. Cells are pushed through the wellbore by incoming fluid, giving each cell a new position without changing its volume. In isothermal simulations, the volume added to the system by the new cells is removed by the cells exiting the system through the annulus. In thermal simulations, the amount of fluid volume removed from the annulus is determined by the mass of the fluid pumped into the system.</p>
+                                            <p>The Lagrangian framework consists of cells, and the Eulerian framework consists of nodes. Most of the cells represent simple elements, each holding a specific segment of fluid volume. They contain the geometric and fluid properties for that segment of the drilling fluid. Although cell properties may change as the cell moves through the wellbore, these properties are assumed to be constant across the cell.</p>
+                                            <p>The nodes are discrete points within the wellbore that represent properties at the specific depth. The nodes do not move with the cells. The nodes are useful for performing pressure and temperature calculations. Before pressure and temperature can be calculated, the properties of the moving fluid cells must be mapped to the nodes.</p>
+                                            <h2><a name="Processes"></a>Processes &amp; Modules</h2>
+                                            <p>The numerical framework uses management processes and modules to create outputs. The management processes oversee the modules to ensure each task associated with the process is completed.</p>
+                                            <p>The initialization process creates an initial snapshot of the wellbore that serves as the starting point for the simulation. Cells are constructed to represent the wellbore, then filled with local properties. The resulting system reflects the initial conditions of wellbore simulation.</p>
+                                            <p>Once the initialization process is completed, the iteration process can be started. During this process, the simulation advances one timestep. Cells are adjusted to reflect the resulting changes and the calculated properties are communicated to the next timestep.</p>
+                                            <h3>Discretization Module</h3>
+                                            <p>The initialization process stores geometric properties in the discretization module, which uses these properties to split the wellbore into cells.  The cells represent a segment of fluid volume in the wellbore and have local geometric, fluid, operational and calculated properties attached to them. Cell volume is used to track the cell as it moves through the wellbore. The cumulative volume of the system, which is used by the mapping module, is also tracked by the discretization module.</p>
+                                            <p>The discretization module is also responsible for initializing the Eulerian framework by discretizing the wellbore into nodes. Whenever an operation such as tripping moves the bit causing the Eulerian mesh to be out of sync with the geometry, the discretization module will remesh the nodes in the Eulerian framework to fit the new geometry. Properties from the existing mesh are carefully mapped to the new mesh depending on the operation.</p>
+                                            <h3>Mapping Module</h3>
+                                            <p>The mapping module creates a geometric map of the wellbore that relates cumulative volume to the measured depth of each cell. It also creates a survey map of the wellbore's trajectory that relates the measured depth along the curve of the wellbore to the total vertical depth.</p>
+                                            <p>Using these maps,  geometric and survey properties are assigned to cells after the wellbore is discretized. Cell position is determined by the geometric map, based on the cell's volume. The mapping module assigns the cell's geometric and survey properties by cross-referencing cell position with the cumulative volume data stored in the discretization module. When cells move during an iteration, the mapping module updates the cells with their new geometric and survey properties.</p>
+                                            <p>The mapping module is also responsible for mapping the fluid properties contained in the cells of the Lagrangian framework to the nodes in the Eulerian framework each time-step in the increment function.</p>
+                                            <h3>Fluid Pool Module</h3>
+                                            <p>The fluid pool module stores the fluid data and fluid-related calculations. The initialization process populates the fluid pool module with properties such as density, rheology, and PVT data. When the mapping module determines a cell's position, these properties are mapped to each cell.</p>
+                                            <h3>Material Pool Module</h3>
+                                            <p>The material pool module is similar to the fluid pool module. The main difference is that the material manager provides properties of solids (e.g. steel, cement, formation, etc.). The mapping module also determines how to map solid properties to the appropriate shells that contain solid elements.</p>
+                                            <h3>Numerical Framework Module</h3>
+                                            <p>The numerical framework module contains the Lagrangian framework and Eulerian frameworks. The Lagrangian framework manages the fluid cells being circulated in the system while the Eulerian framework manages a collection of nodes assigned throughout the wellbore. All other modules have access to both frameworks. In particular, the solver module uses the frameworks in this module the most.</p>
+                                            <p>The numerical framework module manipulates the cells in the Lagrangian framework as instructed by the discretization, pre-conditioning, and operational control modules. The numerical framework module adds and removes cells from the system, adjusts cell positions, and merges and splits cells.</p>
+                                            <p>When the numerical framework module splits a cell, it creates two or more new cells from an existing cell. The new cells have the same properties as the original cell. The sum of the volume of the new cells is the same as the volume of the original cell. Splitting cells can resolve problems with the geometry mapping and the wellbore discretization refinement process.</p>
+                                            <p>When two cells are merged, a new cell is created to replace multiple cells.  The volume of the new cell is equal to the combined volumes of the merged cells. When cells are merged, their properties are combined using a mathematical model.</p>
+                                            <h3>Pre-Conditioning Module</h3>
+                                            <p>The pre-conditioning module communicates with the numerical framework module to optimize cell distribution and the number of cells. It tells the displacement module how to merge and split the cells, which can optimize performance by finding a balance between speed and quality.</p>
+                                            <p class="inset" data-mc-conditions="Outputs.Online"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_IrregularCells.png" data-mc-popup-alt="Splitting cells to create simple cells"><img class="MCPopupThumbnail img imgthumb400px" data-mc-width="670" data-mc-height="374" src="../../Images/Models/Hyd/AHM_IrregularCells.png" alt="Splitting cells to create simple cells" title="Splitting cells to create simple cells" tabindex="" style="max-width: 400px;" /></a>
+                                            </p>
+                                            <p>After an iteration, some simple cells may have an irregular shape. This can happen when a cell crosses a geometry change, such as the boundary between two casing intervals. This problem is resolved by splitting the cell into simple cells along the geometry change.</p>
+                                            <p class="pgbreak clear">If the cells are too large, splitting cells may be required. Large cells indicate that there may not be enough cells in the wellbore, causing poor integration quality and unstable calculations. Splitting cells can refine cell distribution and improve integration quality, which leads to better accuracy.</p>
+                                            <p data-mc-conditions="Outputs.Online"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_LargeCells.png" data-mc-popup-alt="Splitting coarsely discretized cells"><img class="MCPopupThumbnail img imgthumb400px" data-mc-width="670" data-mc-height="453" src="../../Images/Models/Hyd/AHM_LargeCells.png" alt="Splitting coarsely discretized cells" title="Splitting coarsely discretized cells" tabindex="" style="max-width: 400px;" /></a>
+                                            </p>
+                                            <p>If the cells are too small, it may be necessary to merge some of them. The quality of the wellbore representation increases with additional cells, but the slower calculation speed hinders performance. Merging cells can achieve an optimal balance between speed and quality.</p>
+                                            <p data-mc-conditions="Outputs.Online"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_SmallCells.png" data-mc-popup-alt="Merging finely discretized cells"><img class="MCPopupThumbnail img imgthumb400px" data-mc-width="668" data-mc-height="441" src="../../Images/Models/Hyd/AHM_SmallCells.png" alt="Merging finely discretized cells" title="Merging finely discretized cells" tabindex="" style="max-width: 400px;" /></a>
+                                            </p>
+                                            <h3>Operational Control Module</h3>
+                                            <p>The operational control module simulates wellbore operations, such as circulation, tripping, and drilling. Wellbore conditions change depending on the wellbore operation, which is the driving force of the simulation. The operational control module stores the global operational properties, such as flow rate and bit depth, and uses them to control cell behavior by telling the numerical framework module how to move the cells.</p>
+                                            <h4>Circulation</h4>
+                                            <p class="inset" data-mc-conditions="Outputs.Online"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_Ops_Circulation.png" data-mc-popup-alt="Cell movement during circulation"><img class="MCPopupThumbnail img imgthumb400px" data-mc-width="706" data-mc-height="413" src="../../Images/Models/Hyd/AHM_Ops_Circulation.png" alt="Cell movement during circulation" title="Cell movement during circulation" tabindex="" style="max-width: 400px;" /></a>
+                                            </p>
+                                            <p>During circulation, new volume is added to the top of the list through the drillstring. Existing cells are pushed down by the new volume. The drillstring doesn't move during circulation, so the total volume in the system and the inactive fluid region below the bit do not change. An equal amount of volume exits the system at the end of the list through the annulus.</p>
+                                            <p>Circulation may occur alone, such as when removing excess cuttings, or it may occur during drilling and tripping operations. If the drillstring moves, the system volume is adjusted accordingly.</p>
+                                            <h4 class="pgbreak clear">Drilling</h4>
+                                            <p class="inset" data-mc-conditions="Outputs.Online"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_Ops_Drilling.png" data-mc-popup-alt="Cell movement while drilling"><img class="MCPopupThumbnail img imgthumb400px" data-mc-width="567" data-mc-height="437" src="../../Images/Models/Hyd/AHM_Ops_Drilling.png" alt="Cell movement while drilling" title="Cell movement while drilling" tabindex="" style="max-width: 400px;" /></a>
+                                            </p>
+                                            <p>Drilling adds volume to the system, and cells are moved to adjust for the change in pipe volume. The drill bit is on the ground, so there isn't an inactive fluid region below the bit. Volume may be artificially added to ensure fluid is present through the entire system.</p>
+                                            <h4 class="clear">Tripping</h4>
+                                            <div class="inset" data-mc-conditions="Outputs.Online">
+                                                <p>Tripping in without circulation</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_Ops_TripIn.png" data-mc-popup-alt="Cell movement while tripping in, without circulation"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="671" data-mc-height="457" src="../../Images/Models/Hyd/AHM_Ops_TripIn.png" alt="Cell movement while tripping in, without circulation" title="Cell movement while tripping in, without circulation" tabindex="" style="max-width: 340px;" /></a>
+                                                </p>
+                                                <p>Tripping out without circulation</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_Ops_TripOut.png" data-mc-popup-alt="Cell movement while tripping out, without circulation"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="646" data-mc-height="437" src="../../Images/Models/Hyd/AHM_Ops_TripOut.png" alt="Cell movement while tripping out, without circulation" title="Cell movement while tripping out, without circulation" tabindex="" style="max-width: 340px;" /></a>
+                                                </p>
+                                                <p>Tripping with circulation</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_Ops_TripWithCirc.png" data-mc-popup-alt="Cell movement while tripping, with circulation"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="706" data-mc-height="472" src="../../Images/Models/Hyd/AHM_Ops_TripWithCirc.png" alt="Cell movement while tripping, with circulation" title="Cell movement while tripping, with circulation" tabindex="" style="max-width: 340px;" /></a>
+                                                </p>
+                                            </div>
+                                            <p>When tripping in without circulating, the bit depth increases. The pipe volume decreases because there is no fluid in the new pipe. The trip tank adds fluid to fill the new pipe region, and the inactive fluid below the bit is pushed into the annulus.</p>
+                                            <p>Similarly, tripping out without circulation causes fluid from the pipe to flow into the inactive region below the bit. The numerical framework assumes a non-return valve during tripping operations, which prevents the fluid from flowing back up the pipe.</p>
+                                            <p>However, fluid volume may be lost or gained when tripping out and circulating at the same time. Although fluid volume is lost when a pipe section exits the wellbore, circulation adds new volume. The amount of fluid gained or lost depends on the speed of the tripping operation and the flow rate of the fluid. When the flow rate is high and the trip speed is low, circulation replaces the fluid faster than the pipe is removed. When the flow rate is low and the trip speed is high, the fluid is exiting the system faster than circulation replaces it.</p>
+                                            <p>When tripping in while circulating, there are no gaps in volume because the fluid volume is displaced by the volume of the pipe.</p>
+                                            <h3 class="clear">Formulas Module</h3>
+                                            <p>When the solver module performs a calculation, it accesses the equations stored in the formulas module. These equations include numerical methods, empirical relationships, and formulas for basic hydraulics calculations, such as pressure loss across simple and jet elements. <a href="AHM_Isothermal.htm" class="MCXref xref">See "Isothermal pressure".</a></p>
+                                            <h3>Solver Module</h3>
+                                            <p>The solver module is responsible for solving pressure and temperature equations. The solver uses the Eulerian framework in the numerical framework module, formulas module, and the numerical library to accomplish this task.</p>
+                                            <p>The solver module performs advanced calculations across the cells, controls the order of the calculations, and determines calculated properties. It selects the appropriate equation from the formulas module, uses the relevant input properties to calculate the correct value, and stores the resulting calculated property in the cell. Global calculated properties are sent to the post-processing module. When necessary, the solver module reconciles local calculated properties from cells with the global calculated properties of the system.</p>
+                                            <h4>Solver Pipeline</h4>
+                                            <p>The solver consists of two main parts; an initialization process that constructs the initial starting point of the simulation and a time-stepping process that evolves the system based on the time-step. The solver pipeline below describes this time-evolution process.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_SolverPipeline.png" data-mc-popup-alt="Solver pipeline"><img class="MCPopupThumbnail img imgthumb640px" data-mc-width="607" data-mc-height="296" src="../../Images/Models/Hyd/AHM_SolverPipeline.png" alt="Solver pipeline" title="Solver pipeline" tabindex="" style="max-width: 640px;" /></a>
+                                            </p>
+                                            <h4 class="pgbreak">Pressure Solver</h4>
+                                            <p>The following diagram illustrates the integration of pressure in the Eulerian framework.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Models/Hyd/AHM_RefFrame_IterationSteps.png" data-mc-popup-alt="Pressure solver"><img class="MCPopupThumbnail img imgthumb520px" data-mc-width="685" data-mc-height="463" src="../../Images/Models/Hyd/AHM_RefFrame_IterationSteps.png" alt="Pressure solver" title="Pressure solver" tabindex="" style="max-width: 520px;" /></a>
+                                            </p>
+                                            <h3>Post-Processing Module</h3>
+                                            <p>The post-processing module stores global calculated properties for creating output properties and gathers local properties for generating profiles. At each iteration, new profiles are created to reflect cell properties.</p>
+                                            <p>Profiles are reported on a fixed grid, using results from the Eulerian framework. Some calculations also have unstable or chaotic behavior that causes oscillation and extraneous results in profiles. The post-processing module removes unnecessary data points to smooth profile graphs and show the overall trend, rather than the chatter from the calculated results.</p>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../QuickStart/QS_About.htm" title="Quick Start Guide" alt="Quick Start Guide">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/KB/KB_About.htm" title="CENTRO® Engineer v.2.4.15 Knowledge Base" alt="CENTRO® Engineer v.2.4.15 Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../General/Videos/VID_About.htm" title="CENTRO® Engineer v.2.4.15 Video Library" alt="CENTRO® Engineer v.2.4.15 Video Library">Video Library</a>
+                                                </li>
+                                                <li><a href="../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

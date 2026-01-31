@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=App Properties.ToolsScreenName%] |Hydraulics|Snapshot|Results" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The results summary for a snapshot hydraulics analysis includes a summary of pressure distribution, a summary of the pressures and temperatures affecting the configurable components, a detailed depth profile, and well inteval calculations." /><title>Snapshot results summary</title>
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                    </ul>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">CENTRO® Engineer</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1><a name="kanchor79"></a>Snapshot results summary</h1>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#Warnings" class="sectionLink MCXref xref xrefsectionLink" xrefformat="{paratext}">Warnings</a>
+                                                    </p>
+                                                    <p><a href="#Summary" class="sectionLink MCXref xref xrefsectionLink" xrefformat="{paratext}">Analysis summary</a>
+                                                    </p>
+                                                    <p><a href="#AddedGas" class="sectionLink MCXref xref xrefsectionLink" xrefformat="{paratext}">Added gas summary</a>
+                                                    </p>
+                                                    <p><a href="#ConfigComponent" class="sectionLink MCXref xref xrefsectionLink" xrefformat="{paratext}">Split flow components summary</a>
+                                                    </p>
+                                                    <p><a href="#PDrop" class="sectionLink MCXref xref xrefsectionLink" xrefformat="{paratext}">Pressure drop distribution</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2><a name="Warnings"></a>Warnings</h2>
+                                            <p>If the limits of pore pressure, fracture pressure, or flow rate are violated during the analysis, a warning message will appear at the top of the results summary. The table below shows a list of possible warnings, along with recommended solutions.</p>
+                                            <table>
+                                                <caption>List of warning messages</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Warning Message</th>
+                                                        <th>Recommended Solutions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>ECD violates PPG/FPG window</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>If the PPG limit is violated, use a mud with a higher mud weight and/or increase surface backpressure.</li>
+                                                                <li>If the FPG limit is violated, use a mud with a lower mud weight and/or decrease surface backpressure</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ESD violates PPG/FPG window</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>If the PPG limit is violated, use a mud with a higher mud weight and/or increase surface backpressure.</li>
+                                                                <li>If the FPG limit is violated, use a mud with a lower mud weight and/or decrease surface backpressure</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ECD + Cuttings violates PPG/FPG window</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>If the PPG limit is violated, use a mud with a higher mud weight and/or increase surface backpressure.</li>
+                                                                <li>If the FPG limit is violated, use a mud with a lower mud weight and/or decrease surface backpressure</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pump flow rate is less than the min flow rate required to clean the hole</td>
+                                                        <td>Increase the flow rate specified in the analysis settings.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flow rate is greater than max allowed pump flow rate</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Decrease the flow rate specified in the analysis settings.</li>
+                                                                <li>Verify the max flow rate shown for the pumps on the <em>Setup</em> &gt; <em>Surface Equipment</em> &gt; <em>Piping and Instrumentation</em> tab. <a href="../../../Setup/Surface Equipment/RIG_Pumps.htm" class="MCXref xref" xrefformat="See {quote}{paratext}{quote}." data-mc-variable-override="">See "Pump configuration".</a></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Work done by pump is greater than max allowed work</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Decrease the flow rate specified in the analysis settings.</li>
+                                                                <li>Verify the max pump HHP shown for the pumps on the <em>Setup</em> &gt; <em>Surface Equipment</em> &gt; <em>Piping and Instrumentation</em> tab. <a href="../../../Setup/Surface Equipment/RIG_Pumps.htm" class="MCXref xref" xrefformat="See {quote}{paratext}{quote}." data-mc-variable-override="">See "Pump configuration".</a></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pump pressure is greater than max allowed pump pressure</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Use a mud with a higher mud weight and/or increase surface backpressure.</li>
+                                                                <li>Verify the max pump pressure shown for the pumps on the <em>Setup</em> &gt; <em>Surface Equipment</em> &gt; <em>Piping and Instrumentation</em> tab. <a href="../../../Setup/Surface Equipment/RIG_Pumps.htm" class="MCXref xref" xrefformat="See {quote}{paratext}{quote}." data-mc-variable-override="">See "Pump configuration".</a></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flow rate is less than the minimum flow rate required to operate tool</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Increase the flow rate specified in the analysis settings.</li>
+                                                                <li>Verify the minimum flow rate shown for the tool on the <em>Setup</em> &gt; <em>Work String</em> page. <a href="../../../Setup/Work String/WS_About.htm" class="MCXref xref" xrefformat="See {quote}{paratext}{quote}." data-mc-variable-override="">See "Work strings".</a></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flow rate is greater than the maximum flow rate required to operate tool</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Decrease the flow rate specified in the analysis settings.</li>
+                                                                <li>Verify the maximum flow rate shown for the tool on the <em>Setup</em> &gt; <em>Work String</em> page. <a href="../../../Setup/Work String/WS_About.htm" class="MCXref xref" xrefformat="See {quote}{paratext}{quote}." data-mc-variable-override="">See "Work strings".</a></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Reamer opened. Critical flow rate exceeded.</td>
+                                                        <td>Decrease the flow rate specified in the analysis settings.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>Flow rate through turbine generator is above operating flow rate</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Decrease the flow rate specified in the analysis settings.</li>
+                                                                <li>Verify the turbine generator flow range selected for the Magnus RSS on the <em>Setup</em> &gt; <em>Work String</em> page. <a href="../../../Setup/Work String/WS_About.htm" class="MCXref xref" xrefformat="See {quote}{paratext}{quote}." data-mc-variable-override="">See "Work strings".</a></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>Flow rate through turbine generator is below operating flow rate</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Increase the flow rate specified in the analysis settings.</li>
+                                                                <li>Verify the turbine generator flow range selected for the Magnus RSS on the <em>Setup</em> &gt; <em>Work String</em> page. <a href="../../../Setup/Work String/WS_About.htm" class="MCXref xref" xrefformat="See {quote}{paratext}{quote}." data-mc-variable-override="">See "Work strings".</a></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>Flow rate through turbine generator is within 10% of the upper operating flow range</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Decrease the flow rate specified in the analysis settings.</li>
+                                                                <li>Verify the turbine generator flow range selected for the Magnus RSS on the <em>Setup</em> &gt; <em>Work String</em> page. <a href="../../../Setup/Work String/WS_About.htm" class="MCXref xref" xrefformat="See {quote}{paratext}{quote}." data-mc-variable-override="">See "Work strings".</a></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>Flow rate through turbine generator is within 10% of the lower operating flow range</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Increase the flow rate specified in the analysis settings.</li>
+                                                                <li>Verify the turbine generator flow range selected for the Magnus RSS on the <em>Setup</em> &gt; <em>Work String</em> page. <a href="../../../Setup/Work String/WS_About.htm" class="MCXref xref" xrefformat="See {quote}{paratext}{quote}." data-mc-variable-override="">See "Work strings".</a></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="">
+                                                        <td>Stand pipe pressure exceeds pop-off pressure</td>
+                                                        <td>
+                                                            <p>Verify pop-off pressure specified for the pumps in the <em>Setup</em> &gt; <em>Surface Equipment</em> &gt; <em>Piping and Instrumentation</em> page. <a href="../../../Setup/Surface Equipment/RIG_Specs.htm" title="See &quot;Equipment specifications&quot;." alt="See &quot;Equipment specifications&quot;." class="MCXref xref" xrefformat="See {quote}{paratext}{quote}." data-mc-variable-override="">See "Equipment specifications".</a></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="Summary"></a>Analysis summary</h2>
+                                            <p class="clear">Calculated values for hole cleaning, lag time, circulation, and temperature are shown in the <em>Analysis Summary</em> section.</p>
+                                            <table>
+                                                <caption>Calculated values for a snapshot analysis</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Section</th>
+                                                        <th>Value</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td rowspan="3">Lag Time</td>
+                                                        <td>Surface to WS End</td>
+                                                        <td>
+                                                            <p>Time required for the drilling fluid flowing downward to reach the end of the work string from the surface</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>WS End to Surface</td>
+                                                        <td>
+                                                            <p>Time required for the drilling fluid flowing upward to reach the surface from the end of the work string</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Circulation</td>
+                                                        <td>
+                                                            <p>Time required for the drilling fluid to circulate through the entire wellbore</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="4">Break Circulation</td>
+                                                        <td>SPP</td>
+                                                        <td>Standpipe pressure required to break circulation</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bottom Hole ECD</td>
+                                                        <td><a href="#" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm MCTextPopupHotSpot_" glossTerm="Abbreviations.Term2">ECD<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"> </span>equivalent circulating density</span></a> at the bottom of the wellbore required to break circulation</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shoe ECD</td>
+                                                        <td>ECD at the casing shoe required to break circulation</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>WS End ECD</td>
+                                                        <td>ECD at the end of the work string required to break circulation</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="3">Temperature</td>
+                                                        <td>BHT</td>
+                                                        <td>
+                                                            <p>Temperature of the fluid at the bottom of the wellbore</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>WS End</td>
+                                                        <td>
+                                                            <p>Temperature of the fluid at the end of the work string</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CS</td>
+                                                        <td>
+                                                            <p>Temperature of the fluid at the casing shoe</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="9">Hole Cleaning</td>
+                                                        <td>Min Cuttings Velocity</td>
+                                                        <td>Minimum velocity achieved by cuttings in the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ann Velocity at Min</td>
+                                                        <td>Annular velocity when minimum cuttings velocity occurs</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Critical Flow Rate</td>
+                                                        <td>Flow rate required for HCI to be 0.65</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cuttings to Surface</td>
+                                                        <td>Time required for the cuttings to travel from the bit to the surface</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>WS End to DOI</td>
+                                                        <td>Time required for the cuttings to circulate from the end of the work string to the depth of interest specified in the <em>Hole Cleaning DOI</em> field</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Min. Annular Velocity</td>
+                                                        <td>Minimum annular velocity of the fluid required for hole cleaning. This information is only included in the hydraulics snapshot report.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Min CTR</td>
+                                                        <td>Minimum cuttings transport ratio required for hole cleaning. The cuttings transport ratio is the ratio of the cuttings velocity to the annulus fluid velocity. This information is only included in the hydraulics snapshot report.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Max Bed Height</td>
+                                                        <td>Maximum height of the cuttings at the minimum annular velocity. This information is only included in the hydraulics snapshot report.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Max HCI</td>
+                                                        <td>Maximum hole cleaning index at the minimum annular velocity. This information is only included in the hydraulics snapshot report.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2">Compressibility</td>
+                                                        <td>Pressure Up Max</td>
+                                                        <td>Maximum volume to pressure-up pipe or pressure-up annulus. This value is only available when the Pressure-Up Pipe or Pressure-Up Annulus operation is selected.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Pressure Up</p>
+                                                            <p>Min</p>
+                                                        </td>
+                                                        <td>
+                                                            <p>Minimum volume to pressure-up pipe or pressure-up annulus. This value is only available when the Pressure-Up Pipe or Pressure-Up Annulus operation is selected.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="AddedGas"></a>Added gas summary</h2>
+                                            <p>The <em>Added Gas Summary</em> section contains a summary of the flow rates and pressure affected by the gas component of the fluid. This section is only available when the fluid for the selected analysis includes a gas component, or when the work string contains a thru-tubing motor.</p>
+                                            <table>
+                                                <caption>Calculated values for the gas summary</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Value</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Gas Flow</td>
+                                                        <td>Flow rate of the gas through the work string</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Flow</td>
+                                                        <td>Combined flow rate of the liquid and the gas</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>% Gas</td>
+                                                        <td>Percentage of the gas in the total flow rate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pump Pressure</td>
+                                                        <td>Pressure at the pump on surface</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tq Dp Over Motor</td>
+                                                        <td>Relative difference between the pump pressure at the surface and pump pressure when off bottom, when torque equals zero</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Motor Free Running Loss</td>
+                                                        <td>Pressure required to drive fluid through the motor with no load, at the flow rate specified in the analysis settings</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>% Gas Into Motor</td>
+                                                        <td>Percentage of gas in the total flow through the motor</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Flow Into Motor</td>
+                                                        <td>Combined flow rate of the gas and the liquid through the motor. Typically, a higher annular pressure decreases the flow through the motor, and an increased gas flow rate will increase the flow through the motor.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Annulus Pressure at Motor</td>
+                                                        <td>Pressure inside the annulus at the motor</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="ConfigComponent"></a>Split flow components summary</h2>
+                                            <p>The <em>Split Flow Component Summary</em> section contains a summary of the pressures affecting the split flow components in the work string. A split flow component is a tool that diverts flow between the annulus and the pipe before the end of the work string. This includes tools such as drill bits, reamers, and circulation subs.</p>
+                                            <table>
+                                                <caption>Summary results for split flow components</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Tool</td>
+                                                        <td>Name of the configurable tool</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flow Split</td>
+                                                        <td>Percentage of the flow that has split to the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Noz. P. Drop</td>
+                                                        <td>Pressure loss through the bit nozzles</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Diff. Pressure at Top</td>
+                                                        <td>Differential pressure at the top of the tool</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BAP Diff. Pressure</td>
+                                                        <td>Bore and annular pressure, calculated using the differential pressure at the location of the BAP sensor. Only calculated when the BHA contains a HEL-BAP LWD tool or a custom tool that contains a pressure sensor.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="PDrop"></a>Pressure drop distribution</h2>
+                                            <p>A table showing the distribution of circulating pressure losses is shown in the <em>Pressure Drop Distribution</em> section. <span class="mc-variable App_Properties.AppModule variable">CENTRO® Engineer</span> calculates circulating pressure losses across each work string component, as well as the following pressure losses:</p>
+                                            <ul>
+                                                <li><em>Annulus</em> is the circulating pressure loss across the annulus.</li>
+                                                <li><em>Coiled Tubing Surface</em> is the circulating pressure across the coiled tubing that is still in the drum. Only available for work strings with coiled tubing as the top component in the work string.</li>
+                                                <li><em>Inlet Surface Equipment</em> is the circulating pressure loss across the surface connections, such as the standpipe and Kelly hose.</li>
+                                                <li><em>U Tube</em> is the pressure loss due to density differences in the pipe and the annulus.</li>
+                                                <li><em>SPP</em> is the pressure through the standpipe, which is the sum of surface backpressure, circulating pressure losses in the annulus and drillstring, circulating pressure loss at the surface, and pressure loss in the U-tube.</li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../../QuickStart/QS_About.htm" title="Quick Start Guide" alt="Quick Start Guide">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../../General/KB/KB_About.htm" title="CENTRO® Engineer v.2.4.15 Knowledge Base" alt="CENTRO® Engineer v.2.4.15 Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../../General/Videos/VID_About.htm" title="CENTRO® Engineer v.2.4.15 Video Library" alt="CENTRO® Engineer v.2.4.15 Video Library">Video Library</a>
+                                                </li>
+                                                <li><a href="../../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

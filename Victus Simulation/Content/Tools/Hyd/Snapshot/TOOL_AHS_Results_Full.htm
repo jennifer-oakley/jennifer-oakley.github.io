@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=App Properties.ToolsScreenName%] |Hydraulics|Snapshot|Results" data-mc-conditions="Outputs.MC2_Sim" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The results summary for a snapshot hydraulics analysis includes a summary of pressure distribution, a summary of the pressures and temperatures affecting the configurable components, a detailed depth profile, and well inteval calculations." /><title>Detailed snapshot analysis results</title>
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                    </ul>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">Victus™ Simulation</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1><a name="kanchor131"></a>Detailed snapshot analysis results</h1>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#ViewFull" class="sectionLink MCXref xref xrefsectionLink">Viewing detailed results</a>
+                                                    </p>
+                                                    <p><a href="#ConfigComponent" class="sectionLink MCXref xref xrefsectionLink">Split flow components</a>
+                                                    </p>
+                                                    <p><a href="#DepthProfile" class="sectionLink MCXref xref xrefsectionLink">Depth profile</a>
+                                                    </p>
+                                                    <p><a href="#Intervals" class="sectionLink MCXref xref xrefsectionLink">Well interval calculations</a>
+                                                    </p>
+                                                    <p><a href="#PowerCurve" class="sectionLink MCXref xref xrefsectionLink">Power curves</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2><a name="ViewFull"></a>Viewing detailed results</h2>
+                                            <p>After you run <span class="lowerCase mc-variable Snippets._IndefiniteArticle variable">A</span> <span class="lowerCase mc-variable Snippets.TOOL_CalcType variable">Snapshot</span> analysis, the <em>Show Full Results</em> button (<img src="../../../Images/Icons/Icon_show-summary_17x17.png" class="icon" title="Show Full Results button" alt="Show Full Results button" style="width: 17;height: 17;" />) will appear next to the <em>Show Graphs</em> button (<img src="../../../Images/Icons/Icon_show-graph_17x17.png" class="icon" alt="Show Graphs button" title="Show Graphs button" style="width: 17;height: 17;" />) in the bottom toolbar. This button is used to switch between the main view, which contains the analysis settings and the results summary, and the detailed analysis results.</p>
+                                            <p>To view the detailed results for <span class="lowerCase mc-variable Snippets._IndefiniteArticle variable">A</span><span class="lowerCase mc-variable Snippets.TOOL_CalcType variable">Snapshot</span> experiment:</p>
+                                            <ol>
+                                                <li value="1">Go to the <em><span class="mc-variable Snippets.GUI_TabName variable">Snapshot</span></em> tab on the <em><span class="mc-variable App_Properties.ToolsScreenName variable">Tools</span></em> &gt; <em><span class="mc-variable Snippets.GUI_PageName variable">Hydraulics</span></em> page.</li>
+                                                <li value="2">Select the experiment that you want to view results for.</li>
+                                                <li value="3">Click the <em>Show Full Results</em> button (<img src="../../../Images/Icons/Icon_show-summary_17x17.png" class="icon" title="Show Full Results button" alt="Show Full Results button" style="width: 17;height: 17;" />) in the bottom toolbar.</li>
+                                            </ol>
+                                            <p>The detailed results will appear on top of the analysis settings. To close the detailed results, click the <em>Show Full Results</em> button (<img src="../../../Images/Icons/Icon_show-summary_17x17.png" class="icon" title="Show Full Results button" alt="Show Full Results button" style="width: 17;height: 17;" />) again.</p>
+                                            <h2><a name="ConfigComponent"></a>Split flow components</h2>
+                                            <p>The <em>Split Flow Components</em> tab contains additional calculations for the split flow components in the work string.</p>
+                                            <table>
+                                                <caption>Detailed results for split flow components</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Tool</td>
+                                                        <td>Name of the configurable tool</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flow Path</td>
+                                                        <td>Position of the nozzles on the tool. The options available vary, depending on the type of tool.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Port State</td>
+                                                        <td>State of the ports on the component</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nozzle Config.</td>
+                                                        <td>Number and size of the nozzles on the tool. This value is automatically populated from the tool properties on the <em>Setup</em> &gt; <em>Work String</em> &gt; <em>Drillstring</em> tab.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TFA</td>
+                                                        <td>Total flow area.  This value is automatically populated from the tool properties on the <em>Setup</em> &gt; <em>Work String</em> &gt; <em>Drillstring</em> tab.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Discharge</td>
+                                                        <td>Efficiency of the fluid discharge through the component. This value is automatically populated from the pump properties on the <em>Setup</em> &gt; <em>Surface Equipment</em> page.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flow Split</td>
+                                                        <td>Percentage of the flow that has split to the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Noz. P. Drop</td>
+                                                        <td>Pressure loss through the tool nozzles</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jet Vel</td>
+                                                        <td>Jet velocity</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Impact Force</td>
+                                                        <td>Total impact force of the fluid exiting the tool nozzles</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Impact Pressure</td>
+                                                        <td>Impact pressure of the fluid exiting each tool nozzle</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Power</td>
+                                                        <td>Hydraulic power of the flow through the port on the tool</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Power Expended</td>
+                                                        <td>Power expended across a cross section of the tool</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Int Temp</td>
+                                                        <td>Internal temperature</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ext Temp</td>
+                                                        <td>External temperature</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Diff. Pressure at Top</td>
+                                                        <td>Differential pressure at the top of the tool</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Max Press</td>
+                                                        <td>Maximum pressure required to override the configurable component</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flow Rate @ Max Press</td>
+                                                        <td>Flow rate at which the configurable component will override</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SPP @ Max Press</td>
+                                                        <td>Standpipe pressure at which the configurable component will override</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="DepthProfile"></a>Depth profile</h2>
+                                            <p>The <em>Profile</em> table contains a depth profile that includes the calculated results of the analysis, listed in the table below.</p>
+                                            <table>
+                                                <caption>Calculated values for a depth profile</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>MD</td>
+                                                        <td>Measured depth</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TVD</td>
+                                                        <td>True vertical depth</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Inclination</td>
+                                                        <td>Inclination of the trajectory</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Azimuth</td>
+                                                        <td>Azimuth of the trajectory</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ann Velocity</td>
+                                                        <td>Velocity of the fluid in the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Slip Velocity</td>
+                                                        <td>Resulting velocity due to drag, buoyancy, lift, and gravity forces that is acting on a cutting</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cuttings Velocity</td>
+                                                        <td>Velocity of the cuttings in the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ann Flow Regime</td>
+                                                        <td>Flow regime of the fluid in the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fric Ann</td>
+                                                        <td>Frictional pressure loss in the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ann Pressure</td>
+                                                        <td>Total pressure loss in the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pore Pressure</td>
+                                                        <td>Pore pressure of the formation fluids</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Frac Pressure</td>
+                                                        <td>Fracture pressure of the formation fluids</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Wellbore Stability Pressure</td>
+                                                        <td>Minimum pressure required to maintain wellbore stability</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>PV</td>
+                                                        <td>Plastic viscosity of the fluid</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>YP</td>
+                                                        <td>Yield point of the fluid</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>LSYP</td>
+                                                        <td>Low-shear yield point of the fluid</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>ESD</td>
+                                                        <td>Equivalent static density</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ECD</td>
+                                                        <td>Equivalent circulating density</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>ECD+Cuttings</td>
+                                                        <td>ECD, plus density of the cuttings</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pipe Temperature</td>
+                                                        <td>Temperature of the fluid in the pipe</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Annulus Temperature</td>
+                                                        <td>Temperature of the fluid in the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Formation Temperature</td>
+                                                        <td>Temperature of the formation fluid</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>Cuttings %</td>
+                                                        <td>
+                                                            <p>Concentration of cuttings in the fluid, determined by ROP, bit size, and the ratio between the pipe OD and the hole ID</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>Bed Height</td>
+                                                        <td>
+                                                            <p>Height of the cuttings bed, determined by the wellbore inclination, fluid properties, and the ratio between the flow rate and the critical flow rate required to clean the hole</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CTR</td>
+                                                        <td>Cuttings transport ratio, which is the ratio of the cuttings velocity to the annulus fluid velocity</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>HCI</td>
+                                                        <td>
+                                                            <p>Hole cleaning index, an indicator for hole cleaning problems. HCI is a function of the angle, flow rate, shear stress, rotation, eccentricity, and bed height. The ranges for HCI quality are:</p>
+                                                            <ul>
+                                                                <li><strong>Very Good</strong>: 0 to 0.25</li>
+                                                                <li><strong>Good</strong>: 0.25 to 0.5</li>
+                                                                <li><strong>Fair</strong>: 0.5 to 0.75</li>
+                                                                <li><strong>Poor</strong>: 0.75 to 1</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>WS Velocity</td>
+                                                        <td>Velocity of the fluid in the work string</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fric DS</td>
+                                                        <td>Frictional pressure loss in the work string</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>WS Pressure</td>
+                                                        <td>Total pressure in the work string</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hydrostatic Pressure</td>
+                                                        <td>Hydrostatic pressure of the fluid in the work string</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pipe Flow Regime</td>
+                                                        <td>Flow regime of the fluid in the work string</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_01">
+                                                        <td>Eccentricity</td>
+                                                        <td>Drillstring eccentricity</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pipe Apparent Viscosity</td>
+                                                        <td>Apparent viscosity in the drillstring</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Annulus Apparent Viscosity</td>
+                                                        <td>Apparent viscosity in the annulus</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="">
+                                                        <td>Ann Density</td>
+                                                        <td>Density of the fluid in the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DS Component</td>
+                                                        <td>Name of the work string component</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Burst Capacity</td>
+                                                        <td>
+                                                            <p>Burst pressure rating for the <span class="mc-variable Snippets.WS_ToolType variable">work string component</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Collapse Capacity</td>
+                                                        <td>
+                                                            <p>Collapse pressure rating for the <span class="mc-variable Snippets.WS_ToolType variable">work string component</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Differential Pressure</td>
+                                                        <td>Difference between the pressure in the work string and the pressure in the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Viscous Friction Coefficient</td>
+                                                        <td>Coefficient representing the viscosity of the fluid in the work string</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="Intervals"></a>Well interval calculations</h2>
+                                            <p>The <em>Sections</em> table contains calculated values for each well interval included in the analysis.</p>
+                                            <table>
+                                                <caption>Calculated values for a well interval</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Start MD</td>
+                                                        <td>MD at the top of the well interval</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>End MD</td>
+                                                        <td>MD at the bottom of the well interval</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Start TVD</td>
+                                                        <td>TVD at the top of the well interval</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>End TVD</td>
+                                                        <td>TVD at the bottom of the well interval</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Annulus Total Pressure</td>
+                                                        <td>Total annular pressure at the bottom of the well interval</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ECD</td>
+                                                        <td>ECD at the bottom of the well interval</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Minimum CTR</td>
+                                                        <td>Minimum cuttings transport ratio</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Minimum Velocity</td>
+                                                        <td>Minimum fluid velocity</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Annulus Volume</td>
+                                                        <td>Volume of the fluid in the annulus interval</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Warnings</td>
+                                                        <td>Problems that may occur with this set of parameters</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="PowerCurve"></a>Power curves</h2>
+                                            <p>The <em>Power Curve</em> tab contains the performance chart for a thru-tubing motor. The <em>Power Curve</em> tab is only visible when the selected work string includes a through-tubing motor.</p>
+                                            <ul>
+                                                <li>The blue circle represents the operating point for the experiment, based on the operating parameters. The horizontal line that intersects with the operating point is the torque value, and the vertical line is the speed value.</li>
+                                                <li>The gray lines represent the hydraulic power curves for the motor, based on the motor specifications for torque, flow rate, and speed.</li>
+                                                <li>The green lines represent the flow band for the motor. The flow band plots the speed and torque points for each flow rate in the motor specification.</li>
+                                                <li>The blue lines represent the pressure band for the motor. The pressure band plots a horizontal line for each torque setting in the motor specification, starting at lower speed for the torque rating and ending at the upper speed.</li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../../General/KB/KB_About.htm" title="Victus™ Simulation Knowledge Base" alt="Victus™ Simulation Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../../QuickStart/QS_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

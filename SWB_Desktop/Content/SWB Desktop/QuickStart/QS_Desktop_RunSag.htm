@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Welcome|Quick Start" data-mc-conditions="Outputs.SWB Desktop" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Step-by-step guide for running sag corrections to compensate for BHA sag effects in deviated wells with inclination greater than 45 degrees." /><title>Run sag corrections</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppFull variable">Surveyor's Workbench</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1 class="QuickStart" data-mc-autonum="Step 6: "><span class="autonumber"><span>Step 6: </span></span>Run sag corrections</h1>
+                                            <div class="sidebar" data-mc-conditions="Outputs.Online">
+                                                <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/SWB_Desktop.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownsidebar"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_sidebar MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Related Topics</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="MCHelpControl MCHelpControl-Related relatedTopics" style="mc-use-custom-sort-order: true;"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
+                                                            <ul class="MCHelpControlList MCRelatedTopicsControlList">
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../SAG_Config.htm">Sag Setup</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../SAG_Analysis.htm">Sag Analysis Configuration</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About sag corrections</a>
+                                                    </p>
+                                                    <p><a href="#Config" class="sectionLink MCXref xref xrefsectionLink">Configuring sag analysis</a>
+                                                    </p>
+                                                    <p><a href="#AddTool" class="sectionLink MCXref xref xrefsectionLink">Adding BHA components</a>
+                                                    </p>
+                                                    <p><a href="#AddBlade" class="sectionLink MCXref xref xrefsectionLink">Adding blade sections</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2><a name="About"></a>About sag corrections</h2>
+                                            <p>Sag correction calculates the corrected inclination and build rate to compensate for gravitational effects on the BHA. In an inclined well, the BHA tends to deflect under the force of gravity. Typically, the BHA will rest on the stabilizers on the low side of the hole, causing the BHA to bend slightly. Because of this, the survey sensor may not be parallel to the main axis of the wellbore, causing mismatches between the sensor inclination and the well inclination.</p>
+                                            <p>To correct for sag effects, you will need to:</p>
+                                            <ol>
+                                                <li value="1">Upload the raw survey data, if available.<MadCap:conditionalText data-mc-conditions="Snippets.QuickStart"> <a href="QS_Desktop_ImportData.htm" class="MCXref xref">See "Import survey data".</a></MadCap:conditionalText></li>
+                                                <li value="2">Enter the  dimensions of the BHA components, as well as the mud weight, toolface offset, and motor bend angle.<MadCap:conditionalText data-mc-conditions="Snippets.QuickStart"> <a href="#Config" class="MCXref xref">See "Configuring sag analysis".</a></MadCap:conditionalText></li>
+                                            </ol>
+                                            <h2><a name="Config"></a>Configuring sag analysis</h2>
+                                            <p>Sag correction requires the dimensions of each component in the BHA, as well as stabilizer, motor, and sensor positions. You'll also need to enter the mud weight, toolface offset, and motor bend angle. Most of the information required can be found in the BHA report, which lists the BHA components with the dimension and connections for each component. However, it may be necessary to refer to fishing diagrams for more complex tools.</p>
+                                            <p>For sag only projects, all surveys will be selected by default. For MSA with sag projects, all surveys included in MSA optimization will be automatically selected.</p>
+                                            <p>To configure the settings for a sag analysis:</p>
+                                            <ol>
+                                                <li value="1">Go to the <em>Sag</em> &gt; <em>Setup</em> tab.</li>
+                                                <li value="2">In the panel on the left, enter the mud weight, sensor position, and bent sub settings.</li>
+                                                <li value="3">In the <em>BHA Elements</em> pane on the right, enter the dimensions of the components in the BHA.<MadCap:conditionalText data-mc-conditions="Snippets.QuickStart"> <a href="#AddTool" class="MCXref xref">See "Adding BHA components".</a></MadCap:conditionalText></li>
+                                                <li value="4">Click the <em>Validate BHA</em> button to check the BHA configuration.</li>
+                                                <li value="5" data-mc-conditions="Snippets.QuickStart">Go to the <em>Analysis</em> tab.</li>
+                                                <li value="6" data-mc-conditions="Snippets.QuickStart">If you selected the <em>Apply MSA</em> option on the <em>Inputs</em> screen, and you have not run an MSA analysis, click the <em>Optimise MSA</em> button.</li>
+                                                <li value="7" data-mc-conditions="Snippets.QuickStart">Review the surveys included in the analysis, then add and remove surveys as needed.</li>
+                                                <li value="8" data-mc-conditions="Snippets.QuickStart">Click the <em>Correct Survey</em> button.</li>
+                                            </ol>
+                                            <p>As you add components, the BHA schematic will be automatically updated. To maximize the BHA schematic, click the <em>Maximize</em> button (<img src="../Images/Icons/Icon_Maximize.png" title="Maximize button" alt="Maximize button" class="icon" />) at the top of the panel.</p>
+                                            <p>The analysis will calculate the corrected build rate, inclination, and amount of sag correction for each survey point. The chart in the <em>Graph</em> pane will show the amount of correction required for each inclination value.  To maximize the graph, click the <em>Maximize</em> button (<img src="../Images/Icons/Icon_Maximize.png" title="Maximize button" alt="Maximize button" class="icon" />) at the top of the panel.</p>
+                                            <h2><a name="AddTool"></a>Adding BHA components</h2>
+                                            <p>To add a component to the BHA:</p>
+                                            <p class="right"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/SAG_Config_BHAGrid.png" data-mc-popup-alt="Screenshot of a sample BHA"><img class="MCPopupThumbnail img imgthumb400px" data-mc-width="818" data-mc-height="539" src="../Images/SAG_Config_BHAGrid.png" alt="Screenshot of a sample BHA" title="Screenshot of a sample BHA" tabindex="" style="max-width: 400px;" /></a>
+                                            </p>
+                                            <ol>
+                                                <li value="1">Go to the <em>Sag</em> &gt; <em>Setup</em> screen.</li>
+                                                <li value="2">Right-click in the white area in the <em>BHA&#160;Elements</em> pane, then select the <em>Insert</em> option.</li>
+                                                <li value="3">In the new row that appears, go to the <em>Category</em> column and select the type of component.</li>
+                                                <li value="4">Enter a description of the component in the <em>Name</em> field.</li>
+                                                <li value="5">Enter the dimensions in the <em>OD</em>, <em>ID</em>, and <em>Length</em> fields.</li>
+                                                <li value="6">If the tool is composed of non-magnetic material, select the <em>Non-Mag</em> option.</li>
+                                                <li value="7">To add additional components to the BHA, right-click on a row in the table and select the <em>Insert Before</em> option or the <em>Insert After</em> option.</li>
+                                            </ol>
+                                            <p>As you add components, the BHA schematic will be automatically updated. When you have finished adding components, click the <em>Validate BHA</em> option to check the dimensions of the BHA components. To maximize the BHA schematic, click the <em>Maximize</em> button (<img src="../Images/Icons/Icon_Maximize.png" title="Maximize button" alt="Maximize button" class="icon" />) at the top of the panel.</p>
+                                            <h2><a name="AddBlade"></a>Adding blade sections</h2>
+                                            <p>Complex tools, such as stabilizers, RSS units, and mud motors, may need to be split into multiple part sections. You can manually enter the dimensions of each part section by adding each section as a separate component. You can also insert a blade section to automatically create top, bottom, and stabilizer sections for a stabilizer.</p>
+                                            <p>To add a blade section:</p>
+                                            <p class="inset"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/SAG_Config_AddBlade.png" data-mc-popup-alt="Screenshot of the Insert Blade window"><img class="MCPopupThumbnail img imgthumb220px" data-mc-width="336" data-mc-height="203" src="../Images/SAG_Config_AddBlade.png" alt="Screenshot of the Insert Blade window" title="Screenshot of the Insert Blade window" tabindex="" style="max-width: 220px;" /></a>
+                                            </p>
+                                            <ol>
+                                                <li value="1">Right-click on the component that you want to add a blade section to, then select the <em>Insert Blade</em> option.</li>
+                                                <li value="2">In the <em>Insert Blade</em> window, enter the distance between the drill bit and the middle of the blade in the <em>Blade Mid-Pt to Bit</em> field.</li>
+                                                <li value="3">Enter the blade dimensions in the <em>Blade OD</em> and <em>Blade Length</em> fields.</li>
+                                                <li value="4">Click <em>OK</em> to add the blade section.</li>
+                                            </ol>
+                                            <p>The component will be split into three sections: the body section below the blade, the blade section, and the body section above the blade.</p>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2026</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li data-mc-conditions="Outputs.SWB Desktop"><a href="QS_Desktop_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/SWB_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

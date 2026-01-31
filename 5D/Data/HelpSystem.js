@@ -1,0 +1,10 @@
+var xmlHelpSystemData = "";
+xmlHelpSystemData += '<?xml version=\"1.0\" encoding=\"utf-8\"?>';
+xmlHelpSystemData += '<WebHelpSystem DefaultUrl=\"Content/Home.htm\" Toc=\"Data/Tocs/5D_User_Guide___New_Structure.js\" Index=\"Data/Index.js\" Concepts=\"Data/Concepts.js\" Glossary=\"Data/Glossary.js\" SearchDatabase=\"Data/Search.js\" Alias=\"Data/Alias.xml\" Synonyms=\"Data/Synonyms.xml\" SearchUrl=\"Content/Search.htm\" PathToScriptsFolder=\"Resources/Scripts/\" SkinName=\"MainSkin\" SkinID=\"MainSkin\" Multilingual=\"false\" Skins=\"MainSkin\" BuildTime=\"1/21/2026 7:32:39 AM\" BuildVersion=\"21.1.9396.41248\" TargetType=\"WebHelp2\" SkinTemplateFolder=\"Skin/\" InPreviewMode=\"false\" TopNavTocPath=\"false\" MoveOutputContentToRoot=\"false\" ReplaceReservedCharacters=\"false\" MakeFileLowerCase=\"false\" UseCustomTopicFileExtension=\"false\" PreventExternalUrls=\"false\" EnableResponsiveOutput=\"true\" IncludeGlossarySearchResults=\"true\" ResultsPerPage=\"20\" FeaturedSnippetsScopeID=\"AllFiles\" FeaturedSnippetsResults=\"1\" KnowledgePanelResults=\"1\" IncludeMicroContent=\"true\" xml:lang=\"en-us\" LanguageName=\"English\" SearchEngine=\"MadCapSearch\" IncludeCSHRuntime=\"true\" DebugMode=\"false\" ShowMadCapBacklink=\"false\" HasELearning=\"false\">';
+xmlHelpSystemData += '    <CatapultSkin Version=\"6\" SkinType=\"WebHelp2\" ComponentType=\"MasterPage\" TemplateName=\"Fluid\" Comment=\"HTML5 Top Navigation skin\" EnableResponsiveOutput=\"True\" Name=\"MainSkin\" SkinID=\"MainSkin\" SkinClass=\"_Skins_Top_Nav_MainSkin\" HideNavOnStartup=\"False\" LogoUrl=\"\">';
+xmlHelpSystemData += '        <WebHelpOptions NavigationPanePosition=\"Right\" />';
+xmlHelpSystemData += '        <MicroContentOptions FeaturedSnippetsViewMode=\"Truncated\" KnowledgePanelViewMode=\"Truncated\" />';
+xmlHelpSystemData += '        <ProxyOptions FAQProxyViewMode=\"DropDown\" KnowledgeProxyViewMode=\"Truncated\" PromotionProxyViewMode=\"PlainText\" />';
+xmlHelpSystemData += '    </CatapultSkin>';
+xmlHelpSystemData += '</WebHelpSystem>';
+MadCap.Utilities.Xhr._FilePathToXmlStringMap.Add('HelpSystem', xmlHelpSystemData);

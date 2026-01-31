@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Interface|[%=App Properties.HomeScreenName%] Screen" data-mc-conditions="Outputs.MC2_Ops,Outputs.MC2_Sim,Outputs.MC2_OpLt,Outputs.MC2_SimLt" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Indicators are used to display parameters such as flow, density, choke control, wellbore trajectory, rig activity, on/off bottom position, block height, and more. Victus™ Operation has the following indicators: The Flow Difference indicator (Flow In indicator) shows the difference between the flow into the well and..." /><title>Indicators</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Indicators</h1>
+                                            <div class="sidebar" data-mc-conditions="Outputs.Online">
+                                                <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownsidebar"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_sidebar MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Related Topics</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="MCHelpControl MCHelpControl-Related relatedTopics"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
+                                                            <ul class="MCHelpControlList MCRelatedTopicsControlList">
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../Setup/LIM_About.htm"> Limits and Alarms</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Utilities/UTIL_Ind_CustPanels.htm">Custom panels</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Options/OPT_InterfaceSettings.htm">Interface settings</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About indicators</a>
+                                                    </p>
+                                                    <p><a href="#AddIndicator" class="sectionLink MCXref xref xrefsectionLink">Adding indicators to a dashboard</a>
+                                                    </p>
+                                                    <p data-mc-conditions="Outputs.MC2_Ops,Outputs.MC2_OpLt"><a href="#FieldDefs" class="sectionLink MCXref xref xrefsectionLink">RCD sensor definitions</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <article>
+                                                <h2 data-mc-conditions="Outputs.Online"><a name="About"></a>About indicators</h2>
+                                                <p class="right"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/App Shell/Dashboards/DASH_Ind_Sample.png" data-mc-popup-alt="Dashboard with indicators"><img class="MCPopupThumbnail img imgthumb400px" data-mc-width="936" data-mc-height="667" src="../../Images/App Shell/Dashboards/DASH_Ind_Sample.png" alt="Dashboard with indicators" title="Dashboard with indicators" tabindex="" style="max-width: 400px;" /></a>
+                                                </p>
+                                                <p>Indicators are used to display information such as<MadCap:conditionalText data-mc-conditions="Outputs.MC2_OpLt,Outputs.MC2_Ops"> RCD data,</MadCap:conditionalText> flow, density, choke control, wellbore trajectory, rig activity, on/off bottom position, and block height. <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span> has the following indicators:</p>
+                                                <ul>
+                                                    <li>The <em>Flow Difference</em> indicator (<img src="../../Images/Icons/Icon_flowInWidget_17x17.png" title="Flow In indicator" alt="Flow In indicator" class="icon" style="width: 17;height: 17;" />) shows the difference between the flow into the well and the flow out of the well. Flow in is determined from the calculated flow from the pumps into the well, and flow out is determined from the flow measured by the Coriolis meter as the fluid exits the well.</li>
+                                                    <li>The <em>Flow Out Difference</em> indicator (<img src="../../Images/Icons/Icon_flowOutWidget_17x17.png" title="Flow Out indicator" alt="Flow Out indicator" class="icon" style="width: 17;height: 17;" />) shows the difference between the outgoing flow rate measured by the Coriolis meter and the outgoing flow rate calculated by the hydraulics model.</li>
+                                                    <li>The <em>Density Out</em> indicator (<img src="../../Images/Icons/Icon_densityWidget_17x17.png" title="Density Out indicator" alt="Density Out indicator" class="icon" style="width: 17;height: 17;" />) shows the difference between the fluid density measured by the Coriolis meter and the fluid density calculated by the hydraulics model.</li>
+                                                    <li>The <em>Choke</em> indicator (<img src="../../Images/Icons/Icon_chokeWidget_17x17.png" title="Choke indicator" alt="Choke indicator" class="icon" style="width: 17;height: 17;" />) shows the current positions of the chokes.</li>
+                                                    <li>The <em>P &amp; I</em> indicator (<img src="../../Images/Icons/Icon_PIWidget_17x17.png" title="P &amp; I indicator" alt="P &amp; I indicator" class="icon" style="width: 17;height: 17;" />) allows you to adjust the proportional gain of the controller on the MPD manifold. This indicator is only functional when you are using one of the pressure control modes to manage pressure. <a href="../Controls/CTRL_MPD.htm" class="MCXref xref">See "Pressure controls".</a></li>
+                                                    <li>The <em>Survey</em> indicator (<img src="../../Images/Icons/Icon_inspect-wellpath_17x17.png" title="Survey indicator" alt="Survey indicator" class="icon" style="width: 17;height: 17;" />) shows different projections of the wellbore trajectory.</li>
+                                                    <li>The <em>On/Off Bottom</em> indicator (<img src="../../Images/Icons/Icon_onOffBottomWidgetBtn_17x17.png" title="On/Off Bottom indicator" alt="On/Off Bottom indicator" class="icon" style="width: 17;height: 17;" />) shows whether the bit is on-bottom or off-bottom.</li>
+                                                    <li>The <em>Block Height</em> indicator (<img src="../../Images/Icons/Icon_blockHeightWidgetBtn_17x17.png" title="Block Height indicator" alt="Block Height indicator" class="icon" style="width: 17;height: 17;" />) shows the current block position.</li>
+                                                    <li>The <em>Performance</em> indicator (<img src="../../Images/Icons/Icon_calibration_17x17.png" title="Performance indicator" alt="Performance indicator" class="icon" style="width: 17;height: 17;" />) shows a breakdown of the rig activity.<MadCap:conditionalText data-mc-conditions="Outputs.MC2_Ops,Outputs.MC2_Sim"> <a href="../../Feedback/FDBK_Perf_Performance.htm" class="MCXref xref">See "Performance reports".</a></MadCap:conditionalText></li>
+                                                    <li>The <em>RCD</em> indicator (<img src="../../Images/Icons/Icon_rcd_17x17.png" title="RCD indicator" alt="RCD indicator" class="icon" style="width: 17;height: 17;" />) displays sensor data received from the RCD.</li>
+                                                </ul>
+                                            </article>
+                                            <h2><a name="AddIndicator"></a>Adding indicators to a dashboard</h2>
+                                            <p>To add an indicator to a dashboard:</p>
+                                            <ol>
+                                                <li value="1">On the <em><span class="mc-variable App_Properties.HomeScreenName variable">Home</span></em> screen, select the dashboard that you want to add an indicator to.</li>
+                                                <li value="2">Click the <em>Edit Dashboard</em> button (<img src="../../Images/Icons/Icon_addGraphPageBtn_17x17.png" class="icon" title="Edit Dashboard button" alt="Edit Dashboard button" style="width: 17;height: 17;" />) in the bottom left corner of the screen.</li>
+                                                <li value="3">In the <em>Dashboard Editor</em> panel that appears on the left, expand the <em>Indicators</em> heading.</li>
+                                                <li value="4">Click on the icon for the type of indicator you want to create, then drag it to a blank area on the dashboard.</li>
+                                                <li value="5">If you want the indicator to span multiple grid areas, click on the bottom right corner of the indicator and drag it into an adjacent blank area.</li>
+                                            </ol>
+                                            <p>The selected indicator will appear on the dashboard. Some indicators have additional options available when you click the <em>Menu</em> button (<img src="../../Images/Icons/Icon_graphTools_17x17.png" title="Menu button" alt="Menu button" class="icon" style="width: 17;height: 17;" />) in the top left corner of the indicator.</p>
+                                            <ul>
+                                                <li>In the <em>Survey</em> indicator (<img src="../../Images/Icons/Icon_inspect-wellpath_17x17.png" title="Survey indicator" alt="Survey indicator" class="icon" style="width: 17;height: 17;" />), you can change the trajectory view.</li>
+                                                <li>In the <em>Performance</em> indicator (<img src="../../Images/Icons/Icon_calibration_17x17.png" title="Performance indicator" alt="Performance indicator" class="icon" style="width: 17;height: 17;" />), you can change the legend options.</li>
+                                            </ul>
+                                            <article data-mc-conditions="Outputs.MC2_Ops,Outputs.MC2_OpLt">
+                                                <h2><a name="FieldDefs"></a>RCD sensor definitions</h2>
+                                                <p>The table below defines the information shown in the<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_02"> <em>RCD</em> indicator</MadCap:conditionalText>.</p>
+                                                <table>
+                                                    <caption>Information in the<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_02"> <em>RCD</em> indicator</MadCap:conditionalText></caption>
+                                                    <col />
+                                                    <col />
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Field Name</th>
+                                                            <th>Definition</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Mode</td>
+                                                            <td>
+                                                                <p>Indicates the current control mode on the HMI.</p>
+                                                                <ul>
+                                                                    <li><em>Local</em> – The HMI is set to local mode, or RCD communication is not enabled. In <em>Local</em> mode, the RCD cannot be controlled by <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span>. Press <strong>Ctrl</strong> + <strong>F7</strong> on the HMI to switch to remote mode.</li>
+                                                                    <li><em><span class="mc-variable App_Properties.AppShortNoTM variable">Victus</span></em> – The HMI is set to remote mode, and RCD communication is enabled. In <em><span class="mc-variable App_Properties.AppShortNoTM variable">Victus</span></em> mode, the RCD can be controlled by <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span>. Press <strong>Ctrl</strong> + <strong>F8</strong> on the HMI to switch to local mode.</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Pump</td>
+                                                            <td>Indicates the current status of the pumps connected to the RCD</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bearing Latch</td>
+                                                            <td>
+                                                                <p>Indicates the current status of the bearing latch. When the bearing latch is enabled, the secondary latch is automatically disabled.</p>
+                                                                <ul>
+                                                                    <li>Open – The bearing latch is open.</li>
+                                                                    <li>Close – The bearing latch is closed.</li>
+                                                                    <li>Off – The bearing latch is disabled.</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Secondary Latch</td>
+                                                            <td>
+                                                                <p>Indicates the current status of the secondary latch. When the secondary latch is enabled, the bearing latch is automatically disabled.</p>
+                                                                <ul>
+                                                                    <li>Open – The secondary latch is open.</li>
+                                                                    <li>Off – The secondary latch is disabled.</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Active Wellbore Sensor</td>
+                                                            <td>Indicates the current source of the active wellbore sensor</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Latch Position Sensor</td>
+                                                            <td>Indicates the current status of the latch proximity sensor, which detects the position of the latch assembly</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Latch Position Sensor</td>
+                                                            <td>Current reading from the latch position sensor</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Return Filter Differential</td>
+                                                            <td>Amount of clogging on the return filter</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Supply Filter Differential</td>
+                                                            <td>Amount of clogging on the supply filter</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bearing Open Volume</td>
+                                                            <td>Volume of fluid in the open line for the bearing latch</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bearing Close Volume</td>
+                                                            <td>Volume of fluid in the close line for the bearing latch</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Secondary Open Volume</td>
+                                                            <td>Volume of fluid in the open line for the secondary latch</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bearing Latch Open Pressure</td>
+                                                            <td>Current pressure reading from the open line for the bearing latch</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bearing Latch Close Pressure</td>
+                                                            <td>Current pressure reading from the close line for the bearing latch</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Secondary Latch Open Pressure</td>
+                                                            <td>Current pressure reading from the open line for the secondary latch</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Hydraulic Pressure</td>
+                                                            <td>Current pump pressure</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Oil Tank Level</td>
+                                                            <td>Level of the oil in the hydraulic tank</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Oil Tank Temperature</td>
+                                                            <td>Temperature of the oil in the hydraulic tank</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </article>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../General/KB/KB_About.htm" title="Victus™ Operation Knowledge Base" alt="Victus™ Operation Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../QuickStart/QS_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                                <li data-mc-conditions="Outputs.MC2_OpLt,Outputs.MC2_Ops,Outputs.MC2_RCD"><a href="../../General/MC2_Downloads.htm" title="Downloads" alt="Downloads">Downloads</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Projects|All Projects|Import Objects|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="On the File tab, you can import BHAs and drillstrings from a WITSML XML file, created from a tubular object on a WITSML server. The contents of the imported file must adhere to the WITSML specification for tubular objects.&#xD;&#xA;The XML file must contain the following information: Type – The type of drillstring component. This value must ..." /><title>Work string imports from WITSML</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">CENTRO® Engineer</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Work string imports from WITSML</h1>
+                                            <div class="sidebar" data-mc-conditions="Outputs.Online">
+                                                <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownsidebar"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_sidebar MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Related Topics</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="MCHelpControl MCHelpControl-Related relatedTopics"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
+                                                            <ul class="MCHelpControlList MCRelatedTopicsControlList">
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Setup/Work String/WS_About.htm">Work strings</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About WITSML work string imports</a>
+                                                    </p>
+                                                    <p><a href="#Errors" class="sectionLink MCXref xref xrefsectionLink">Validation errors</a>
+                                                    </p>
+                                                    <p><a href="#Import" class="sectionLink MCXref xref xrefsectionLink">Importing work strings from WITSML</a>
+                                                    </p>
+                                                    <p><a href="#FieldDefs" class="sectionLink MCXref xref xrefsectionLink">Field definitions</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2 data-mc-conditions="Outputs.Online"><a name="About"></a>About WITSML work string imports</h2>
+                                            <p class="right"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/Projects/PROJ_ImportObj_BHA_XML.png" data-mc-popup-alt="Importing BHAs from a WITSML XML file"><img class="MCPopupThumbnail img imgthumb400px" data-mc-width="1680" data-mc-height="993" src="../Images/Projects/PROJ_ImportObj_BHA_XML.png" alt="Importing BHAs from a WITSML XML file" title="Importing BHAs from a WITSML XML file" tabindex="" style="max-width: 400px;" /></a>
+                                            </p>
+                                            <p>On the <em>Import Objects</em> &gt; <em>File</em> tab, you can import BHAs and work strings from a <span class="mc-variable Snippets.FILE_ImportObj_FileType variable">WITSML XML</span> file<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_04">, created from a tubular object on a WITSML server. The contents of the imported file must adhere to the WITSML specification for tubular objects</MadCap:conditionalText>. The <span class="mc-variable Snippets.FILE_ImportObj_FileType variable">WITSML XML</span> file must contain the following<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_04"> information</MadCap:conditionalText>:</p>
+                                            <ul>
+                                                <li data-mc-conditions="Snippets.Analysis_02,Snippets.Analysis_04"><em>Type</em> – The type of work string component.<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_04"> This value must match one of the WITSML tool types defined for the WITSML schema.</MadCap:conditionalText></li>
+                                                <li><em>Description</em> – A description of the component.</li>
+                                                <li><em>OD</em> – Nominal OD of the component. This column can only contain numeric values.</li>
+                                                <li><em><MadCap:conditionalText data-mc-conditions="Snippets.Analysis_04">Component </MadCap:conditionalText>Length</em> – Length of the component. This column can only contain numeric values.</li>
+                                            </ul>
+                                            <p><span class="mc-variable App_Properties.AppModule variable">CENTRO® Engineer</span> will import all tools into a separate catalog. Drill bits, drill collars, drill pipe, and HWDP will be imported as the appropriate tool type.<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_04"> Drilling motors will be imported as custom motors.</MadCap:conditionalText> All other types of components will be imported as custom tools. After you import a work string, you should verify that the work string components were imported correctly on the <em>Setup</em> &gt; <em>Work String</em> page. <a href="../Setup/Work String/WS_About.htm" class="MCXref xref" data-mc-variable-override="">See "Work strings".</a></p>
+                                            <p><span class="mc-variable App_Properties.AppModule variable">CENTRO® Engineer</span> will attempt to automatically detect the tool type and connection types. However, you should verify these values in the preview table before saving the BHA. If any of the values need to be modified, double-click on the component you want to edit to open the editing panel. <a href="#Import" class="MCXref xref">See "Importing work strings from WITSML".</a></p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown dropDownnote"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_note MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Note</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>The name defined for the custom data section in the XML file will be used to determine the name of the work string component. If the file doesn't have a custom data section, then the description defined for the tubular component section will be used. </p>
+                                                </div>
+                                            </div>
+                                            <h2><a name="Errors"></a>Validation errors</h2>
+                                            <p>If there are any validation errors in your data, the cells containing the errors will be outlined in red. Specific validation errors will also appear in the <em>Validation Error</em> column in the preview table.</p>
+                                            <p>Errors in the columns for the<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_02,Snippets.Analysis_04"> <em>Type</em>, <em>Description</em>, <em>OD</em>, and <em>ID</em></MadCap:conditionalText> fields must be fixed in the<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_04"> XML</MadCap:conditionalText> file before you can import the data. If there are errors in the columns for any of the optional fields, you will still be able to import the data. However, the invalid values will be ignored and will not be imported. For more information about the validations used for each field, refer to the <em>Field Definitions</em> section.<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_04"> <a href="#FieldDefs" class="MCXref xref" data-mc-variable-override="">See "Field definitions".</a></MadCap:conditionalText></p>
+                                            <h2><a name="Import"></a>Importing work strings from WITSML</h2>
+                                            <p>When you import a work string, you can import it with or without an explicitly-defined BHA. To import a work string with an explicitly-defined BHA, enter a value in the <em># of BHA Components</em> field. If no value is entered, the work string will be imported without an explicitly-defined BHA.</p>
+                                            <ul>
+                                                <li>In a work string with an explicitly-defined BHA, the BHA and drillstring components will be grouped into separate tables. </li>
+                                                <li>In a work string without an explicitly-defined BHA, all BHA and drillstring components will appear in one table.</li>
+                                            </ul>
+                                            <p>To import work strings from a <span class="mc-variable Snippets.FILE_ImportObj_FileType variable">WITSML XML</span> file:</p>
+                                            <ol>
+                                                <li value="1">Go to the <em>File</em> tab on the <em>All Projects</em> &gt; <em>Import Objects</em> page.</li>
+                                                <li value="2">In the <em>Utility</em> field, select the <em><span class="mc-variable Snippets.FILE_ImportObj_OptionName variable">Work String Import (WITSML)</span></em> option.</li>
+                                                <li value="3">In the <em>Decimal Separator</em> field, verify the character used to separate decimal portion of a number from the integer.</li>
+                                                <li value="4">In the <em>Work String Name</em> field, enter a name for the work string.</li>
+                                                <li value="5">To create a work string with an explicitly-defined BHA, go to the <em># of BHA Components</em> field and enter the number of components that make up that BHA portion of the work string.</li>
+                                                <li value="6">In the <em>Path</em> field, click the <em>Browse</em> button (<img src="../Images/Icons/Icon_Browse.png" title="Browse button" alt="Browse button" class="" />) and navigate to the file you want to import. A preview of the data will appear in the table at the bottom of the screen.</li>
+                                                <li value="7" data-mc-conditions="Snippets.Analysis_04">In the preview table, double-click on the component description to open the editing panel and edit the imported values as needed.</li>
+                                                <li value="8">Review the<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_04"> remaining</MadCap:conditionalText> data shown in the preview table, and verify that there are no validation errors.</li>
+                                                <li value="9">Click the <em>Save Changes</em> button (<img src="../Images/Icons/Icon_save_17x17.png" title="Save Changes button" alt="Save Changes button" class="icon" style="width: 17;height: 17;" />) to import the data.</li>
+                                            </ol>
+                                            <p>A new work string will be created on the <em>Setup</em> &gt; <em>Work String</em> page, using the name entered in the <em>Work String Name</em> field. All of the tools in the work string will be imported in a separate catalog.</p>
+                                            <h2><a name="FieldDefs"></a>Field definitions</h2>
+                                            <p>The table below defines the fields on the <em>All Projects</em> &gt; <em>Import Objects</em> &gt; <em>File</em> tab, when the <em>Work String Import (WITSML)</em> option is selected.</p>
+                                            <table>
+                                                <caption>Fields on the <em>Import Objects</em> &gt; <em>File</em> tab for WITSML work string imports</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column Type</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Utility</td>
+                                                        <td>
+                                                            <p>Type of data in the import file</p>
+                                                            <ul>
+                                                                <li><em>Work String Import (CSV)</em> – File contains BHA and work string data, in a CSV file format. <a href="PROJ_AllProjects_ImportObj_File_BHA_CSV.htm" class="MCXref xref" data-mc-variable-override="">See "Work string imports from CSV".</a></li>
+                                                                <li><em>Work String Import (XLSX)</em> – File contains BHA and work string data, in an XSLX file exported from AccuView. <a href="PROJ_AllProjects_ImportObj_File_BHA_XLSX.htm" class="MCXref xref" data-mc-variable-override="">See "Work string imports from XLSX".</a></li>
+                                                                <li><em>Work String Import (WITSML)</em> - File contains BHA and work string data, in a WITSML XML file format. <a href="#" class="MCXref xref selected" data-mc-variable-override="">See "Work string imports from WITSML".</a></li>
+                                                                <li><em>Actual Risk Import</em> – File contains actual risks and events data. <a href="PROJ_AllProjects_ImportObj_File_Risks_Actual.htm" class="MCXref xref" data-mc-variable-override="">See "Actual risk imports".</a></li>
+                                                                <li><em>Planned Risk Import</em> – File contains planned risks and events data. <a href="PROJ_AllProjects_ImportObj_File_Risks_Planned.htm" class="MCXref xref" data-mc-variable-override="">See "Planned risk imports".</a></li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Decimal Separator</td>
+                                                        <td>
+                                                            <p>Character used to separate the decimal portion of a number from the integer portion, usually either a period or a comma</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="">
+                                                        <td>Work String Name</td>
+                                                        <td>
+                                                            <p>Name for the work string that you want to appear on the <em>Setup</em> &gt; <em>Work String</em> page</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="">
+                                                        <td># of BHA Components</td>
+                                                        <td>
+                                                            <p>Number of components that make up that BHA portion of the work string. If there is no value entered in this field, the work string will be imported without an explicitly-defined BHA.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Path</td>
+                                                        <td>
+                                                            <p>File path for the import file</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>The XML file may contain columns for the following information:</p>
+                                            <table>
+                                                <caption>Required and optional information for BHA imports</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Data Type</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Type</td>
+                                                        <td>
+                                                            <p>The type of work string component. This information is required for BHA imports.<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_04"> This value must match one of the WITSML tool types defined for the WITSML schema. This is a read-only value, populated from the XML file.</MadCap:conditionalText> </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>OneSync Type</td>
+                                                        <td>Equivalent type of component in the <span class="mc-variable App_Properties.AppModuleBase variable">CENTRO® Engineer</span> catalog. This value is automatically determined, based on the value populated from the XML file. You can change this value before you begin the import.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Description</td>
+                                                        <td>A description of the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="">
+                                                        <td>Qty</td>
+                                                        <td>Quantity of consecutive components. This value can only contain numeric values.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>OD</td>
+                                                        <td>Nominal OD of the component. This information is required for BHA imports. This value can only contain numeric values.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ID</td>
+                                                        <td>Minimum pass-through ID of the component. This value can only contain numeric values.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Max OD</td>
+                                                        <td>Maximum OD of the component.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <MadCap:conditionalText data-mc-conditions="Snippets.Analysis_04">Component </MadCap:conditionalText>Length</td>
+                                                        <td>Length of the component. This information is required for BHA imports. This value can only contain numeric values.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Body Length</td>
+                                                        <td>Length of the body section of the component</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>NW</td>
+                                                        <td>Nominal weight of the section, calculated by diving the mass of the component by the length of the component. This value can only contain numeric values.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="">
+                                                        <td>Top Connection</td>
+                                                        <td>Type of connection at the top of the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>OneSync Top Connection</td>
+                                                        <td>Equivalent top connection type in the <span class="mc-variable App_Properties.AppModuleBase variable">CENTRO® Engineer</span> catalog. This value is automatically determined, based on the value populated from the XML file. You can change this value before you begin the import.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Top Tool Joint OD</td>
+                                                        <td>Outside diameter of the tool joint at the top of the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Top Tool Joint ID</td>
+                                                        <td>Inside diameter of the tool joint at the top of the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Top Tool Joint Length</td>
+                                                        <td>Length of the tool joint at the top of the component.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Top Makeup Torque</td>
+                                                        <td>Makeup torque for the top connection on the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Top Tensile Capacity</td>
+                                                        <td>Tensile capacity for the top connection on the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="">
+                                                        <td>Bottom Connection</td>
+                                                        <td>Type of connection at the bottom of the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>OneSync Bottom Connection</td>
+                                                        <td>Equivalent top connection type in the <span class="mc-variable App_Properties.AppModuleBase variable">CENTRO® Engineer</span> catalog. This value is automatically determined, based on the value populated from the XML file. You can change this value before you begin the import.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Bottom Tool Joint OD</td>
+                                                        <td>Outside diameter of the tool joint at the top of the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Bottom Tool Joint ID</td>
+                                                        <td>Inside diameter of the tool joint at the top of the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Bottom Tool Joint Length</td>
+                                                        <td>Length of the tool joint at the top of the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Bottom Makeup Torque</td>
+                                                        <td>Makeup torque for the bottom connection on the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Bottom Tensile Capacity</td>
+                                                        <td>Tensile capacity for the bottom connection on the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Fishneck OD</td>
+                                                        <td>Outer diameter of the fishneck section</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Fishneck ID</td>
+                                                        <td>Inner diameter of the fishneck section</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Fishneck Length</td>
+                                                        <td>Length of the fishneck section</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>TFA</td>
+                                                        <td>Total flow area of the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Nozzles</td>
+                                                        <td>Number of nozzles on the component</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Blade Offset</td>
+                                                        <td>Distance between the stabilizer blade and the bottom of the tool. Only valid for stabilizers and components that contain stabilizers.
+</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Deflection Type</td>
+                                                        <td>Method used to steer the RSS unit. Only valid for RSS units.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Bend Angle</td>
+                                                        <td>Current bend angle setting for the RSS unit. Only valid for point-the-bit RSS units.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Screen Restrictor Size</td>
+                                                        <td>Diameter of the screen on the restrictor. Only valid for push-the-bit RSS units.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Pad Count</td>
+                                                        <td>Number of pads on the outside of the RSS unit. Only valid for push-the-bit RSS units.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Pad Nozzle Size</td>
+                                                        <td>Diameter of the nozzles on the pads. Only valid for push-the-bit RSS units.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Sensor 1 Offset</td>
+                                                        <td>Distance between the first sensor and the bottom of the RSS unit</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Sensor 1 Type</td>
+                                                        <td> Type of measurements taken by the first sensor on the RSS unit</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Sensor 2 Offset</td>
+                                                        <td>Distance between the second sensor and the bottom of the RSS unit</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_04">
+                                                        <td>Sensor 2 Type</td>
+                                                        <td> Type of measurements taken by the second sensor on the RSS unit</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../QuickStart/QS_About.htm" title="Quick Start Guide" alt="Quick Start Guide">Quick Start</a>
+                                                </li>
+                                                <li><a href="../General/KB/KB_About.htm" title="CENTRO® Engineer v.2.4.15 Knowledge Base" alt="CENTRO® Engineer v.2.4.15 Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../General/Videos/VID_About.htm" title="CENTRO® Engineer v.2.4.15 Video Library" alt="CENTRO® Engineer v.2.4.15 Video Library">Video Library</a>
+                                                </li>
+                                                <li><a href="../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

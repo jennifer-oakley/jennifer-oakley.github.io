@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Setup|Wells|Wellpath" data-mc-conditions="Outputs.MC2_Ops,Outputs.MC2_Sim" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="There are multiple ways to add trajectory and survey data on the Setup &gt; Well Data &gt; Wellpath tab. If your wellpath data is in a CSV or LAS file, you can import the data from a file. If you do not have any wellpath data to import, you can also enter each survey point individually. After you have added the planned trajectory, you..." /><title>Wellpath data</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Wellpath data</h1>
+                                            <div class="sidebar" data-mc-conditions="Outputs.Online">
+                                                <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownsidebar"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_sidebar MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Related Topics</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="MCHelpControl MCHelpControl-Related relatedTopics"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
+                                                            <ul class="MCHelpControlList MCRelatedTopicsControlList">
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../App Shell/Dashboards/DASH_Ind_About.htm">Indicators</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../DAQ/DAQ_WML_About.htm">WITSML channels</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About wellpath data</a>
+                                                    </p>
+                                                    <p><a href="#ImportData" class="sectionLink MCXref xref xrefsectionLink">Importing wellpath data from a file</a>
+                                                    </p>
+                                                    <p><a href="#ImportTrajWITSML" class="sectionLink MCXref xref xrefsectionLink">Importing the planned trajectory from WITSML</a>
+                                                    </p>
+                                                    <p><a href="#ImportRT" class="sectionLink MCXref xref xrefsectionLink">Importing real-time surveys</a>
+                                                    </p>
+                                                    <p><a href="#CopyData" class="sectionLink MCXref xref xrefsectionLink">Copying survey data from a file</a>
+                                                    </p>
+                                                    <p><a href="#AddPts" class="sectionLink MCXref xref xrefsectionLink">Adding survey points</a>
+                                                    </p>
+                                                    <p><a href="#ApplyTort" class="sectionLink MCXref xref xrefsectionLink">Applying tortuosity</a>
+                                                    </p>
+                                                    <p><a href="#FieldDefs" class="sectionLink MCXref xref xrefsectionLink">Field definitions</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <article>
+                                                <h2 data-mc-conditions="Outputs.Online"><a name="About"></a>About wellpath data</h2>
+                                                <p>There are multiple ways to add trajectory and survey data on the <em>Setup</em> &gt; <em><span class="mc-variable App_Properties.WellsPageName variable">Well Data</span></em> &gt; <em>Wellpath</em> tab.</p>
+                                                <ul>
+                                                    <li>If the planned trajectory and real-time surveys are stored on a WITSML server, you can import the data directly from the WITSML server. <a href="#ImportTrajWITSML" class="multiple_first MCXref xref xrefmultiple_first">See "Importing the planned trajectory from WITSML"</a> and <a href="#ImportRT" class="multiple_last MCXref xref xrefmultiple_last">"Importing real-time surveys".</a></li>
+                                                    <li>If your wellpath data is in a CSV or LAS file, you can import the data from a file. <a href="#ImportData" class="MCXref xref">See "Importing wellpath data from a file".</a></li>
+                                                    <li>If your wellpath data is in an Excel or CSV file, you copy and paste the data from Excel into <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span>. <a href="#CopyData" class="MCXref xref">See "Copying survey data from a file".</a></li>
+                                                    <li>If you do not have any wellpath data to import, you can also enter each survey point individually. <a href="#AddPts" class="MCXref xref">See "Adding survey points".</a></li>
+                                                </ul>
+                                                <p>After you have added the planned well trajectory, you can interpolate additional survey points by applying tortuosity to the trajectory. <a href="#ApplyTort" class="MCXref xref">See "Applying tortuosity".</a></p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownwarning"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_warning MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Warning</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>When you apply tortuosity, any existing survey points in the <em>Survey</em> view will be overwritten by the interpolated survey points.</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article>
+                                                <h2><a name="kanchor65"></a><a name="ImportData"></a>Importing wellpath data from a file</h2>
+                                                <p class="clear">To import survey data from a CSV, LAS, or Compass file:</p>
+                                                <p class="inset"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Setup/Well Data/TRJ_ImportPanel.png" data-mc-popup-alt="Survey import options"><img class="MCPopupThumbnail img imgthumb160px" data-mc-width="250" data-mc-height="626" src="../../Images/Setup/Well Data/TRJ_ImportPanel.png" alt="Survey import options" title="Survey import options" tabindex="" style="max-width: 160px;" /></a>
+                                                </p>
+                                                <ol>
+                                                    <li value="1">Go to the <em>Wellpath</em> tab on the <em>Setup</em> &gt; <em><span class="mc-variable App_Properties.WellsPageName variable">Well Data</span></em> page.</li>
+                                                    <li value="2">In the drop-down menu at the bottom of the screen, select<MadCap:conditionalText data-mc-conditions="Snippets.UserGuide"> data that you want to update</MadCap:conditionalText>.<ul data-mc-conditions="Snippets.UserGuide"><li>To view the planned trajectory, select the <em>Trajectory</em> option.</li><li>To view real-time surveys, select the <em>Survey</em> option.</li></ul></li>
+                                                    <li value="3">Click the <em>Import Wellpath</em> button (<img src="../../Images/Icons/Icon_import_17x17.png" alt="Import button" title="Import button" class="icon" style="width: 17;height: 17;" />) at the bottom of the screen.</li>
+                                                    <li value="4">In the menu that appears, select the <em>File</em> option. This menu will only appear if you are connected to a WITSML channel with trajectory data.</li>
+                                                    <li value="5">Click <em>Yes</em> on the warning message that appears.</li>
+                                                    <li value="6">Navigate to the file you want to import and click <em>Open</em>. A list of import options will appear in <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span>.</li>
+                                                    <li value="7">Select the options for the measured depth data in the file you are importing.<ul><li><em>MD data</em> is the name of the MD column.</li><li><em>MD unit</em> is the measurement unit for MD.</li></ul></li>
+                                                    <li value="8">Select the options for the inclination data in the import file.<ul><li><em>Inclination data</em> is the name of the inclination column.</li><li><em>Inclination unit</em> is the measurement unit for inclination.</li></ul></li>
+                                                    <li value="9">Select the options for the azimuth data, then click the <em>OK</em> button (<img src="../../Images/Icons/Icon_select_17x17.png" class="icon" alt="OK button" title="OK button" style="width: 17;height: 17;" />).<ul><li><em>Azimuth data</em> is the name of the azimuth column.</li><li><em>Azimuth unit</em> is the measurement unit for azimuth.</li></ul></li>
+                                                    <li value="10">When the import finishes, click the <em>Save Changes</em> button (<img src="../../Images/Icons/Icon_save_17x17.png" class="icon" title="Save Changes button" alt="Save Changes button" style="width: 17;height: 17;" />) at the bottom of the screen.</li>
+                                                </ol>
+                                                <p>The calculated values and charts on the <em>Wellpath</em> tab will be updated automatically. Any existing survey points will be deleted and replaced with the new data. If you updated the survey data, the formation layers on the <em>Formation</em> tab will be updated to reflect the new TVD values. If you updated the trajectory data, the formation layers will not be affected.</p>
+                                            </article>
+                                            <h2><a name="ImportTrajWITSML"></a>Importing the planned trajectory from WITSML</h2>
+                                            <p class="clear">If the planned trajectory is stored on a WITSML server, you can import trajectory data directly from the WITSML server. The well on the WITSML server must have a trajectory log with the planned trajectory data. Before you can import the data, you'll need to create a WITSML channel on the <em>Setup</em> &gt; <em>DAQ</em> &gt; <em>WITSML</em> tab. <a href="../DAQ/DAQ_WML_About.htm" class="MCXref xref">See "WITSML channels".</a></p>
+                                            <ol>
+                                                <li value="1">Go to the <em>Wellpath</em> tab on the <em>Setup</em> &gt; <em><span class="mc-variable App_Properties.WellsPageName variable">Well Data</span></em> screen.</li>
+                                                <li value="2">Select the <em>Trajectory</em> option in the drop-down menu at the bottom of the screen.</li>
+                                                <li value="3">Click the <em>Import Wellpath</em> button (<img src="../../Images/Icons/Icon_import_17x17.png" title="Import Wellpath button" alt="Import Wellpath button" class="icon" style="width: 17;height: 17;" />).</li>
+                                                <li value="4">In the menu that appears, select the WITSML channel and trajectory log that contains the planned trajectory.</li>
+                                                <li value="5">A list of import options will appear. Select the appropriate options for measured depth, inclination, and azimuth.</li>
+                                                <li value="6">Click the <em>OK</em> button (<img src="../../Images/Icons/Icon_select_17x17.png" class="icon" title="OK button" alt="OK button" style="width: 17;height: 17;" />), then click the <em>Save Changes</em> button (<img src="../../Images/Icons/Icon_save_17x17.png" class="icon" title="Save Changes button" alt="Save Changes button" style="width: 17;height: 17;" />).</li>
+                                            </ol>
+                                            <p>The trajectory data from the WITSML server will be imported into <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span>. Any existing survey points will be deleted and replaced with the new data. </p>
+                                            <h2><a name="ImportRT"></a>Importing real-time surveys</h2>
+                                            <p class="clear">If the real-time survey data is stored on a WITSML server, you can import data directly from the WITSML server. The well on the WITSML server must have a trajectory log with the real-time survey data. Before you can import the data, you'll need to create a WITSML channel on the <em>Setup</em> &gt; <em>DAQ</em> &gt; <em>WITSML</em> tab.<MadCap:conditionalText data-mc-conditions="Snippets.UserGuide"> <a href="../DAQ/DAQ_WML_About.htm" class="MCXref xref">See "WITSML channels".</a></MadCap:conditionalText></p>
+                                            <p>To import real-time survey data:</p>
+                                            <ol>
+                                                <li value="1">Go to the <em>Wellpath</em> tab on the <em>Setup</em> &gt; <em><span class="mc-variable App_Properties.WellsPageName variable">Well Data</span></em> screen.</li>
+                                                <li value="2">Select the <em>Survey</em> option in the drop-down menu at the bottom of the screen.</li>
+                                                <li value="3">Click the <em>Import Wellpath</em> button (<img src="../../Images/Icons/Icon_import_17x17.png" title="Import Wellpath button" alt="Import Wellpath button" class="icon" style="width: 17;height: 17;" />).</li>
+                                                <li value="4">In the menu that appears, select the WITSML channel and trajectory log that contains the real-time survey data.</li>
+                                                <li value="5">A list of import options will appear. Select the appropriate options for measured depth, inclination, and azimuth.</li>
+                                                <li value="6">Select the <em>Auto Import</em> option, then select the frequency with which you want real-time surveys to be updated.</li>
+                                                <li value="7">In the <em>Tie-On Point</em> field, enter the measured depth of the tie-on point.</li>
+                                                <li value="8">Click the <em>OK</em> button (<img src="../../Images/Icons/Icon_select_17x17.png" class="icon" title="OK button" alt="OK button" style="width: 17;height: 17;" />), then click the <em>Save Changes</em> button (<img src="../../Images/Icons/Icon_save_17x17.png" class="icon" title="Save Changes button" alt="Save Changes button" style="width: 17;height: 17;" />).</li>
+                                            </ol>
+                                            <p>Any existing survey points below the tie-on point will be deleted and replaced with the new survey points from the WITSML server. Survey points above the tie-on point will not be affected. <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span> will periodically query the WITSML server and update the list of real-time surveys.</p>
+                                            <h2><a name="CopyData"></a>Copying survey data from a file</h2>
+                                            <p>To copy survey points from a file:</p>
+                                            <ol>
+                                                <li value="1">Open the file containing your data, then copy the data you want to paste into <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span>.</li>
+                                                <li value="2">Go to the <em>Wellpath</em> tab on the <em>Setup</em> &gt; <em><span class="mc-variable App_Properties.WellsPageName variable">Well Data</span></em> page.</li>
+                                                <li value="3">Select the row where you want to insert the data, and press <strong>Ctrl</strong> + <strong>V</strong>.</li>
+                                                <li value="4">Click the <em>Save Changes</em> button (<img src="../../Images/Icons/Icon_save_17x17.png" class="icon" title="Save Changes button" alt="Save Changes button" style="width: 17;height: 17;" />) at the bottom of the screen.</li>
+                                            </ol>
+                                            <p>The selected row and any rows below it will be replaced with the copied survey data. The calculated values and charts on the <em>Wellpath</em> tab will be updated automatically.</p>
+                                            <article>
+                                                <h2><a name="kanchor66"></a><a name="AddPts"></a>Adding survey points</h2>
+                                                <p>To add a survey point:</p>
+                                                <ol>
+                                                    <li value="1">Go to the <em>Wellpath</em> tab on the <em>Setup</em> &gt; <em><span class="mc-variable App_Properties.WellsPageName variable">Well Data</span></em> page.</li>
+                                                    <li value="2">In the drop-down menu at the bottom of the screen, select the data that you want to update.<ul><li>To view the planned trajectory, select the <em>Trajectory</em> option.</li><li>To view real-time surveys, select the <em>Survey</em> option.</li></ul></li>
+                                                    <li value="3">Select a row in the table. <ul><li>To add a survey point above that row, click the <em>Insert Above</em> button (<img src="../../Images/Icons/Icon_insertitemabove_17x17.png" alt="Insert Above button" title="Insert Above button" class="icon" style="width: 17;height: 17;" />). </li><li>To add a survey point below that row, click the <em>Insert Below</em> button (<img src="../../Images/Icons/Icon_insertitembelow_17x17.png" alt="Insert Below button" title="Insert Below button" class="icon" style="width: 17;height: 17;" />).</li></ul></li>
+                                                    <li value="4">In the row that appears, go to the <em>MD</em> column and enter the measured depth of the survey point.</li>
+                                                    <li value="5">Enter the inclination and azimuth of the survey point.</li>
+                                                    <li value="6">Click the <em>Save Changes</em> button (<img src="../../Images/Icons/Icon_save_17x17.png" class="icon" title="Save Changes button" alt="Save Changes button" style="width: 17;height: 17;" />) at the bottom of the screen.</li>
+                                                </ol>
+                                                <p>As you add and edit survey points, the calculated values and charts on the <em>Wellpath</em> tab will be updated automatically. If you updated the survey data, the formation layers on the <em>Formations</em> tab will be updated to reflect the new TVD values. If you updated the trajectory data, the formation layers will not be affected.</p>
+                                            </article>
+                                            <h2><a name="ApplyTort"></a>Applying tortuosity</h2>
+                                            <p>To apply tortuosity to the planned trajectory:</p>
+                                            <p class="right"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Setup/Well Data/TRJ_ApplyTort.png" data-mc-popup-alt="Sample tortuosity ranges"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="809" data-mc-height="659" src="../../Images/Setup/Well Data/TRJ_ApplyTort.png" alt="Sample tortuosity ranges" title="Sample tortuosity ranges" tabindex="" style="max-width: 340px;" /></a>
+                                            </p>
+                                            <ol>
+                                                <li value="1">Go to the <em>Wellpath</em> tab on the <em>Setup</em> &gt; <em><span class="mc-variable App_Properties.WellsPageName variable">Well Data</span></em> screen.</li>
+                                                <li value="2">Select the <em>Trajectory</em> option in the drop-down menu at the bottom of the screen.</li>
+                                                <li value="3">Add the survey points for the planned well trajectory.</li>
+                                                <li value="4">Click the <em>Tortuosity</em> button (<img src="../../Images/Icons/Icon_tortuosity_17x17.png" title="Tortuosity button" alt="Tortuosity button" class="icon" style="width: 17;height: 17;" />).</li>
+                                                <li value="5">In the window that appears, click the <em>Add</em> button (<img src="../../Images/Icons/Icon_insert-table-item_17x17.png" class="icon" title="Add button" alt="Add button" style="width: 17;height: 17;" />) to add a new tortuosity range.</li>
+                                                <li value="6">In the new row, enter the start and end depths of the tortuosity range in the <em>From</em> and <em>To</em> fields.</li>
+                                                <li value="7">In the <em>Interpolation Step</em> field, enter the desired distance between each interpolated trajectory point.</li>
+                                                <li value="8">In the <em>Tortuosity Method</em> field, select the desired method for applying tortuosity to the trajectory.</li>
+                                                <li value="9">Enter the amplitude, period, phase, and shift in the remaining fields.</li>
+                                                <li value="10">Click the <em>Apply</em> button (<img src="../../Images/Icons/Icon_select_17x17.png" class="icon" title="Apply button" alt="Apply button" style="width: 17;height: 17;" />) to apply your changes to the trajectory.</li>
+                                            </ol>
+                                            <p>Tortuosity will be applied to the trajectory, and the interpolated survey points will appear in the <em>Survey</em> view. Any existing survey points will be overwritten by the interpolated survey points. When you are finished adding tortuosity ranges, click the <em>Close</em> button (<img src="../../Images/Icons/Icon_close-window.png" title="Close button" alt="Close button" class="icon" />) to close the window.</p>
+                                            <h2><a name="kanchor67"></a><a name="FieldDefs"></a>Field definitions</h2>
+                                            <p>Most of the values on the <em>Wellpath</em> tab are calculated automatically, based on the MD, inclination, and azimuth of the survey point. The table on the <em>Wellpath</em> tab contains the following values:</p>
+                                            <table>
+                                                <caption>Field definitions for survey point properties</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>MD</td>
+                                                        <td>Measured depth</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Inclination</td>
+                                                        <td>Inclination at the survey point's MD</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Azimuth</td>
+                                                        <td>Azimuth at the survey point's MD</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TVD</td>
+                                                        <td>True vertical depth</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TVDSS</td>
+                                                        <td>True vertical depth subsea</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>North</td>
+                                                        <td>Northing coordinate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>East</td>
+                                                        <td>Easting coordinate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>L.Distance</td>
+                                                        <td>Lateral distance</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DLS</td>
+                                                        <td>Dogleg severity</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>B. Rate</td>
+                                                        <td>Build rate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>T. Rate</td>
+                                                        <td>Turn rate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>T. Face</td>
+                                                        <td>Tool face</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>VS</td>
+                                                        <td>Vertical section</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>H. Disp</td>
+                                                        <td>Horizontal displacement</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CL</td>
+                                                        <td>Course length</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tort</td>
+                                                        <td>Tortuosity</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ABSTort</td>
+                                                        <td>Absolute tortuosity</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DDI</td>
+                                                        <td>Rating for the Directional Difficulty Index. The values in the <em>DDI</em> column are color-coded, based on the directional difficulty for the survey point. This color-coding system is also applied to the charts in the <em>Well View</em> pane. <a href="TRJ_Charts.htm" class="MCXref xref">See "Trajectory charts".</a><ul><li>Green — Difficulty is 6.00 or lower, for relatively short wells and simple profiles with low tortuosity.</li><li>Yellow — Difficulty of 6.10 - 6.40, for shorter wells with high tortuosity and longer wells with lower tortuosity.</li><li>Orange — Difficulty of 6.50 - 6.80, for longer wells with relatively tortuous well paths.</li><li>Dark orange — Difficulty of 6.90 or higher, for long, tortuous well profiles with a high degree of difficulty</li></ul></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>The table below defines the fields in the <em>Tortuosity</em> window.</p>
+                                            <table>
+                                                <caption>Field definitions for the <em>Tortuosity</em> window</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Column</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>From</td>
+                                                        <td>MD at the beginning of the tortuosity range</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>To</td>
+                                                        <td>MD at the end of the tortuosity range</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Interpolation Step</td>
+                                                        <td>Distance between each interpolated trajectory point</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tortuosity Method</td>
+                                                        <td>
+                                                            <p>Method for applying tortuosity</p>
+                                                            <ul>
+                                                                <li><em>None</em> – No tortuosity is applied to the tortuosity range.</li>
+                                                                <li><em>Random Inclination and Azimuth Amplitudes</em> – Applies random inclination and azimuth angles to the tortuosity range.</li>
+                                                                <li><em>Random inclination and dependent amplitude sine azimuth</em> – Applies random angles to the inclination and a sine wave to the azimuth.</li>
+                                                                <li><em>Sine Wave Inclination</em> – Applies a sine wave to the inclination. Azimuth is not affected.</li>
+                                                                <li><em>Sine Wave Azimuth</em> – Applies a sine wave to the azimuth. Inclination is not affected.</li>
+                                                                <li><em>Sine Wave Inclination and Azimuth</em> – Applies sine waves to the inclination and the azimuth.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Amplitude</td>
+                                                        <td>Amount of displacement in a wave, measured from the high point to the low point</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Period</td>
+                                                        <td>Distance between the peak of two consecutive waves</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Phase</td>
+                                                        <td>Horizontal shift of the wave</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shift</td>
+                                                        <td>Vertical offset of the wave</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Retain Original</td>
+                                                        <td>Retains a copy of the original trajectory</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../General/KB/KB_About.htm" title="Victus™ Operation Knowledge Base" alt="Victus™ Operation Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../QuickStart/QS_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                                <li data-mc-conditions="Outputs.MC2_OpLt,Outputs.MC2_Ops,Outputs.MC2_RCD"><a href="../../General/MC2_Downloads.htm" title="Downloads" alt="Downloads">Downloads</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

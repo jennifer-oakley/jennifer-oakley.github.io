@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=App Properties.ToolsScreenName%] |Geomechanics|Pore Pressure" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="On the Pore Pressure tab, the Linear Trend Line and Semi-Log Trend Line tools allow you to add a trend line to normalize your log data. The normalized trend line is used as a baseline to calculate pore pressure by comparing the filtered log values against the hydrostatic gradient. Linear trend lines are defined by the slope of the line..." /><title>Trend lines</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                    </ul>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">CENTRO® Engineer</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1><a name="kanchor67"></a>Trend lines</h1>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About trend lines</a>
+                                                    </p>
+                                                    <p><a href="#AddLine" class="sectionLink MCXref xref xrefsectionLink">Adding a normalized trend line</a>
+                                                    </p>
+                                                    <p><a href="#EditLine" class="sectionLink MCXref xref xrefsectionLink">Editing a normal trend line</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2 data-mc-conditions="Outputs.Online"><a name="About"></a>About trend lines</h2>
+                                            <p>On the <em>Pore Pressure</em> tab, the <em>Linear Trend Line</em> and <em>Semi-Log Trend Line</em> tools allow you to add a trend line to normalize your log data. The normalized trend line is used as a baseline to calculate pore pressure by comparing the filtered log values against the hydrostatic gradient. </p>
+                                            <p>Linear trend lines are defined by the slope of the line and the base value at 0 TVD. Exponential trend lines are defined by the slope of the line and a curvature constant.</p>
+                                            <p>You can add multiple trend lines to the <em>Offset Well</em> and <em>Current Well</em> charts. However, trend lines can not overlap within the same chart.</p>
+                                            <h2><a name="AddLine"></a>Adding a normalized trend line</h2>
+                                            <div class="inset">
+                                                <p>Linear and semi-log trend lines</p>
+                                                <p>
+                                                    <img src="../../Images/Plan/PP/PorePressure/PLAN_APP_LinearTrend_100x288.png" class="size100px" title="Linear trend line" alt="Linear trend line" style="width: 100;height: 288;" />
+                                                    <img src="../../Images/Plan/PP/PorePressure/PLAN_APP_SemiLogTrend_100x286.png" class="size100px" title="Semi-log trend line" alt="Semi-log trend line" style="width: 100;height: 286;" />
+                                                </p>
+                                            </div>
+                                            <p>To add a normalized trend line:</p>
+                                            <ol>
+                                                <li value="1">Select the experiment you want to edit, then click the <em>Edit</em> button (<img src="../../Images/Icons/Icon_edit_17x17.png" title="Edit button" alt="Edit button" class="icon" style="width: 17;height: 17;" />).</li>
+                                                <li value="2">Go to the <em>Pore Pressure</em> tab and click on the trend line tool that you want to use.<ul><li>To use a simple line, click the <em>Linear Trend Line</em> button (<img src="../../Images/Icons/Icon_trendTool_17x17.png" alt="Linear Trend Line button" title="Linear Trend Line button" class="icon" style="width: 17;height: 17;" />).</li><li>To use an exponential curve, click the <em>Semi-Log Trend Line</em> button (<img src="../../Images/Icons/Icon_semilogTrendTool_17x17.png" alt="Semi-Log Trend Line button" title="Semi-Log Trend Line button" class="icon" style="width: 17;height: 17;" />).</li></ul></li>
+                                                <li value="3">Click on the graph you want to add a trend line to.</li>
+                                                <li value="4">Drag your mouse to connect two points in the graph to draw the trend line.</li>
+                                            </ol>
+                                            <p><span class="mc-variable App_Properties.AppModule variable">CENTRO® Engineer</span> will calculate the pore pressure at each filtered point along the trend line, and the calculated pore pressures will be automatically graphed in the <em>Results</em> chart. When you are finished editing the experiment, click the <em>Save Changes</em> button (<img src="../../Images/Icons/Icon_save_17x17.png" title="Save Changes button" alt="Save Changes button" class="icon" style="width: 17;height: 17;" />).</p>
+                                            <h2 class="clear"><a name="EditLine"></a>Editing a normal trend line</h2>
+                                            <p>To edit a normal trend line:</p>
+                                            <p class="inset"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Plan/PP/PorePressure/PLAN_APP_EditTrend.png" data-mc-popup-alt="Trend line properties"><img class="MCPopupThumbnail img imgthumb160px" data-mc-width="550" data-mc-height="830" src="../../Images/Plan/PP/PorePressure/PLAN_APP_EditTrend.png" alt="Trend line properties" title="Trend line properties" tabindex="" style="max-width: 160px;" /></a>
+                                            </p>
+                                            <ol>
+                                                <li value="1">Click the <em>Edit</em> button (<img src="../../Images/Icons/Icon_edit_17x17.png" class="icon" alt="Edit button" title="Edit button" style="width: 17;height: 17;" />), then click on the trend line you want to edit.</li>
+                                                <li value="2">In the window that appears, update the line's endpoints as needed.<ul><li><em>TVD 1</em> is the TVD of the line's starting point.</li><li><em>TVD 2</em> is the TVD of the line's ending point.</li></ul></li>
+                                                <li value="3">If the line is a linear trend line, update the slope and base value for the line.<ul><li><em>K</em> is the slope of the line.</li><li><em>A</em> is the calculated value at 0 TVD.</li></ul></li>
+                                                <li value="4">If the line is an exponential trend line, update the slope and curvature of the line.<ul><li><em>K</em> is a constant that effects the curvature of the line.</li><li><em>A</em> is the slope of the line.</li></ul></li>
+                                                <li value="5">Click the <em>Enter</em> button (<img src="../../Images/Icons/Icon_select-project_17x17.png" alt="Enter button" title="Enter button" class="icon" style="width: 17;height: 17;" />) to update the graph..</li>
+                                            </ol>
+                                            <p>The trend line will move to the new position. The results for pore pressure will be recalculated and graphed in the <em>Results</em> chart. When you are finished making changes, click the <em>Close</em> button (<img src="../../Images/Icons/Icon_close-window.png" alt="Close button" title="Close button" class="icon" />) to close the window.</p>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../QuickStart/QS_About.htm" title="Quick Start Guide" alt="Quick Start Guide">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/KB/KB_About.htm" title="CENTRO® Engineer v.2.4.15 Knowledge Base" alt="CENTRO® Engineer v.2.4.15 Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../General/Videos/VID_About.htm" title="CENTRO® Engineer v.2.4.15 Video Library" alt="CENTRO® Engineer v.2.4.15 Video Library">Video Library</a>
+                                                </li>
+                                                <li><a href="../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

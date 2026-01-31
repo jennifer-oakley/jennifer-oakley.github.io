@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Getting Started" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-condition-tag-expression="include[&quot;Topic Status.Not Started&quot;]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Weatherford 5D v9.6.3 release notes with new features, bug fixes, and known issues. Learn about WITSML imports/exports, network authentication, plotting improvements, and more." /><title>Weatherford 5D v9.8.0 Release Notes</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/5D_User_Guide___New_Structure.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                    </ul>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">Weatherford 5D</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1><span class="mc-variable App_Properties.AppModule variable">Weatherford 5D</span> v<span class="mc-variable App_Properties.AppVersion variable">9.8.0</span> Release Notes</h1>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#New" class="sectionLink MCXref xref xrefsectionLink">What's new</a>
+                                                    </p>
+                                                    <p><a href="#Fixed" class="sectionLink MCXref xref xrefsectionLink">Bugs fixed</a>
+                                                    </p>
+                                                    <p><a href="#Known" class="sectionLink MCXref xref xrefsectionLink">Known issues</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p>Welcome to <span class="mc-variable App_Properties.AppModule variable">Weatherford 5D</span> v<span class="mc-variable App_Properties.AppVersion variable">9.8.0</span>. This version of <span class="mc-variable App_Properties.AppModule variable">Weatherford 5D</span> contains new features and enhancements, as well as many bug fixes. For a full list of the updates in v<span class="mc-variable App_Properties.AppVersion variable">9.8.0</span>, refer to the sections below.</p>
+                                            <article>
+                                                <h2><a name="New"></a>What's new</h2>
+                                                <p>The features in this section are new for <span class="mc-variable App_Properties.AppModule variable">Weatherford 5D</span> v<span class="mc-variable App_Properties.AppVersion variable">9.8.0</span>.</p>
+                                                <ul>
+                                                    <li>Updated the algorithm for calculating the probability of collision.</li>
+                                                    <li>Updated the HDGM model to HDGM 2026.</li>
+                                                    <li>Added the GYRO_PTW and VES GyroFlex v4.1 tools to the list of available survey tools in the <em>Survey Tool Picker</em> window.</li>
+                                                    <li>In the <em>Plot</em> window, added an option to select the master graph object. When the <em>Select Master</em> option is selected, moving or resizing the grid or axes for the graph will move and resize the entire graph. When the <em>Select Master</em> option is not selected, the grid and axes can be resized independently.<MadCap:conditionalText data-mc-conditions="Outputs.Online"> <a href="Videos/VID_PLOT_SelectMaster.htm" class="MCXref xref">See "Plotting: Using the Select Master option".</a></MadCap:conditionalText></li>
+                                                    <li>Improved the way graphs are drawn and resized in the <em>Plot</em> window, so that the actual graph size more closely matches the area that you draw.</li>
+                                                    <li>Improved the functionality of snapshots in the <em>Plot</em> window. Snapshots are now automatically created when you perform any of the following actions:  add or delete a graph or plot object, resize or move a graph, load a chart, reload all wells or information boxes, update the section view or top view properties, or edit the wellpath accessories. When you click the <em>Undo</em> button, the chart will revert back to the most recent snapshot.<MadCap:conditionalText data-mc-conditions="Outputs.Online"> <a href="../Analysis Visualization/Plotting/PLOT_About.htm#PlotObjectBrowser" class="MCXref xref">See "Plot object browser".</a></MadCap:conditionalText></li>
+                                                    <li>Updated the keyboard and mouse controls required to move a graph or plot object in the <em>Plot</em> window. To move an object on the chart, you will now need to hold the <strong>Shift</strong> key while using the mouse to move the object.<MadCap:conditionalText data-mc-conditions="Outputs.Online"> <a href="../Analysis Visualization/Plotting/PLOT_Charts.htm#UseTab" class="MCXref xref">See "Keyboard and mouse controls".</a></MadCap:conditionalText></li>
+                                                    <li>Added the ability to view the targets for offset wells in the <em>Field Operations</em> window. When offset targets are enabled, they will shown in the <em>Section View</em> and <em>Top View</em> graphs. To show targets for offset wells, click the <em>Targets</em> button (<img src="../Images/Icons/Icon_targetset_17x17.png" title="Targets button" alt="Targets button" class="icon" style="width: 17;height: 17;" />) in the <em>Graph</em> pane and select the <em>Show Offset Targets</em> option.</li>
+                                                    <li data-mc-conditions="Outputs.5D_Full">When the <em>Restrict TVD Range</em> option is enabled in the <em>3D Viewer</em> window, you can now adjust the increment at which the minimum and maximum TVD changes. To enable the <em>Restrict TVD Range</em> option, click the <em>Wellpath Display Options</em> button (<img src="../Images/Icons/Icon_WellThickness_17x17.png" title="Wellpath Display button" alt="Wellpath Display button" class="icon" style="width: 17;height: 17;" />) in the toolbar for the <em>3D Viewer</em> window. WISE 1084038<MadCap:conditionalText data-mc-conditions="Outputs.Online"> <a href="Videos/VID_3DV_RestrictTVD.htm" class="MCXref xref">See "3D Viewer: Using the Restrict TVD Range option".</a></MadCap:conditionalText></li>
+                                                </ul>
+                                            </article>
+                                            <article>
+                                                <h2><a name="Fixed"></a>Bugs fixed</h2>
+                                                <p>The critical issues in this section have been fixed in <span class="mc-variable App_Properties.AppModule variable">Weatherford 5D</span> v<span class="mc-variable App_Properties.AppVersion variable">9.8.0</span>.</p>
+                                                <ul>
+                                                    <li>Fixed an issue where uncertainty reports for surveys using the Blind Rotary BHA_PTTEP tool displayed extremely large semi-major uncertainty values.</li>
+                                                    <li>Fixed an issue with polyhedron targets where drilling targets displayed incorrect TVD positioning in side view when the target had negative TVD values. WISE 1109748</li>
+                                                    <li>Corrected the magnitude for the DSTG error source on GYRO+MWD_KOC tools.</li>
+                                                    <li>Improved the error messages that appear when <span class="mc-variable App_Properties.AppShort variable">5D</span> is unable to import Compass files due to line feed characters from Unix operating systems. WISE 1107713</li>
+                                                </ul>
+                                            </article>
+                                            <article data-mc-conditions="Outputs.Online">
+                                                <h2><a name="Known"></a>Known issues</h2>
+                                                <p>The issues in this section are known issues for <span class="mc-variable App_Properties.AppModule variable">Weatherford 5D</span> v<span class="mc-variable App_Properties.AppVersion variable">9.8.0</span>.</p>
+                                                <ul>
+                                                    <li>When you attempt to build a section using an azimuth of 270 degrees or more, you may get an error that the section could not be built. As a workaround, use inclination to build the section and set the toolface to the desired azimuth value.</li>
+                                                    <li>The precision of the coordinates in a report may not be displayed correctly.</li>
+                                                    <li>If you run a proximity analysis for a sidetrack well with only one point in the current plan, no results will be shown for anti-collision analysis.</li>
+                                                    <li>When you import wells from Compass 2003, the kick-off depth for sidetrack wells may be incorrect.</li>
+                                                    <li>The warning messages for anti-collision analysis may be inconsistent when there are multiple survey tools used in the same survey.</li>
+                                                    <li>When you project back on a sidetrack well, child wells may become detached from the sidetrack well.</li>
+                                                    <li>If you attempt to import a large Compass 2000 or Compass 2003 file, the import may fail.</li>
+                                                </ul>
+                                            </article>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2026</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="QuickStart/QS_About.htm">Quick Start</a>
+                                                </li>
+                                                <li><a href="5D_Support.htm">Feedback</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=App Properties.ToolsScreenName%] |Calculators" data-mc-conditions="Outputs.MC2_Sim,Outputs.MC2_Ops" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The rollover tool on the Tools &gt; Calculators &gt; Rollover tab is used to calculate the optimum surface backpressure and rollover schedule to maintain bottomhole pressure when displacing a lighter fluid with a heavier fluid or a heavier fluid with a lighter fluid. The rollover tool calculates the rollover schedule starting with the current fluid..." /><title>Rollover tool</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">Victus™ Simulation</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Rollover tool</h1>
+                                            <div class="sidebar" data-mc-conditions="Outputs.Online">
+                                                <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownsidebar"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_sidebar MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Related Topics</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="MCHelpControl MCHelpControl-Related relatedTopics" style="mc-use-custom-sort-order: true;"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
+                                                            <ul class="MCHelpControlList MCRelatedTopicsControlList">
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../App Shell/Utilities/UTIL_Mud.htm">Mud utility</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Hyd/Displacement/TOOL_AHD_About.htm">Displacement analysis</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About the rollover tool</a>
+                                                    </p>
+                                                    <p><a href="#FieldDefs" class="sectionLink MCXref xref xrefsectionLink">Field definitions</a>
+                                                    </p>
+                                                    <p><a href="#UseTab" class="sectionLink MCXref xref xrefsectionLink">Using the Rollover page</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2 data-mc-conditions="Outputs.Online"><a name="About"></a>About the rollover tool</h2>
+                                            <p class="right"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Tools/Calculators/TOOL_Calc_Rollover.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="1011" data-mc-height="718" src="../../Images/Tools/Calculators/TOOL_Calc_Rollover.png" alt="" title="" tabindex="" style="max-width: 340px;" /></a>
+                                            </p>
+                                            <p>The rollover tool on the <em><span class="mc-variable App_Properties.ToolsScreenName variable">Tools</span></em> &gt; <em>Calculators</em> &gt; <em>Rollover</em> tab is used to calculate the optimum surface backpressure and rollover schedule to maintain bottomhole pressure when displacing a lighter fluid with a heavier fluid or a heavier fluid with a lighter fluid. The rollover tool calculates the rollover schedule starting with the current fluid in the well, and ending with the selected rollover fluid. If you want to start the simulation with a different mud than the fluid currently in the well, you'll need to change the current pump fluid. <a href="../../App Shell/Utilities/UTIL_Mud.htm" class="MCXref xref">See "Mud utility".</a></p>
+                                            <p>By default, the rollover tool uses the current operating parameters as inputs for the rollover calculations. However, these values can be changed as needed.</p>
+                                            <p>To use the rollover tool:</p>
+                                            <ol>
+                                                <li value="1">Go to the <em>Rollover</em> tab on the <em><span class="mc-variable App_Properties.ToolsScreenName variable">Tools</span></em> &gt; <em>Calculators</em> page.</li>
+                                                <li value="2">Click the <em>Reset</em> button (<img src="../../Images/Icons/Icon_undo-Btn_17x17.png" class="icon" title="Reset button" alt="Reset button" style="width: 17;height: 17;" />) to reset the settings to match the current operating parameters.</li>
+                                                <li value="3">In the <em>Fluid</em> field, select the new fluid that will be pumped into the well.</li>
+                                                <li value="4">Change the remaining settings as needed.</li>
+                                                <li value="5">Click the <em>Calculate</em> button (<img src="../../Images/Icons/Icon_calculate_17x17.png" class="icon" title="Calculate button" alt="Calculate button" style="width: 17;height: 17;" />) to begin the rollover calculations. </li>
+                                            </ol>
+                                            <p>When the rollover calculations have completed, the rollover schedule will automatically load on top of the rollover settings. If you want to re-run the calculations with different settings, click the <em>Back to Input</em> button (<img src="../../Images/Icons/Icon_backAction_17x17.png" title="Back to Input button" alt="Back to Input button" class="icon" style="width: 17;height: 17;" />) and edit the settings as needed.</p>
+                                            <p>If the measured depth at the end of the rollover schedule is not zero, then the simulation stopped before the top of the rollover fluid reached the surface. This occurs when it is not possible to complete the full circulation of the rollover fluid while maintaining bottomhole pressure, typically because the rollover fluid is too heavy or too light.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown dropDownnote"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_note MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Note</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>The rollover fluid must have a different density than the current pump fluid. If the new fluid has the same density as the current fluid, no results will be calculated.</p>
+                                                </div>
+                                            </div>
+                                            <h2><a name="FieldDefs"></a>Field definitions</h2>
+                                            <p>The table below defines the settings required for rollover calculations.</p>
+                                            <table>
+                                                <caption>Field definitions for rollover settings</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Field Name</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Flow Rate</td>
+                                                        <td>Flow rate at which the rollover schedule will start. This flow rate should be between the drilling flow rate and minimum flow rate.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Drilling Flow Rate</td>
+                                                        <td>Flow rate at which the well is circulated during drilling. This flow rate should not include flow from booster or auxiliary pumps.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Minimum Flow Rate</td>
+                                                        <td>Minimum flow rate required to circulate the well, also known as the slow circulation rate.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Surface Back Pressure</td>
+                                                        <td>Surface backpressure at which the rollover schedule will start. By default, this is the surface backpressure that is maintained while circulating at the drilling flow rate.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>System Back Pressure</td>
+                                                        <td>Surface backpressure at the drilling flow rate, with the chokes fully open. This value is measured during the in-casing test.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>High Limit</td>
+                                                        <td>High limit for surface backpressure</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rotary Speed</td>
+                                                        <td>Planned top drive speed during the rollover</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fluid</td>
+                                                        <td>New fluid that will be pumped into the well</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>min. BHP</td>
+                                                        <td>Minimum allowable bottomhole pressure</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>max. BHP</td>
+                                                        <td>Maximum allowable bottomhole pressure</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>The table below defines the values in the rollover schedule, which are calculated by the rollover tool.</p>
+                                            <table>
+                                                <caption>Values calculated by the rollover tool</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Field Name</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>MD</td>
+                                                        <td>Measured depth of the head of the displaced fluid</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TVD</td>
+                                                        <td>TVD of the head of the displaced fluid</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flow Rate</td>
+                                                        <td>Flow rate required to maintain surface backpressure</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pump Speed</td>
+                                                        <td>Pump rate required to achieve the desired flow rate, based on the pump output specified in the pump properties on the <em>Setup</em> &gt; <em>Surface Equipment</em> &gt; <em>Piping and Instrumentation</em> tab. <a href="../../Setup/Surface Equipment/RIG_Pumps.htm" class="MCXref xref">See " Pump configuration".</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Time</td>
+                                                        <td>Total time since the rollover began</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Strokes</td>
+                                                        <td>Number of pump strokes required for each step of the rollover</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Strokes</td>
+                                                        <td>Total number of pump strokes required for the rollover</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Volume</td>
+                                                        <td>Total volume of fluid pumped into the well. Fluid pumped through booster or auxiliary pumps are not included.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SBP</td>
+                                                        <td>Surface backpressure required to maintain bottomhole pressure within the limits defined in the rollover settings</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BHP</td>
+                                                        <td>Bottomhole pressure at each stage of the rollover</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BH ECD</td>
+                                                        <td>
+                                                            <p>Bottomhole ECD for each step in the rollover. The openhole section is color-coded, based on the pore pressure gradient and fracture pressure gradient of the openhole section.</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p><em>Yellow</em> – Bottomhole ECD is less than the pore pressure gradient of the openhole section.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><em>Green</em> – Bottomhole ECD is between the pore pressure gradient and the fracture pressure gradient of the openhole section.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><em>Red</em> – Bottomhole ECD is greater than the fracture pressure gradient of the openhole section.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SBP to trap if pumps fail</td>
+                                                        <td>Surface backpressure that must be maintained in the event of pump failure during the rollover</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="UseTab"></a>Using the Rollover page</h2>
+                                            <p>The toolbar at the bottom of the screen allows you to begin <span class="lowerCase mc-variable Snippets.TOOL_CalcType variable">Rollover</span> calculations and import the current operating parameters. When you are viewing the calculation results, additional buttons will appear in the bottom toolbar.</p>
+                                            <table>
+                                                <caption>Toolbar buttons on the <em><span class="mc-variable Snippets.GUI_TabName variable">Rollover</span></em> tab</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Button</th>
+                                                        <th>Function</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_undo-Btn_20x20.png" alt="Reset button" title="Reset button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Resets the <span class="lowerCase mc-variable Snippets.TOOL_CalcType variable">Rollover</span> settings to<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_01"> match the current operating parameters</MadCap:conditionalText></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_calculate_20x20.png" class="icon" alt="Calculate button" title="Calculate button" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Begins <span class="lowerCase mc-variable Snippets.TOOL_CalcType variable">Rollover</span> calculations</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_backAction.png" title="Back to Input button" alt="Back to Input button" class="icon" />
+                                                        </td>
+                                                        <td>Closes the calculation results and returns to the <span class="lowerCase mc-variable Snippets.TOOL_CalcType variable">Rollover</span> settings</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_show-hide-legend_20x20.png" class="icon" title="Show Legends button" alt="Show Legends button" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Pins the chart legends to the top of the <span class="lowerCase mc-variable Snippets.TOOL_CalcType variable">Rollover</span> charts</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../General/KB/KB_About.htm" title="Victus™ Simulation Knowledge Base" alt="Victus™ Simulation Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../QuickStart/QS_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

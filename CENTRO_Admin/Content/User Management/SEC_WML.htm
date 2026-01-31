@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Security|User Management" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="On the User Management &gt; WITSML ACLs page, you can view and update the privileges for the wells, wellbores, and wellbore child objects on the WITSML server. WITSML privileges determine which WITSML objects a user can access on the WITSML server, as well as which actions the user can perform. You can assign WITSML privileges to individual wells and child objects ..." /><title>WITSML Access Control Lists</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://kit.fontawesome.com/7ebf01bdf4.js" crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/CENTRO_DC.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                    </ul>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">CENTRO® Admin</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1>WITSML Access Control Lists</h1>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About WITSML ACLs</a>
+                                                    </p>
+                                                    <p><a href="#GrantAccess" class="sectionLink MCXref xref xrefsectionLink">Granting access to wells</a>
+                                                    </p>
+                                                    <p><a href="#ApplyFilter" class="sectionLink MCXref xref xrefsectionLink">Applying filters</a>
+                                                    </p>
+                                                    <p><a href="#FieldDefs" class="sectionLink MCXref xref xrefsectionLink">Permission levels</a>
+                                                    </p>
+                                                    <p><a href="#UseTab" class="sectionLink MCXref xref xrefsectionLink">Using the WITSML ACLs page</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2 data-mc-conditions="Outputs.Online"><a name="About"></a>About WITSML ACLs</h2>
+                                            <p>On the <em>User Management</em> &gt; <em>WITSML ACLs</em> page, you can view and update the privileges for the wells, wellbores, and wellbore child objects on the WITSML server. WITSML privileges determine which WITSML objects a user can access on the WITSML server, as well as which actions the user can perform. You can assign WITSML privileges to individual wells and child objects, as well as all wells on the WITSML server. <a href="#FieldDefs" class="MCXref xref">See "Permission levels".</a></p>
+                                            <p class="right"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/User Management/SEC_WML_DC.png" data-mc-popup-alt="Screenshot of the WITSML ACLs page"><img class="MCPopupThumbnail img imgthumb520px" data-mc-width="1133" data-mc-height="754" src="../Images/User Management/SEC_WML_DC.png" alt="Screenshot of the WITSML ACLs page" title="Screenshot of the WTISML ACLs page" tabindex="" style="max-width: 520px;" /></a>
+                                            </p>
+                                            <p>The access level for each WITSML privilege may be directly assigned to a user account, or it may be inherited from a security role. When the privileges assigned to a security role are updated, the privileges for all users with that security role will also be updated. </p>
+                                            <p>There are five levels of access that you can grant to all wells, an individual well,  or a child object. <a href="#FieldDefs" class="MCXref xref">See "Permission levels".</a></p>
+                                            <ul>
+                                                <li><em>Create</em> – Allows the user to add WITSML objects.</li>
+                                                <li><em>Read</em> – Allows the user to build WITSML queries and view the properties of WITSML objects.</li>
+                                                <li><em>Update</em> – Allows the user to update existing WITSML objects.</li>
+                                                <li><em>Delete</em> – Allows the user to delete WITSML objects.</li>
+                                                <li><em>List</em> – Allows the user view the well in the WITSML Explorer.  All roles and users that need access to an individual well or any of the child objects for the well <strong>must</strong> have this permission level assigned to them.</li>
+                                            </ul>
+                                            <p>These privileges must be assigned to each well that the user needs access to. When you grant access to a well, the permissions will be automatically inherited by all wellbores and child objects within the well. However, the inherited permission can be overridden by assigning permissions directly to the wellbore or wellbore child object.</p>
+                                            <p>All roles and users must have the <em>List</em> privilege assigned. If the <em>List</em> privilege is not assigned, the user will not be able to access the well.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown dropDownnote"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_note MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Note</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>If a client company is assigned to your account, you  will only be able to view the WITSML ACLs for wells that are associated with the same client company. <a href="SEC_Users.htm" class="MCXref xref">See "User accounts".</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown dropDownnote"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_note MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Note</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>The permissions granted to a role on the <em>WITSML ACLs</em> page will be inherited by all users that role is assigned to. However, the inherited permissions are not displayed.</p>
+                                                </div>
+                                            </div>
+                                            <h2><a name="GrantAccess"></a>Granting access to wells</h2>
+                                            <p>To grant access to a well:</p>
+                                            <ol>
+                                                <li value="1">Go to the <em>User Management</em> &gt; <em>WITSML&#160;ACLs</em> page.</li>
+                                                <li value="2">In the list of wells on the left, select the well that you want to grant access to.</li>
+                                                <li value="3">In the <em>Permissions</em> table, select the <em>List</em> option for each role or user that you want to have access to the well.</li>
+                                                <li value="4">Select additional privileges as needed, then click the <em>Save</em> button (<img src="../Images/Icons/Icon_fa-save_17x17.png" title="Save button" alt="Save button" class="icon" style="width: 17;height: 17;" />).</li>
+                                            </ol>
+                                            <p>If you granted access to a security role, the new privileges will be granted to all users with the selected security role. However, these changes will only be applied to the server where the changes were made. If you granted access to a user account, the account will be granted all of the selected privileges. If the user is currently logged in, they will need to log out  and log back in.</p>
+                                            <h2><a name="ApplyFilter"></a>Applying filters</h2>
+                                            <p>The <em>Apply Filter</em> option at the top of the <em>Permissions</em> table allows you to filter the list of roles and users, based on the WITSML privileges assigned to them.</p>
+                                            <p>To apply filters to the <em>Permissions</em> table:</p>
+                                            <ol>
+                                                <li value="1">Go to the <em>User Management</em> &gt; <em>WITSML&#160;ACLs</em> page.</li>
+                                                <li value="2">In the list of wells on the left, select the well that you want to view privileges for.</li>
+                                                <li value="3">In the <em>Permissions</em> table, select the <em>Apply Filter</em> option at the top of the table.</li>
+                                                <li value="4">In the same row, select the privileges you want to view roles and users for.</li>
+                                            </ol>
+                                            <p>The list will be automatically filtered to only show roles and users with the selected privileges to the well. If you selected multiple permissions, only roles and users with all of the selected permissions will be shown.</p>
+                                            <h2><a name="FieldDefs"></a>Permission levels</h2>
+                                            <p>The table below defines the permission levels for all wells, individual wells, and the child objects in a well</p>
+                                            <table>
+                                                <caption>Permission levels for WITSML ACLs</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Permission Level</th>
+                                                        <th>All Wells</th>
+                                                        <th>Individual Well</th>
+                                                        <th>Child Object</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Create</td>
+                                                        <td class="aligntop">
+                                                            <ul>
+                                                                <li>Grants access to create new wells using <span class="mc-variable App_Properties.AppShort variable">CENTRO®</span> or any WITSML client. When the user creates a well, they will automatically have create, read, update, and list access to the child objects for the well.</li>
+                                                                <li>Does not grant any access to wells created by other users.</li>
+                                                                <li>Does not grant delete access to wells created by the user. Delete access must be granted separately for each individual well.</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="aligntop">
+                                                            <ul>
+                                                                <li>Grants access to create child objects using <span class="mc-variable App_Properties.AppShort variable">CENTRO®</span> or any WITSML client.</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="aligntop">n/a</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Read</td>
+                                                        <td class="aligntop">
+                                                            <ul>
+                                                                <li>Grants access to view all wells and the well information on the WITSML server using <span class="mc-variable App_Properties.AppShort variable">CENTRO®</span> or any WITSML client.</li>
+                                                                <li>Does not grant access to view child objects for any well.</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="aligntop">
+                                                            <ul>
+                                                                <li>Grants access to view the well and the well information on the WITSML server using <span class="mc-variable App_Properties.AppShort variable">CENTRO®</span> or any WITSML client.</li>
+                                                                <li>Does not grant access to view child objects for the well.</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="aligntop">
+                                                            <ul>
+                                                                <li>Grants access to view the child object using <span class="mc-variable App_Properties.AppShort variable">CENTRO®</span> or any WITSML client.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Update</td>
+                                                        <td class="aligntop">n/a</td>
+                                                        <td class="aligntop">
+                                                            <ul>
+                                                                <li>Grants access to update the properties of the well using <span class="mc-variable App_Properties.AppShort variable">CENTRO®</span> or any WITSML client.</li>
+                                                                <li>Does not grant access to update child objects for the well.</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="aligntop">
+                                                            <ul>
+                                                                <li>Grants access to update the properties of the child object using <span class="mc-variable App_Properties.AppShort variable">CENTRO®</span> or any WITSML client.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="aligntop">Delete</td>
+                                                        <td class="aligntop">n/a</td>
+                                                        <td class="aligntop">
+                                                            <ul>
+                                                                <li>Grants access to delete the well using <span class="mc-variable App_Properties.AppShort variable">CENTRO®</span> or any WITSML client.</li>
+                                                                <li>Does not grant access to delete individual child objects for the well.</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="aligntop">
+                                                            <ul>
+                                                                <li>Grants access to delete the child object using <span class="mc-variable App_Properties.AppShort variable">CENTRO®</span> or any WITSML client.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="aligntop">List</td>
+                                                        <td class="aligntop">n/a</td>
+                                                        <td class="aligntop">
+                                                            <ul>
+                                                                <li>Grants access to view the well in the WITSML Explorer.</li>
+                                                                <li>Only grants access to view the well name and well ID.</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="aligntop">n/a</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="UseTab"></a>Using the WITSML ACLs page</h2>
+                                            <p>The search box above the table on the <em><span class="mc-variable Snippets.PageName variable">WITSML ACLs</span></em> page allows you to filter the rows displayed. To view additional rows of data, click on the page numbers or arrows at the bottom of the table. To change the number of rows shown on each page, use the dropdown menu next to the page numbers.</p>
+                                            <p>The buttons on the <em>User Management</em> &gt;&#160;<em>WITSML ACLs</em> page are used to save and undo changes.</p>
+                                            <table>
+                                                <caption>Buttons on the <em>User Management</em> &gt;&#160;<em>WITSML ACLs</em> page</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Button</th>
+                                                        <th>Function</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../Images/Icons/Icon_fa-save_20x20.png" title="Save button" alt="Save button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>
+                                                            <p>Saves all changes</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../Images/Icons/Icon_fa-undo_20x20.png" title="Reset button" alt="Reset button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>
+                                                            <p>Discards all changes made since the last time you saved</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CopyrightYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../QuickStart/QS_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../General/CENTRO_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

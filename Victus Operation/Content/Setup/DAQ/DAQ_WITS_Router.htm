@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Setup|DAQ|WITS" data-mc-conditions="Outputs.MC2_Ops,Outputs.MC2_RCD,Outputs.MC2_OpLt" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="WITS data is sent and received through the WAN-2 port on the UPI. Before you can send or receive WITS data over a network connection, you'll need to configure the UPI's internal router so that it routes WITS data correctly. You'll need to obtain the following network details from the mud logger..." /><title>Router configuration</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                    </ul>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Router configuration</h1>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About router configuration</a>
+                                                    </p>
+                                                    <p><a href="#Connection" class="sectionLink MCXref xref xrefsectionLink">Configuring the connection settings</a>
+                                                    </p>
+                                                    <p><a href="#WitsIn" class="sectionLink MCXref xref xrefsectionLink">Receiving WITS data</a>
+                                                    </p>
+                                                    <p><a href="#WitsOut" class="sectionLink MCXref xref xrefsectionLink">Sending WITS data</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2 data-mc-conditions="Outputs.Online"><a name="About"></a>About router configuration</h2>
+                                            <p>WITS data is sent and received through the <em>WAN-2</em> port on the UPI. Before you can send or receive WITS data over a network connection, you'll need to configure the UPI's internal router so that it routes WITS data correctly. You'll need to obtain the following network details from the mud logger:</p>
+                                            <ul>
+                                                <li>IP address of the mud logger</li>
+                                                <li>Subnet mask</li>
+                                                <li>Default gateway</li>
+                                            </ul>
+                                            <p>If the UPI will be receiving data from a WITS provider, you'll also need the port number. After you've obtained the required network information, you can configure the UPI's internal router. There are three basic steps required to configure the WAN-2 port:</p>
+                                            <ul>
+                                                <li><strong>Configure the connection settings.</strong> The router can use either a static or dynamic IP address, depending on the way the WITS network is set up. If you don't know which type of connection you should use, contact the WITS provider.<MadCap:conditionalText data-mc-conditions="Snippets.UserGuide"> <a href="#Connection" class="MCXref xref">See "Configuring the connection settings".</a></MadCap:conditionalText></li>
+                                                <li><strong>Bind incoming WITS data to the WAN-2 port.</strong> Binding the incoming data to the <em>WAN-2</em> port ensures that all data received from the mud logger will be routed through the <em>WAN-2</em> port on the UPI.<MadCap:conditionalText data-mc-conditions="Snippets.UserGuide"> <a href="#WitsIn" class="MCXref xref">See "Receiving WITS data".</a></MadCap:conditionalText></li>
+                                                <li><strong>Bind outgoing WITS data to the WAN-2 port.</strong> Binding the outgoing data to the <em>WAN-2</em> port ensures that all data sent to the mud logger will be routed through the <em>WAN-2</em> port on the UPI.<MadCap:conditionalText data-mc-conditions="Snippets.UserGuide"> <a href="#WitsOut" class="MCXref xref">See "Sending WITS data".</a></MadCap:conditionalText></li>
+                                            </ul>
+                                            <h2><a name="Connection"></a>Configuring the connection settings</h2>
+                                            <p>To configure the connection settings for the <em>WAN-2</em> port:</p>
+                                            <div class="inset" data-mc-conditions="Outputs.Online">
+                                                <p>Connection settings for a static IP address</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Setup/DAQ/DAQ_WITS_Router_StaticIP.png" data-mc-popup-alt="Connection settings for a static IP address"><img class="MCPopupThumbnail img imgthumb220px" data-mc-width="801" data-mc-height="488" src="../../Images/Setup/DAQ/DAQ_WITS_Router_StaticIP.png" alt="Connection settings for a static IP address" title="Connection settings for a static IP address" tabindex="" style="max-width: 220px;" /></a>
+                                                </p>
+                                                <p>Connection settings for a dynamic IP address</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Setup/DAQ/DAQ_WITS_Router_DHCP.png" data-mc-popup-alt="Connection settings for a dynamic IP address"><img class="MCPopupThumbnail img imgthumb220px" data-mc-width="801" data-mc-height="488" src="../../Images/Setup/DAQ/DAQ_WITS_Router_DHCP.png" alt="Connection settings for a dynamic IP address" title="Connection settings for a dynamic IP address" tabindex="" style="max-width: 220px;" /></a>
+                                                </p>
+                                            </div>
+                                            <ol>
+                                                <li value="1">Connect a network cable from the operation station to the <em>LAN-1</em> port on the UPI.</li>
+                                                <li value="2">In Internet Explorer, go to <a href="https://192.168.79.254/">https://192.168.79.254</a>.</li>
+                                                <li value="3">When prompted, click the <em>Continue to this website</em> button.</li>
+                                                <li value="4">Log in to the router, using the following log-in credentials:<ul><li><em>Username</em>: Microflux</li><li><em>Password</em>: Micr0flux</li></ul></li>
+                                                <li value="5">Using the menu on the left side of the page, go to the <em>Setup</em> &gt; <em>Network</em> page.</li>
+                                                <li value="6">Under the <em>WAN Settings Table</em>, select the <em>WAN2</em> option and click the <em>Edit</em> button.</li>
+                                                <li value="7">On the <em>WAN Connection Settings</em> page, enter the connection settings for the <em>WAN-2</em> port.<ul><li>To use a static IP address, go to the <em>WAN Connection Type</em> field and select <em>Static IP</em>. Enter the IP address, subnet mask, and default gateway address provided by the mud logger.</li><li>To use a dynamic IP address, go to the <em>WAN Connection Type</em> field and select <em>Obtain an IP automatically</em>.</li></ul></li>
+                                                <li value="8">Click the <em>Save Changes</em> button to save your changes.</li>
+                                            </ol>
+                                            <p>The <em>WAN-2</em> port on the UPI will be able to connect to the WITS provider on the rig, using the specified connection settings.</p>
+                                            <h2><a name="WitsIn"></a>Receiving WITS data</h2>
+                                            <p>To configure the <em>WAN-2</em> port to receive WITS data:</p>
+                                            <div class="inset" data-mc-conditions="Outputs.Online">
+                                                <p>Dual WAN settings for the UPI</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Setup/DAQ/DAQ_WITS_Router_DualWan.png" data-mc-popup-alt="Dual WAN settings for the UPI"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="860" data-mc-height="468" src="../../Images/Setup/DAQ/DAQ_WITS_Router_DualWan.png" alt="Dual WAN settings for the UPI" title="Dual WAN settings for the UPI" tabindex="" style="max-width: 340px;" /></a>
+                                                </p>
+                                                <p>Protocol bindings for incoming WITS data</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Setup/DAQ/DAQ_WITS_Router_BindIn.png" data-mc-popup-alt="Protocol bindings for incoming WITS data"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="1235" data-mc-height="681" src="../../Images/Setup/DAQ/DAQ_WITS_Router_BindIn.png" alt="Protocol bindings for incoming WITS data" title="Protocol bindings for incoming WITS data" tabindex="" style="max-width: 340px;" /></a>
+                                                </p>
+                                            </div>
+                                            <ol>
+                                                <li value="1">Using the menu on the left, go to the <em>System Management</em> &gt; <em>Dual WAN</em> page.</li>
+                                                <li value="2">Go to the <em>Load Balance</em> section and select the <em>Load Balance (Auto Mode)</em> option.</li>
+                                                <li value="3">Under the <em>Interface Setting Table</em>, select the <em>WAN2</em> option and click the <em>Edit</em> button.</li>
+                                                <li value="4">Go to the <em>Protocol Binding Table</em>, then click the <em>Service Management</em> button below the table.</li>
+                                                <li value="5">Scroll to the bottom of the <em>Service Management</em> window that appears, then click the <em>Add</em> button to create a new service.</li>
+                                                <li value="6">In the new row that appears, enter the properties of the new service.<ul><li><em>Service Name</em>: Any name useful for identifying the service.</li><li><em>Protocol</em>: TCP</li><li><em>Port Range</em>: The port range should include the port number provided by the mud logger.</li></ul></li>
+                                                <li value="7">Click the <em>Save Changes</em> button to save your changes.</li>
+                                                <li value="8">Navigate back to the <em>Protocol Binding Table</em> for <em>WAN2</em>. Click the <em>Add</em> button to add a new protocol.</li>
+                                                <li value="9">In the new row that appears, select the name of service that you created. Enter the following settings:<ul><li><em>Source IP</em>: 192.168.79.101 to 192.168.79.150</li><li><em>Destination IP</em>: The range of destination IP address should include the IP address for the mud logger. For example, if the mud logger's IP address is 172.19.45.82, the range of destination IP addresses could be 172.19.45.80 to 172.19.45.85.</li><li><em>Interface</em>: WAN2</li><li><em>Status</em>: Enabled</li></ul></li>
+                                                <li value="10">Click the <em>Save Changes</em> button to save your changes.</li>
+                                            </ol>
+                                            <p>The new protocol will be saved to the UPI's internal router. All data received from the mud logger will be routed through the <em>WAN-2</em> port on the UPI.</p>
+                                            <h2><a name="WitsOut"></a>Sending WITS data</h2>
+                                            <p>To configure the <em>WAN-2</em> port to send WITS data:</p>
+                                            <div class="inset" data-mc-conditions="Outputs.Online">
+                                                <p>Dual WAN settings for the UPI</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Setup/DAQ/DAQ_WITS_Router_DualWan.png" data-mc-popup-alt="Dual WAN settings for the UPI"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="860" data-mc-height="468" src="../../Images/Setup/DAQ/DAQ_WITS_Router_DualWan.png" alt="Dual WAN settings for the UPI" title="Dual WAN settings for the UPI" tabindex="" style="max-width: 340px;" /></a>
+                                                </p>
+                                                <p>Protocol bindings for outcoming WITS data</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Setup/DAQ/DAQ_WITS_Router_BindOut.png" data-mc-popup-alt="Protocol bindings for outcoming WITS data"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="1234" data-mc-height="681" src="../../Images/Setup/DAQ/DAQ_WITS_Router_BindOut.png" alt="Protocol bindings for outcoming WITS data" title="Protocol bindings for outgoing WITS data" tabindex="" style="max-width: 340px;" /></a>
+                                                </p>
+                                            </div>
+                                            <ol>
+                                                <li value="1">Using the menu on the left, go to the <em>System Management</em> &gt; <em>Dual WAN</em> page.</li>
+                                                <li value="2">Go to the <em>Load Balance</em> section and select the <em>Load Balance (Auto Mode)</em> option.</li>
+                                                <li value="3">Under the <em>Interface Setting Table</em>, select the <em>WAN2</em> option and click the <em>Edit</em> button.</li>
+                                                <li value="4">Go to the <em>Protocol Binding Table</em> and click the <em>Add</em> button to create a new protocol.</li>
+                                                <li value="5">In the new row that appears, enter the properties of the new service.<ul><li><em>Service</em>: WITS-Out [TCP/4000~4003]</li><li><em>Source IP</em>: 192.168.79.101 to 192.168.79.150</li><li><em>Destination IP</em>: The range of source IP addresses should match the IP range from the third party.</li><li><em>Interface</em>: WAN2</li></ul></li>
+                                                <li value="6">Select the checkmark in the <em>Status</em> column to enable the protocol.</li>
+                                                <li value="7">Click the <em>Save Changes</em> button to save your changes.</li>
+                                            </ol>
+                                            <p>The new protocol will be saved to the UPI's internal router. All data sent to the mud logger will be routed through the <em>WAN-2</em> port on the UPI.</p>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../General/KB/KB_About.htm" title="Victus™ Operation Knowledge Base" alt="Victus™ Operation Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../QuickStart/QS_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                                <li data-mc-conditions="Outputs.MC2_OpLt,Outputs.MC2_Ops,Outputs.MC2_RCD"><a href="../../General/MC2_Downloads.htm" title="Downloads" alt="Downloads">Downloads</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

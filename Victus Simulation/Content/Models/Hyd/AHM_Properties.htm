@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Models|Hydraulics" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The numerical framework uses input, output, and calculated properties. A property is a quantitative value that represents some aspect related to the drilling process. An input is a property sent to the simulator. An output is any property produced by the simulator. A calculated property is an intermediate property that is derived by the simulator from other properties." /><title>Model properties</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                    </ul>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">Victus™ Simulation</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1 class="pgbreak"><a name="kanchor51"></a>Model properties</h1>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink" xrefformat="{paratext}">About the model properties</a>
+                                                    </p>
+                                                    <p><a href="#InputProps" class="sectionLink MCXref xref xrefsectionLink" xrefformat="{paratext}">Input Properties</a>
+                                                    </p>
+                                                    <p><a href="#CellProps" class="sectionLink MCXref xref xrefsectionLink" xrefformat="{paratext}">Cell Properties</a>
+                                                    </p>
+                                                    <p><a href="#OutputProps" class="sectionLink MCXref xref xrefsectionLink" xrefformat="{paratext}">Output Properties</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2 data-mc-conditions="Outputs.Online"><a name="About"></a>About the model properties</h2>
+                                            <p>The numerical framework uses input, output, and calculated properties. A property is a quantitative value that represents some aspect related to the drilling process.</p>
+                                            <ul>
+                                                <li>An <i>input</i> is a property sent to the simulator.</li>
+                                                <li>An <i>output</i> is any property produced by the simulator.</li>
+                                                <li>A <i>calculated property</i> is an intermediate property that is derived by the simulator from other properties.</li>
+                                            </ul>
+                                            <p>Properties may be local or global properties. Local properties, such as pipe ID or cell volume, only apply to a particular cell.  Global properties, such as flow rate or bit depth, apply to the entire simulation.</p>
+                                            <h2><a name="InputProps"></a>Input Properties</h2>
+                                            <p>Geometry, fluid density, rheology, and the wellbore operation each affect pressure. To accurately calculate pressure, these factors must be taken into account.</p>
+                                            <p>Pressure calculations require inputs which are specific to the wellbore environment. Many wells are directionally drilled and have a curved trajectory, which impacts the distribution of hydrostatic pressure. Frictional pressure loss is affected by the type of geometry housing the fluid, the fluid's rheology, and the wellbore operation.</p>
+                                            <h3>Geometry</h3>
+                                            <p>The discretization module uses geometric input properties to discretize the wellbore and map local properties to the discretized cells.</p>
+                                            <h4>Drillstring Segments</h4>
+                                            <p>The geometric dimensions of an element are captured by defining the inside diameter, outside diameter, and length of the element. This information identifies the size and shape of the physical space occupied by the cell.</p>
+                                            <table>
+                                                <caption>Drillstring geometry properties</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Pipe OD</td>
+                                                        <td>in</td>
+                                                        <td>Outside diameter of the pipe</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pipe ID</td>
+                                                        <td>in</td>
+                                                        <td>Inside diameter of the pipe</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Length</td>
+                                                        <td>ft</td>
+                                                        <td>Length of the drillstring segment</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tool joint OD</td>
+                                                        <td>in</td>
+                                                        <td>Outside diameter of the tool joint</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tool joint ID</td>
+                                                        <td>in</td>
+                                                        <td>Inside diameter of the tool joint</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tool joint length</td>
+                                                        <td>ft</td>
+                                                        <td>Length of the tool joint</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Surface pipe ID</td>
+                                                        <td>in</td>
+                                                        <td>Inside diameter of the pipe at the surface</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Surface pipe length</td>
+                                                        <td>ft</td>
+                                                        <td>Length of the pipe at the surface</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h4>Bit</h4>
+                                            <p>Due to its unique shape and function in the drillstring, the bit requires unique input properties. This information is used for bit-specific calculations, such as pressure loss across the bit.</p>
+                                            <table>
+                                                <caption>Bit geometry properties</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>TFA</td>
+                                                        <td>in<sup>2</sup></td>
+                                                        <td>Total flow area</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nozzle diameter</td>
+                                                        <td>1/32"</td>
+                                                        <td>Diameter of the bit nozzles</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p><span class="symbol">K<sub>d</sub></span>
+                                                            </p>
+                                                        </td>
+                                                        <td>--</td>
+                                                        <td>Discharge efficiency coefficient</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h4>Well Intervals</h4>
+                                            <p>Well intervals are captured by defining the measured depth at the beginning and end of the interval. This identifies the vertical location of the cell in the wellbore.</p>
+                                            <table>
+                                                <caption>Well interval geometry properties</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Hole OD</td>
+                                                        <td>in</td>
+                                                        <td>Outside diameter of the casing, liner, or riser.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hole ID</td>
+                                                        <td>in</td>
+                                                        <td>Inside diameter of the casing, liner, or riser.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Start depth</td>
+                                                        <td>ft</td>
+                                                        <td>Starting depth of the well interval.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>End depth</td>
+                                                        <td>ft</td>
+                                                        <td>Ending depth of the well interval.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h4 class="pgbreak">Depth</h4>
+                                            <p>Depth is captured by defining the measured depth and TVD at specific points in the wellbore. This information is cross-referenced with the well interval data to identify the location of a cell.</p>
+                                            <table>
+                                                <caption>Depth properties</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Depth</td>
+                                                        <td>ft</td>
+                                                        <td>Measured depth. The distance from a point at the surface of the well, along the curve of the wellbore, to a specific point in the wellbore.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TVD</td>
+                                                        <td>ft</td>
+                                                        <td>True vertical depth. Vertical distance from a point at the surface of the well to a specific point in the wellbore.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hole depth</td>
+                                                        <td>ft</td>
+                                                        <td>Measured depth at the bottom of the hole.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bottomhole TVD</td>
+                                                        <td>ft</td>
+                                                        <td>True vertical depth at the bottom of the hole.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Fluid</h3>
+                                            <p>The isothermal pressure model relies on fluid density and rheological properties to calculate pressure loss. Density, commonly referred to as mud weight, measures the mass of the fluid in an element. Only one value is needed for density in isothermal pressure calculations.</p>
+                                            <p>The values for rheological properties can typically be found on the mud report. They may be reported as Fann viscometer readings, PV and YP values, or LSYP values. These values are used to determine calculated properties, such as shear rate and flow regime.</p>
+                                            <table>
+                                                <caption>Fluid properties</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Mud weight</td>
+                                                        <td>lb/gal</td>
+                                                        <td>Density of the fluid</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="equation"><span class="symbol">R</span><sub>600</sub></span>
+                                                        </td>
+                                                        <td>rpm</td>
+                                                        <td>Dial reading taken at 600 rpm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="equation"><span class="symbol">R</span><sub>300</sub></span>
+                                                        </td>
+                                                        <td>rpm</td>
+                                                        <td>Dial reading taken at 300 rpm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="equation"><span class="symbol">R</span><sub>200</sub></span>
+                                                        </td>
+                                                        <td>rpm</td>
+                                                        <td>Dial reading taken at 200 rpm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="equation"><span class="symbol">R</span><sub>100</sub></span>
+                                                        </td>
+                                                        <td>rpm</td>
+                                                        <td>Dial reading taken at 100 rpm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="equation"><span class="symbol">R</span><sub>6</sub></span>
+                                                        </td>
+                                                        <td>rpm</td>
+                                                        <td>Dial reading taken at 6 rpm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="equation"><span class="symbol">R</span><sub>3</sub></span>
+                                                        </td>
+                                                        <td>rpm</td>
+                                                        <td>Dial reading taken at 3 rpm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="symbol">n</span>
+                                                        </td>
+                                                        <td>--</td>
+                                                        <td>Fluid behavior index, Herschel-Bulkley model</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="symbol">K</span>
+                                                        </td>
+                                                        <td>
+                                                            <p>cP</p>
+                                                            <p>lb<sup>n</sup>/100 ft<sup>2</sup></p>
+                                                        </td>
+                                                        <td>Consistency index, Herschel-Bulkley model</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p><span class="symbol">τ<sub>γ</sub></span>
+                                                            </p>
+                                                        </td>
+                                                        <td>lb<sup>n</sup>/100 ft<sup>2</sup></td>
+                                                        <td>Yield stress, Herschel-Bulkey model</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>PV</td>
+                                                        <td>cP</td>
+                                                        <td>Plastic viscosity, Bingham plastic model</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>YP</td>
+                                                        <td>lb<sup>n</sup>/100 ft<sup>2</sup></td>
+                                                        <td>Yield point, Bingham plastic model</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LSYP</td>
+                                                        <td>lb/100 ft<sup>2</sup></td>
+                                                        <td>Low shear yield point, Bingham plastic model</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Operations</h3>
+                                            <p>Operating parameters define the conditions of the simulated wellbore operation. They are used to determine calculated properties and for pressure calculations.</p>
+                                            <table>
+                                                <caption>Operating parameters</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Flow rate</td>
+                                                        <td>gal/min</td>
+                                                        <td>Velocity of the fluid</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mud weight</td>
+                                                        <td>lb/gal</td>
+                                                        <td>Density of the fluid</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Temperature</td>
+                                                        <td>°F</td>
+                                                        <td>Temperature of the fluid</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rotary</td>
+                                                        <td>rpm</td>
+                                                        <td>Speed at which the bit is rotating</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bit depth</td>
+                                                        <td>ft</td>
+                                                        <td>Depth of the bit</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SBP</td>
+                                                        <td>psi</td>
+                                                        <td>Surface backpressure</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ROP</td>
+                                                        <td>ft/hr</td>
+                                                        <td>Rate of penetration</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Displacement index</td>
+                                                        <td>--</td>
+                                                        <td>Identifies a fluid being displaced into the wellbore</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Temperature</h3>
+                                            <table>
+                                                <caption>Temperature properties</caption>
+                                                <col style="width: 109px;" />
+                                                <col style="width: 87px;" />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="symbol">T</span>
+                                                        </td>
+                                                        <td>°F</td>
+                                                        <td>Temperature</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="symbol">C<sub>P</sub></span>
+                                                        </td>
+                                                        <td>btu/lb-°F</td>
+                                                        <td>Specific heat capacity of the drilling fluid</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="symbol">k</span>
+                                                        </td>
+                                                        <td>btu/ft-hr °F</td>
+                                                        <td>Thermal conductivity of the fluid</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="symbol">H</span>
+                                                        </td>
+                                                        <td>btu/ft<sup>2</sup> hr °F</td>
+                                                        <td>
+                                                            <p>Heat transfer coefficient</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="symbol">q</span>
+                                                        </td>
+                                                        <td>btu/hr ft<sup>2</sup></td>
+                                                        <td>Heat generation</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2 class="pgbreak"><a name="CellProps"></a>Cell Properties</h2>
+                                            <p>Mapped, calculated, and time-persistent properties are stored in each cell in the system. These properties are used in global outputs and profiles. </p>
+                                            <h3>Mapped Properties</h3>
+                                            <p>These properties are mapped to each cell.</p>
+                                            <table>
+                                                <caption>Mapped cell properties</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Depth</td>
+                                                        <td>ft</td>
+                                                        <td>Measured depth of the top of a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TVD</td>
+                                                        <td>ft</td>
+                                                        <td>Measured TVD of the top of a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Volume</td>
+                                                        <td>bbl</td>
+                                                        <td>Total volume occupied by a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cumulative volume at top</td>
+                                                        <td>bbl</td>
+                                                        <td>Total volume of all cells above a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Density</td>
+                                                        <td>lb/gal</td>
+                                                        <td>Fluid density of a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fluid index</td>
+                                                        <td>--</td>
+                                                        <td>Unique fluid index that points to fluid properties</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Length</td>
+                                                        <td>ft</td>
+                                                        <td>Measured length of a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TVD length</td>
+                                                        <td>ft</td>
+                                                        <td>Vertical length of a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>OD</td>
+                                                        <td>in</td>
+                                                        <td>Outside diameter of a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ID</td>
+                                                        <td>in</td>
+                                                        <td>Inside diameter of a cell</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Calculated Properties</h3>
+                                            <p>These properties are calculated by the simulator and stored in the cell.</p>
+                                            <table>
+                                                <caption>Calculated properties</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Hydraulics diameter</td>
+                                                        <td>in</td>
+                                                        <td>Equivalent circular diameter of duct-like geometry</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hydraulics area</td>
+                                                        <td>in<sup>2</sup></td>
+                                                        <td>Cross-sectional area defined using hydraulic diameter</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Average velocity</td>
+                                                        <td>ft/min</td>
+                                                        <td>Average velocity of the fluid in a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Frictional pressure loss</td>
+                                                        <td>psi</td>
+                                                        <td>Frictional pressure loss across a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hydrostatic pressure loss</td>
+                                                        <td>psi</td>
+                                                        <td>Hydrostatic pressure loss across a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total pressure loss</td>
+                                                        <td>psi</td>
+                                                        <td>Total pressure loss across a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Friction factor</td>
+                                                        <td>--</td>
+                                                        <td>Skin friction factor at a cell for Fanning's equation</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ECD</td>
+                                                        <td>lb/gal</td>
+                                                        <td>Equivalent circulating density of a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Reynold's number</td>
+                                                        <td>--</td>
+                                                        <td>Reynold's number of the fluid in the cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flow regime</td>
+                                                        <td>--</td>
+                                                        <td>Flow regime for a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>PV</td>
+                                                        <td>cP</td>
+                                                        <td>Plastic viscosity of the fluid in a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>YP</td>
+                                                        <td>lb/100 ft<sup>2</sup></td>
+                                                        <td>Yield point of the fluid in a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LSYP</td>
+                                                        <td>lb/100 ft<sup>2</sup></td>
+                                                        <td>Low shear yield point of the fluid in the cell</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Time-Persistent Properties</h3>
+                                            <p>These properties persist between timesteps.</p>
+                                            <table>
+                                                <caption>Time-persistent properties</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Volume</td>
+                                                        <td>bbl</td>
+                                                        <td>Total volume occupied by a cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fluid index</td>
+                                                        <td>--</td>
+                                                        <td>Unique fluid index that points to fluid properties</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2><a name="OutputProps"></a>Output Properties</h2>
+                                            <p>The numerical framework produces global output properties, which apply to the entire system, and profile outputs, which are collections of local properties.</p>
+                                            <h3>Global Output Properties</h3>
+                                            <p>The overall values for pressure loss are stored as global output properties. They are single numerical values that represent the total pressure loss in a region.</p>
+                                            <table>
+                                                <caption>Global properties</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>PFann</td>
+                                                        <td>psi</td>
+                                                        <td>Total frictional pressure loss in the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>PHann</td>
+                                                        <td>psi</td>
+                                                        <td>Total hydrostatic pressure loss in the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>PTann</td>
+                                                        <td>psi</td>
+                                                        <td>Sum of the frictional and hydrostatic pressure loss in the annulus.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pbit</td>
+                                                        <td>psi</td>
+                                                        <td>Pressure loss due to complex tools</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SBP</td>
+                                                        <td>psi</td>
+                                                        <td>Surface backpressure</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>PFpipe</td>
+                                                        <td>psi</td>
+                                                        <td>Total frictional pressure loss in the pipe</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>PHpipe</td>
+                                                        <td>psi</td>
+                                                        <td>Total hydrostatic pressure loss in the pipe</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>PTpipe</td>
+                                                        <td>psi</td>
+                                                        <td>Sum of the frictional and hydrostatic pressure loss in the pipe </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SPP</td>
+                                                        <td>psi</td>
+                                                        <td>Standpipe pressure</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ECD</td>
+                                                        <td>psi</td>
+                                                        <td>Equivalent circulating density</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Swab and surge</td>
+                                                        <td>psi</td>
+                                                        <td>Pressure loss due to swab and surge effects </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Profile Outputs</h3>
+                                            <p>Profiles track unique property changes throughout the wellbore. The simulator creates profiles by comparing the cell properties listed earlier against the measured depth of each cell.</p>
+                                            <table>
+                                                <caption>Profile outputs</caption>
+                                                <col />
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Profile</th>
+                                                        <th>Units</th>
+                                                        <th>Definition</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Annular pressure loss</td>
+                                                        <td>psi</td>
+                                                        <td>Total pressure loss throughout the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pipe pressure loss</td>
+                                                        <td>psi</td>
+                                                        <td>Total pressure loss throughout the pipe</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total pressure loss</td>
+                                                        <td>psi</td>
+                                                        <td>Total pressure loss throughout the system</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Annular velocity</td>
+                                                        <td>ft/min</td>
+                                                        <td>Fluid velocity throughout the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Critical velocity</td>
+                                                        <td>ft/min</td>
+                                                        <td>Critical velocity points throughout the system</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flow regime</td>
+                                                        <td>--</td>
+                                                        <td>Flow regime types throughout the system</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Reynold's number</td>
+                                                        <td>--</td>
+                                                        <td>Reynold's numbers throughout the system</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Annulus volume</td>
+                                                        <td>bbl</td>
+                                                        <td>Cell volume throughout the annulus</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Drillstring volume</td>
+                                                        <td>bbl</td>
+                                                        <td>Cell volume throughout the drillstring</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Inactive volume</td>
+                                                        <td>bbl</td>
+                                                        <td>Inactive volume throughout the system</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fluid positions</td>
+                                                        <td>--</td>
+                                                        <td>Position of segments of fluid</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Density</td>
+                                                        <td>lb/gal</td>
+                                                        <td>Fluid density throughout the system</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>PV</td>
+                                                        <td>cP</td>
+                                                        <td>Plastic viscosity values throughout the system</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>YP</td>
+                                                        <td>lb/in<sup>2</sup></td>
+                                                        <td>Yield point values throughout the system</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LSYP</td>
+                                                        <td>lb/in<sup>2</sup></td>
+                                                        <td>Low shear yield point values throughout the system</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../General/KB/KB_About.htm" title="Victus™ Simulation Knowledge Base" alt="Victus™ Simulation Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../QuickStart/QS_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

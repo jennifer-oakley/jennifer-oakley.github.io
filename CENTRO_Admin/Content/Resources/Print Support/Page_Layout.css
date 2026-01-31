@@ -1,0 +1,277 @@
+﻿
+@media print
+{
+	.pgbreak
+	{
+		page-break-before: always;
+		page-break-after: avoid;
+		margin-top: 0;
+	}
+
+	table#cover,
+	#cover table
+	{
+		width: 7.25in;
+	}
+
+	/*	
+	table#cover
+	{
+		margin: 250px;
+	}
+*/
+
+	div#cover p
+	{
+		margin: 0 0 1.15in 0;
+	}
+
+	table#cover p,
+	#cover table p
+	{
+		font-weight: bold;
+		margin: 0;
+	}
+
+	#cover h1
+	{
+		background-color: #FFF;
+		padding: 0;
+		margin: 20px 0;
+		color: #464646;
+		font-size: 40px;
+		letter-spacing: 2px;
+		border-bottom: none;
+		page-break-before: avoid;
+		mc-heading-level: 0;
+	}
+
+	#cover h2
+	{
+		color: #CF201E;
+		font-size: 27px;
+		font-weight: normal;
+		letter-spacing: 4px;
+		line-height: 44px;
+		mc-heading-level: 0;
+		margin: 35px 0;
+	}
+
+	#footer
+	{
+		margin: 0;
+	}
+
+	div#footer
+	{
+		padding: 10px 0;
+	}
+
+	#footer h6
+	{
+		color: #000;
+		text-align: center;
+		border-top: 0.75pt #000 solid;
+		margin: 0;
+		font-size: 10px;
+		letter-spacing: 0;
+	}
+
+	#footer p
+	{
+		margin: 0;
+		font-size: 9px;
+		line-height: 10px;
+	}
+
+	table#header
+	{
+		margin: 0;
+		font-size: 11pt;
+		line-height: 11pt;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		border-bottom: 1px #000 solid;
+		width: 7.25in;
+	}
+
+	#header p
+	{
+		margin: 0;
+		line-height: 1em;
+		text-align: right;
+	}
+
+	#header img
+	{
+		width: auto;
+		height: 0.3in;
+		vertical-align: middle;
+		/*padding: 5px 0;*/
+	}
+
+	#header td
+	{
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		padding: 4px 0;
+		font-weight: bold;
+		text-align: center;
+		vertical-align: bottom;
+		line-height: 11pt;
+	}
+
+	#header td p
+	{
+		line-height: 11pt;
+		text-align: right;
+		font-weight: normal;
+	}
+
+	#print h1,
+	#print h2
+	{
+        margin-top: 0;
+		mc-heading-level: 0;
+		page-break-before: always;
+	}
+}
+
+@media pdf
+{
+	.pgbreak
+	{
+		page-break-before: always;
+		page-break-after: avoid;
+		margin-top: 0;
+	}
+
+	table#cover,
+	#cover table
+	{
+		width: 7.25in;
+	}
+
+	/*	
+	table#cover
+	{
+		margin: 250px;
+	}
+*/
+
+	div#cover p
+	{
+		margin: 0 0 1.15in 0;
+	}
+
+	table#cover p,
+	#cover table p
+	{
+		font-weight: bold;
+		margin: 0;
+	}
+
+	#cover h1
+	{
+		background-color: #FFF;
+		padding: 0;
+		margin: 20px 0;
+		color: #464646;
+		font-size: 40px;
+		letter-spacing: 2px;
+		border-bottom: none;
+		page-break-before: avoid;
+		mc-heading-level: 0;
+	}
+
+	#cover h2
+	{
+		color: #CF201E;
+		font-size: 27px;
+		font-weight: normal;
+		letter-spacing: 4px;
+		line-height: 44px;
+		mc-heading-level: 0;
+		margin: 35px 0;
+	}
+
+	#footer
+	{
+		margin: 0;
+	}
+
+	div#footer
+	{
+		padding: 10px 0;
+	}
+
+	#footer h6
+	{
+		color: #000;
+		text-align: center;
+		border-top: 0.75pt #000 solid;
+		margin: 0;
+		font-size: 10px;
+		letter-spacing: 0;
+	}
+
+	#footer p
+	{
+		margin: 0;
+		font-size: 9px;
+		line-height: 10px;
+	}
+
+	table#header
+	{
+		margin: 0;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		border-bottom: 1px #000 solid;
+		width: 7.25in;
+	}
+
+	#header p
+	{
+		margin: 0;
+		line-height: 1em;
+		text-align: right;
+	}
+
+	#header img
+	{
+		width: auto;
+		height: 0.3in;
+		vertical-align: middle;
+		padding: 5px 0;
+	}
+
+	#header td
+	{
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		padding: 0px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.2em;
+	}
+
+	#header td p
+	{
+		line-height: 1.2em;
+		text-align: right;
+		font-weight: normal;
+	}
+
+	#print h1,
+	#print h2
+	{
+		mc-heading-level: 0;
+		page-break-before: always;
+	}
+}
+

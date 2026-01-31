@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Interface|Utilities|Indicators" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The WITS Data window shows the incoming data received from WITS channels. The values shown in this window are based on the incoming WITS records defined on the Setup &gt; DAQ &gt; WITS &gt; In tab. To view incoming WITS data: 1. Click the Indicators button in the Utilities toolbar. 2. Select the DAQ option..." /><title>Data acquisition indicators</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">Victus™ Simulation</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Data acquisition indicators</h1>
+                                            <div class="sidebar" data-mc-conditions="Outputs.Online">
+                                                <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownsidebar"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_sidebar MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Related Topics</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="MCHelpControl MCHelpControl-Related relatedTopics" style="mc-use-custom-sort-order: true;"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
+                                                            <ul class="MCHelpControlList MCRelatedTopicsControlList">
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../Alarms/ALRM_Status.htm">Status alarms</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../Setup/DAQ/DAQ_WITS_About.htm">WITS data</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../Setup/DAQ/DAQ_WML_About.htm">WITSML channels</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../Setup/Calibration/CALB_SpareAnalogs.htm">Spare analogs</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#WITS" class="sectionLink MCXref xref xrefsectionLink">WITS data</a>
+                                                    </p>
+                                                    <p><a href="#Analog" class="sectionLink MCXref xref xrefsectionLink">Analog sensors</a>
+                                                    </p>
+                                                    <p><a href="#WITSML" class="sectionLink MCXref xref xrefsectionLink">WITSML data</a>
+                                                    </p>
+                                                    <p><a href="#Modbus" class="sectionLink MCXref xref xrefsectionLink">Modbus data</a>
+                                                    </p>
+                                                    <p><a href="#OPC" class="sectionLink MCXref xref xrefsectionLink">OPC UA data</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <article>
+                                                <h2><a name="WITS"></a>WITS data</h2>
+                                                <p class="inset"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/App Shell/Utilities/Indicators/UTIL_Ind_WITS.png" data-mc-popup-alt="Data received from WITS channels"><img class="MCPopupThumbnail img imgthumb220px" data-mc-width="294" data-mc-height="328" src="../../Images/App Shell/Utilities/Indicators/UTIL_Ind_WITS.png" alt="Data received from WITS channels" title="Data received from WITS channels" tabindex="" style="max-width: 220px;" /></a>
+                                                </p>
+                                                <p>The <em>WITS Data</em> window shows the incoming data received from WITS channels. The values shown in this window are based on the incoming WITS records defined on the <em>Setup</em> &gt; <em>DAQ</em> &gt; <em>WITS</em> &gt; <em>In</em> tab. <a href="../../Setup/DAQ/DAQ_WITS_About.htm" class="MCXref xref">See "WITS data".</a></p>
+                                                <p>To view incoming WITS data: </p>
+                                                <ol>
+                                                    <li value="1">Click the <em>Indicators</em> button (<img src="../../Images/Icons/Icon_indicators-view_17x17.png" class="icon" title="Indicators View button" alt="Indicators View button" style="width: 17;height: 17;" />) in the <em>Utilities</em> toolbar.</li>
+                                                    <li value="2">Select the <em>DAQ</em> option.</li>
+                                                    <li value="3">Select the <em>WITS</em> option from the list that appears.</li>
+                                                </ol>
+                                                <p>The <em>WITS Data</em> window will open. All of the incoming data for all WITS channels will appear in the <em>WITS Data</em> window.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDowntip"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_tip MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Tip</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>If there is no data shown in the <em>WITS Data</em> window, or the data seems to be out-of-date, <span class="mc-variable App_Properties.AppModule variable">Victus™ Simulation</span> may have lost communication with the data acquisition service. To fix this issue, try restarting the DAQ service. <a href="../../Alarms/ALRM_Status_WITS.htm" class="MCXref xref">See "WITS alarms".</a></p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article>
+                                                <h2><a name="Analog"></a>Analog sensors</h2>
+                                                <p>The <em>Analog Data</em> window shows the<MadCap:conditionalText data-mc-conditions="Outputs.MC2_Sim,Outputs.MC2_SimLt"> simulated</MadCap:conditionalText> data received from analog sensors. The values shown in this window are based on the spare analog sensors defined on the <em>Setup</em> &gt; <em>Calibration</em> &gt; <em>Spare Analogs</em> tab. <a href="../../Setup/Calibration/CALB_SpareAnalogs.htm" class="MCXref xref">See "Spare analogs".</a></p>
+                                                <p>To view incoming analog sensor data: </p>
+                                                <ol>
+                                                    <li value="1">Click the <em>Indicators</em> button (<img src="../../Images/Icons/Icon_indicators-view_17x17.png" class="icon" title="Indicators View button" alt="Indicators View button" style="width: 17;height: 17;" />) in the <em>Utilities</em> toolbar.</li>
+                                                    <li value="2">Select the <em>DAQ</em> option.</li>
+                                                    <li value="3">Select the <em>Analogs</em> option from the list that appears.</li>
+                                                </ol>
+                                                <p>The <em>Analog Data</em> window will open, showing all incoming data from analog sensors.</p>
+                                            </article>
+                                            <article>
+                                                <h2><a name="WITSML"></a>WITSML data</h2>
+                                                <p class="inset"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/App Shell/Utilities/Indicators/UTIL_Ind_WITSML.png" data-mc-popup-alt="Data from a WITSML channel"><img class="MCPopupThumbnail img imgthumb220px" data-mc-width="294" data-mc-height="397" src="../../Images/App Shell/Utilities/Indicators/UTIL_Ind_WITSML.png" alt="Data from a WITSML channel" title="Data from a WITSML channel" tabindex="" style="max-width: 220px;" /></a>
+                                                </p>
+                                                <p>The incoming data from each WITSML log is shown in a separate window for each log. The values shown in this window are based on the mnemonics selected for the channel on the <em>Setup</em> &gt; <em>DAQ</em> &gt; <em>WITSML</em> tab.<MadCap:conditionalText data-mc-conditions="Outputs.MC2_Ops,Outputs.MC2_RCD,Outputs.MC2_Sim"> <a href="../../Setup/DAQ/DAQ_WML_About.htm" class="MCXref xref">See "WITSML channels".</a></MadCap:conditionalText></p>
+                                                <p>To view incoming data from a WITSML log:</p>
+                                                <ol>
+                                                    <li value="1">Click the <em>Indicators</em> button (<img src="../../Images/Icons/Icon_indicators-view_17x17.png" class="icon" title="Indicators View button" alt="Indicators View button" style="width: 17;height: 17;" />) in the <em>Utilities</em> toolbar.</li>
+                                                    <li value="2">Select the <em>DAQ</em> option.</li>
+                                                    <li value="3">Select the name of the WITSML channel from the list that appears.</li>
+                                                    <li value="4">Select the name of the log.</li>
+                                                </ol>
+                                                <p>A window for the WITSML log will open, showing all of the incoming data for that log.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDowntip"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_tip MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Tip</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>If there is no data shown in the WITSML window, or the data seems to be out-of-date, <span class="mc-variable App_Properties.AppModule variable">Victus™ Simulation</span> may have lost communication with the data acquisition service. To fix this issue, try restarting the DAQ service. <a href="../../Alarms/ALRM_Status_WML.htm" class="MCXref xref">See "WITSML alarms".</a></p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article>
+                                                <h2><a name="Modbus"></a>Modbus data</h2>
+                                                <p>The incoming data from each modbus channel is shown in a separate window for each channel. The values shown in this window are based on the mnemonics entered for the channel on the <em>Setup</em> &gt; <em>DAQ</em> &gt; <em>Modbus</em> tab.<MadCap:conditionalText data-mc-conditions="Outputs.MC2_Ops,Outputs.MC2_RCD,Outputs.MC2_Sim"> <a href="../../Setup/DAQ/DAQ_MOD.htm" class="MCXref xref">See "Modbus data".</a></MadCap:conditionalText></p>
+                                                <p>To view incoming data from a modbus channel:</p>
+                                                <ol>
+                                                    <li value="1">Click the <em>Indicators</em> button (<img src="../../Images/Icons/Icon_indicators-view_17x17.png" class="icon" title="Indicators View button" alt="Indicators View button" style="width: 17;height: 17;" />) in the <em>Utilities</em> toolbar.</li>
+                                                    <li value="2">Select the <em>DAQ</em> option.</li>
+                                                    <li value="3">Select the name of the modbus channel from the list that appears.</li>
+                                                </ol>
+                                                <p>A window for the modbus channel will open, showing all of the incoming data for that channel.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDowntip"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_tip MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Tip</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>If there is no data shown in the modbus window, or the data seems to be out-of-date, <span class="mc-variable App_Properties.AppModule variable">Victus™ Simulation</span> may have lost communication with the data acquisition service. To fix this issue, try restarting the DAQ service. <a href="../../Alarms/ALRM_Status_Modbus.htm" class="MCXref xref">See "Modbus alarms".</a></p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article>
+                                                <h2><a name="OPC"></a>OPC UA data</h2>
+                                                <p>The incoming data from each OPC UA channel is shown in a separate window for each channel. The values shown in this window are based on the mnemonics entered for the channel on the <em>Setup</em> &gt; <em>DAQ</em> &gt; <em>OPC UA</em> tab.<MadCap:conditionalText data-mc-conditions="Outputs.MC2_Ops,Outputs.MC2_RCD,Outputs.MC2_Sim"> <a href="../../Setup/DAQ/DAQ_OPC.htm" class="MCXref xref">See "OPC UA data".</a></MadCap:conditionalText></p>
+                                                <p>To view incoming data from an OPC UA channel:</p>
+                                                <ol>
+                                                    <li value="1">Click the <em>Indicators</em> button (<img src="../../Images/Icons/Icon_indicators-view_17x17.png" class="icon" title="Indicators View button" alt="Indicators View button" style="width: 17;height: 17;" />) in the <em>Utilities</em> toolbar.</li>
+                                                    <li value="2">Select the <em>DAQ</em> option.</li>
+                                                    <li value="3">Select the name of the OPC UA channel from the list that appears.</li>
+                                                </ol>
+                                                <p>A window for the OPC UA channel will open, showing all of the incoming data for that channel.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDowntip"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_tip MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Tip</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>If there is no data shown in the OPC UA window, or the data seems to be out-of-date, <span class="mc-variable App_Properties.AppModule variable">Victus™ Simulation</span> may have lost communication with the data acquisition service. To fix this issue, try restarting the DAQ service. <a href="../../Alarms/ALRM_Status_OPC.htm" class="MCXref xref">See "OPC UA alarms".</a></p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../General/KB/KB_About.htm" title="Victus™ Simulation Knowledge Base" alt="Victus™ Simulation Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../QuickStart/QS_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

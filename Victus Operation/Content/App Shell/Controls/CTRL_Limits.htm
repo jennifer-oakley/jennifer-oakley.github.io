@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Interface|Controls" data-mc-conditions="Outputs.MC2_Ops,Outputs.MC2_Sim,Outputs.MC2_OpLt,Outputs.MC2_SimLt" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Pressure limits control the maximum and minimum values for surface backpressure. The high limit helps prevent excessive pressure in the wellbore during MPD operations. In addition to the high limit, a low limit is calculated to prevent pressure from dropping below the formation resistance. Victus™ Operation calculates the high limit and low limit automatically." /><title>Pressure Limit control</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Pressure Limit control</h1>
+                                            <div class="sidebar" data-mc-conditions="Outputs.Online">
+                                                <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownsidebar"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_sidebar MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Related Topics</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="MCHelpControl MCHelpControl-Related relatedTopics"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
+                                                            <ul class="MCHelpControlList MCRelatedTopicsControlList">
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../Setup/Surface Equipment/RIG_Specs.htm">Equipment specifications</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../Setup/Ctrl Algorithms/ALG_Limits.htm">Limits algorithm</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../Operation/OPS_Equip_Sensors.htm">Pressure sensors</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../Alarms/ALRM_Sensors.htm">Sensor diagnostics</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#AboutLimits" title="About pressure limits" alt="About pressure limits" class="sectionLink MCXref xref xrefsectionLink">About pressure limits</a>
+                                                    </p>
+                                                    <p><a href="#AboutHighLimit" title="About the high limit" alt="About the high limit" class="sectionLink MCXref xref xrefsectionLink">About the high limit</a>
+                                                    </p>
+                                                    <p><a href="#Override" title="Overriding the high limit" alt="Overriding the high limit" class="sectionLink MCXref xref xrefsectionLink">Overriding the high limit</a>
+                                                    </p>
+                                                    <p><a href="#Reset" title="Resetting the high limit" alt="Resetting the high limit" class="sectionLink MCXref xref xrefsectionLink">Resetting the high limit</a>
+                                                    </p>
+                                                    <p><a href="#AboutLowLimit" title="About the low limit" alt="About the low limit" class="sectionLink MCXref xref xrefsectionLink">About the low limit</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2 data-mc-conditions="Outputs.Online"><a name="AboutLimits"></a>About pressure limits</h2>
+                                            <p>Pressure limits are used to control the maximum and minimum values for surface backpressure. The high limit helps prevent excessive pressure in the wellbore during MPD operations. In addition to the high limit, a low limit is calculated to prevent pressure from dropping below the formation resistance. <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span> calculates the high limit and low limit automatically. You can also manually override the calculated high limit with another value. <a href="#AboutHighLimit" title="See &quot;About the high limit&quot;." alt="See &quot;About the high limit&quot;." class="MCXref xref">See "About the high limit".</a></p>
+                                            <h2><a name="AboutHighLimit"></a>About the high limit</h2>
+                                            <p><span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span>'s behavior regarding the high limit is configured in the <em>Setup</em> &gt; <em>Control Algorithms</em> &gt; <em>Limits </em>tab. According to the settings in the<em> Limits</em> tab, when 70%, 80% or 90% of the high limit is reached, <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span> will update the SBP set point and keep it at the selected percentage of the high limit. <a href="../../Setup/Ctrl Algorithms/ALG_Limits.htm" title="See &quot;Limits algorithm&quot;." alt="See &quot;Limits algorithm&quot;." class="MCXref xref">See "Limits algorithm".</a></p>
+                                            <p> When surface backpressure reaches 98% of the high limit:</p>
+                                            <ul>
+                                                <li>If you selected the <em>Fully Open Chokes to 100%</em> option, <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span> will change the MPD control mode to <em>None</em> mode. Any chokes that are disabled when an emergency shutdown occurs will be activated and fully opened. If a choke is in calibration mode, it will not open when surface backpressure reaches 98% of the high limit. The choke will only open when it is out of calibration mode.</li>
+                                                <li>If you selected the <em> Go to Low Limit (based on Pore Pressure) - SBP mode</em> option, <span class="mc-variable App_Properties.AppModule variable">Victus™ Operation</span> will update the SBP to the low limit value. <a href="#AboutLowLimit" title="See &quot;About the low limit&quot;." alt="See &quot;About the low limit&quot;." class="MCXref xref">See "About the low limit".</a></li>
+                                            </ul>
+                                            <p>The calculated high limit is the lesser of the following values:</p>
+                                            <ul>
+                                                <li>RCD pressure rating</li>
+                                                <li>Riser pressure rating</li>
+                                                <li>Maximum allowable annular surface pressure</li>
+                                            </ul>
+                                            <p>If the high limit cannot be calculated, or the calculated high limit is zero, the high limit will be set to the previous value. If there is no previous value, the high limit will be set to 5000 psi.</p>
+                                            <p>The pressure ratings for the RCD and riser can be updated on the <em>Setup</em> &gt; <em>Surface Equipment</em> &gt; <em>Piping and Instrumentation</em> tab. <a href="../../Setup/Surface Equipment/RIG_Specs.htm" class="MCXref xref">See "Equipment specifications".</a> Maximum allowable annular surface pressure is calculated using the following formula:</p>
+                                            <ul class="noBullets">
+                                                <li><span class="equation"><span class="symbol">MAASP</span> = <span class="symbol">CSD</span> x min(<span class="symbol">FIT</span>,<span class="symbol">FPG</span>) x 0.052 – <span class="symbol">AP</span> + <span class="symbol">SBP</span></span>,</li>
+                                                <li>where<ul><li><span class="symbol">MAASP</span> is the maximum allowable annular surface pressure (psi)</li><li><span class="symbol">CSD</span> is the casing shoe depth (ft)</li><li><span class="symbol">FIT</span> is the results from the formation integrity test (ppg)</li><li><span class="symbol">FPG</span> is the fracture pressure gradient</li><li><span class="symbol">AP</span> is the annular pressure at the casing shoe</li><li><span class="symbol">SBP</span> is the surface backpressure</li></ul></li>
+                                            </ul>
+                                            <article>
+                                                <p>When you click the <em>High Limit</em> tile, the <em>High Limit</em> window will open. The <em>High Limit</em> window shows two values:</p>
+                                                <ul>
+                                                    <li><em>Pressure High Limit</em> – This is the calculated high limit. If you reset the high limit from an override value, this is the value that will be used for the new high limit. <a href="#Reset" class="MCXref xref">See "Resetting the high limit".</a></li>
+                                                    <li><em>Overwrite High Limit</em> – This is the current high limit. If you are using the calculated high limit, this value will match the value in the <em>Pressure High Limit</em> field. If not, this value is current override value. <a href="#Override" class="MCXref xref">See "Overriding the high limit".</a></li>
+                                                </ul>
+                                            </article>
+                                            <article>
+                                                <h2><a name="Override"></a>Overriding the high limit</h2>
+                                                <p>To override the calculated high limit:</p>
+                                                <ol>
+                                                    <li value="1">In the <em>Well View</em> pane, click the <em>High Limit</em> tile.</li>
+                                                    <li value="2">In the <em>High Limit</em> window, enter the high limit in the <em>Overwrite High Limit</em> field.</li>
+                                                    <li value="3">Click the <em>Enter</em> button (<img src="../../Images/Icons/Icon_enterBtn_17x17.png" alt="Enter button" title="Enter button" class="icon" style="width: 17;height: 17;" />), the click <em>Yes</em> on the confirmation message that appears.</li>
+                                                    <li value="4">Click the <em>Close</em> button (<img src="../../Images/Icons/Icon_close-window.png" alt="Close button" title="Close button" class="icon" />) to close the window.</li>
+                                                </ol>
+                                                <p>The high limit shown on the <em>High Limit</em> tile will be updated to the new value. The text color in the <em>High Limit</em> tile will change to orange to indicate that a manual value has been entered.</p>
+                                            </article>
+                                            <article>
+                                                <h2><a name="Reset"></a>Resetting the high limit</h2>
+                                                <p>If you previously entered a value to override the calculated high limit, you can reset the high limit to the calculated value. To reset the high limit:</p>
+                                                <ol>
+                                                    <li value="1">In the <em>Well View</em> pane, click the <em>High Limit</em> tile.</li>
+                                                    <li value="2">In the <em>High Limit</em> window, click the <em>Undo</em> button (<img src="../../Images/Icons/Icon_undo-Btn_17x17.png" class="icon" title="Undo Changes button" alt="Undo Changes button" style="width: 17;height: 17;" />).</li>
+                                                    <li value="3">Click <em>Yes</em> on the confirmation message that appears.</li>
+                                                    <li value="4">Click the <em>Close</em> button (<img src="../../Images/Icons/Icon_close-window.png" alt="Close button" title="Close button" class="icon" />) to close the window.</li>
+                                                </ol>
+                                                <p>The high limit will be reset to the calculated value shown in the <em>Pressure High Limit</em> field. The text color in the <em>High Limit</em> tile will change to white to indicate that the calculated value is being used.</p>
+                                                <h2><a name="AboutLowLimit"></a>About the low limit</h2>
+                                                <p> In most cases, the pressure low limit is calculated using the following formula:</p>
+                                                <p><span class="equation"><span class="symbol">LL</span> = <span class="symbol">SBP</span> - (smallest difference between <span class="symbol">PP</span> and <span class="symbol">AP</span>)</span>
+                                                </p>
+                                                <p>Where:</p>
+                                                <ul>
+                                                    <li><span class="symbol">SBP</span> is the surface backpressure</li>
+                                                    <li><span class="symbol">PP</span> is the pore pressure gradient</li>
+                                                    <li><span class="symbol">AP</span> is the annular pressure</li>
+                                                </ul>
+                                                <p>However, if pore pressure exceeds annular pressure, the following formula is used:</p>
+                                                <p><span class="equation"><span class="symbol">LL</span> = <span class="symbol">SBP</span> + (difference between <span class="symbol">PP</span> and <span class="symbol">AP</span>)</span>
+                                                </p>
+                                                <p>The maximum value of the low limit is determined by the option selected in the <em>System goes to SBP mode at</em> field on the <em>Setup</em> &gt;&#160;<em>Control Algorithms</em> &gt;&#160;<em>Limits</em> tab. The low limit cannot exceed the percentage of the high limit at which the system switches to <em>SBP</em> mode. </p>
+                                                <p>If it exceeds that value, the low limit will set to the percentage of the high limit. For example, if the high limit is 1000 psi and the <em>70% of High Limit</em> option is selected, the low limit will be set to 700 psi. <a href="../../Setup/Ctrl Algorithms/ALG_Limits.htm" class="MCXref xref">See "Limits algorithm".</a> The current low limit value is displayed on the chart in the <em>Main Time Data</em> dashboard in addition to the high limit.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownnote"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_note MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Note</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The complete functionality for the pressure low limit only works in Victus™ Operation. In Victus™ Simulation, the low limit value shows on the <em>Home</em> screen. But the system does not maintain the pressure when it approaches the high limit. </p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../General/KB/KB_About.htm" title="Victus™ Operation Knowledge Base" alt="Victus™ Operation Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../QuickStart/QS_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                                <li data-mc-conditions="Outputs.MC2_OpLt,Outputs.MC2_Ops,Outputs.MC2_RCD"><a href="../../General/MC2_Downloads.htm" title="Downloads" alt="Downloads">Downloads</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

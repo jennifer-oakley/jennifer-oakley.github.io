@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Data Management|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="You can view and edit managed wells on the Wells &gt; Well Management page. Managed wells created in CENTRO® Admin are synchronized from the data hub to the data center. When you create a managed well, the well will be created on the WITSML server for the data hub and the data center. The well will be listed..." /><title>Well management</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://kit.fontawesome.com/7ebf01bdf4.js" crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">CENTRO® Admin</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1 class="pgbreak"><a name="kanchor1"></a>Well management</h1>
+                                            <div class="sidebar" data-mc-conditions="Outputs.Online">
+                                                <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/CENTRO_DC.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownsidebar"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_sidebar MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Related Topics</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="MCHelpControl MCHelpControl-Related relatedTopics"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
+                                                            <ul class="MCHelpControlList MCRelatedTopicsControlList">
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Lookups/LOOK_Contracts.htm">Contracts</a>
+                                                                </li>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../Lookups/LOOK_Metadata.htm">Metadata</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About well management</a>
+                                                    </p>
+                                                    <p><a href="#NewWell" class="sectionLink MCXref xref xrefsectionLink">Creating a managed well</a>
+                                                    </p>
+                                                    <p data-mc-conditions="Outputs.DC"><a href="#Monitor" class="sectionLink MCXref xref xrefsectionLink">CENTRO® Monitor well integration</a>
+                                                    </p>
+                                                    <p><a href="#FieldDefs" class="sectionLink MCXref xref xrefsectionLink">Field definitions</a>
+                                                    </p>
+                                                    <p><a href="#UseTab" class="sectionLink MCXref xref xrefsectionLink">Using the Well Management page</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2 data-mc-conditions="Outputs.Online"><a name="About"></a>About well management</h2>
+                                            <p>The <em>Wells</em> &gt; <em>Well Management</em> page lists all of the wells on the <span class="mc-variable App_Properties.ServerType variable">data center</span>. Managed wells created in <span class="mc-variable App_Properties.AppModule variable">CENTRO® Admin</span> are synchronized from the data hub to the data center.<br /></p>
+                                            <p data-mc-conditions="Outputs.DC"> When you create a managed well on the data center and assign a data hub to the well, the well will be automatically created on the assigned data hub. The WITSML data received for the well will be automatically synchronized between the data center and the data hub. If the assigned data hub is not currently registered and authorized, the well data will be synchronized once the data hub is authorized by the system administrator. Changes to managed wells are only replicated from the data hub to the data center. If you edit a well through the <em>Well Management</em> page on the data center, the changes will not be replicated to the data hub.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown dropDownnote"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_note MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Note</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>If a client company is assigned to your account, you  will only be able to view wells that are associated with the same client company. <a href="../User Management/SEC_Users.htm" class="MCXref xref" data-mc-variable-override="">See "User accounts".</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown dropDowntip"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_tip MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Tip</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Completed and archive-ready wells are not shown by default on the <em>Well Management</em> page. To view completed and archive-ready wells, go to the <em>Well Status</em> field at the top of the table and select the checkbox at the top of the list.</p>
+                                                </div>
+                                            </div>
+                                            <h2><a name="NewWell"></a>Creating a managed well</h2>
+                                            <p>To create a new managed well:</p>
+                                            <p class="inset"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/Wells/WELL_New.png" data-mc-popup-alt="Screenshot of a new well"><img class="MCPopupThumbnail img imgthumb220px" data-mc-width="1008" data-mc-height="849" src="../Images/Wells/WELL_New.png" alt="Screenshot of a new well" title="Screenshot of a new well" tabindex="" style="max-width: 220px;" /></a>
+                                            </p>
+                                            <ol>
+                                                <li value="1">Go to the <em>Wells</em> &gt; <em>Well Management</em> page.</li>
+                                                <li value="2">Click the <em>Add Well</em> button (<img src="../Images/Icons/Icon_fa-plus_17x17.png" title="Add Well button" alt="Add Well button" class="icon" style="width: 17;height: 17;" />) at the top of the page.</li>
+                                                <li value="3" data-mc-conditions="Outputs.DC">In the window that appears, select the name of the project in the <em>Contract</em> field.</li>
+                                                <li value="4">Enter the unique ID for the well and the well name.</li>
+                                                <li value="5">Enter the remaining job and well information.</li>
+                                                <li value="6" data-mc-conditions="Outputs.DC">In the <em>Equipment</em> field, select the data hub that will be used for the job.</li>
+                                                <li value="7">Click the <em>Save</em> button at the bottom of the window.</li>
+                                            </ol>
+                                            <p>The well will be created on the WITSML server for the selected data hub, using the unique well ID and wellbore ID that you specified.<MadCap:conditionalText data-mc-conditions="Outputs.DC"> The well will be available on both the data center and the selected data hub. The WITSML data received for the well will be automatically synchronized between the data hub and the data center. To integrate the well with <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span>, click the <em>Create Project/Groups</em> button (<img src="../Images/Icons/Icon_Monitor_25x17.png" title="Create Project/Groups button" alt="Create Project/Groups button" class="icon" style="width: 25;height: 17;" />) next to the well name. <a href="#Monitor" class="MCXref xref" data-mc-variable-override="">See "CENTRO® Monitor well integration".</a></MadCap:conditionalText></p>
+                                            <article data-mc-conditions="Outputs.DC">
+                                                <h2><a name="Monitor"></a><span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span> well integration</h2>
+                                                <p>After you create a well in <span class="mc-variable App_Properties.AppModule variable">CENTRO® Admin</span>, you can integrate the well with <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span>. When you integrate a well with <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span>, the well will be mapped to a new project in <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span>. </p>
+                                                <p><span class="mc-variable App_Properties.AppShort variable">CENTRO®</span> will also create the roles required to access the well. When you begin the integration process, three roles will be created in <span class="mc-variable App_Properties.AppModule variable">CENTRO® Admin</span>:</p>
+                                                <ul>
+                                                    <li><strong>[RigName]_[WellName]_ReadOnly</strong> – Grants read-only access to <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span>, as well as read and list access to the WITSML data store for the well.</li>
+                                                    <li><strong>[RigName]_[WellName]_NormalUser</strong> – Grants normal user access to <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span>, as well as read and list to the WITSML data store for the well.</li>
+                                                    <li><strong>[RigName]_[WellName]_Admin</strong> – Grants admin access to <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span>, as well as create, update, read, and list access to the WITSML data store for the well.</li>
+                                                </ul>
+                                                <p>The ACLs and WITSML ACLs required for each access level will be automatically assigned to the appropriate role. <a href="../User Management/SEC_ACLs.htm" class="multiple_first MCXref xref xrefmultiple_first" data-mc-variable-override="">See "Security Access Control Lists"</a> and <a href="../User Management/SEC_WML.htm" class="multiple_last MCXref xref xrefmultiple_last" data-mc-variable-override="">"WITSML Access Control Lists".</a> </p>
+                                                <p>Two groups will also be created for the project in <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span>:</p>
+                                                <ul>
+                                                    <li><strong>[RigName]_[WellName]_InternalUsers</strong> – User accounts with a user name that ends with @weatherford.com will be assigned to the internal users group.</li>
+                                                    <li><strong>[RigName]_[WellName]_ExternalUsers</strong> – User accounts with a user name that does not end with @weatherford.com will be assigned to the external users group.</li>
+                                                </ul>
+                                                <p>When a user is assigned to a well-specific role in <span class="mc-variable App_Properties.AppModule variable">CENTRO® Admin</span>, a user account will also be created in <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span> and assigned to the appropriate group.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownnote"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_note MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Note</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>This feature is only available <span class="mc-variable App_Properties.ServerType variable">data center</span>s that have IVAAP integration enabled. IVAAP integration is not enabled by default. To enable IVAAP integration, refer to the <strong>Server-Side Configuration</strong> chapter of the <strong><span class="mc-variable App_Properties.AppShort variable">CENTRO®</span> Admin Install Guide</strong>.</p>
+                                                    </div>
+                                                </div>
+                                                <p>To integrate a well with <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span>:</p>
+                                                <ol>
+                                                    <li value="1">Click the <em>Create Project/Groups</em> button (<img src="../Images/Icons/Icon_Monitor_25x17.png" title="Create Project/Groups button" alt="Create Project/Groups button" class="icon" style="width: 25;height: 17;" />) next to the well name.</li>
+                                                    <li value="2">In the <em>Monitor Integration</em> window, click the <em>Create Group and Projects</em> button.</li>
+                                                    <li value="3">When the mapping process is complete, click the <em>Close</em> button to close the <em>Monitor Integration</em> window.</li>
+                                                </ol>
+                                                <p>The status of the integration process will be automatically updated every 30 seconds. The <em>Create Project/Groups</em> button (<img src="../Images/Icons/Icon_Monitor_25x17.png" title="Create Project/Groups button" alt="Create Project/Groups button" class="icon" style="width: 25;height: 17;" />) next to the well name will be replaced with the <em>View Status</em> button (<img src="../Images/Icons/Icon_fa-eye_17x17.png" title="View Status button" alt="View Status button" class="icon" style="width: 17;height: 17;" />). To add users to the roles for the well, go to the <em>User Management</em> &gt; <em>Roles</em> page. <a href="../User Management/SEC_Roles_AddUsers.htm" class="MCXref xref">See "Adding users to roles".</a></p>
+                                            </article>
+                                            <article>
+                                                <h2><a name="FieldDefs"></a>Field definitions</h2>
+                                                <p>The table below defines all of the fields on the <em>Wells</em> &gt; <em>Well Management</em> page.</p>
+                                                <table style="">
+                                                    <caption>Field definitions for the <em>Wells</em> &gt; <em>Well Management</em> page</caption>
+                                                    <col />
+                                                    <col />
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Field</th>
+                                                            <th>Definition</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Name [UID]</td>
+                                                            <td>The well name should match the well name in Spectrum, if available. The unique ID in WITSML is shown in brackets, after the well name.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="">
+                                                            <td>Status</td>
+                                                            <td>
+                                                                <p>Current status of the well</p>
+                                                                <ul>
+                                                                    <li><em>New</em> – The well is a new well, and drilling has not yet begun.</li>
+                                                                    <li><em>Current</em> – The well is currently being drilled.</li>
+                                                                    <li><em>Completed</em> – Drilling has completed for the well.</li>
+                                                                    <li><em>Archive Ready</em> – The data for the well is ready to be archived. This option is not available until the well has been marked as completed.</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Contract</td>
+                                                            <td>Name of the contract for the well<MadCap:conditionalText data-mc-conditions="Outputs.DC">. The list of available contracts is defined on the <em>Lookups</em> &gt; <em>Contracts</em> page. <a href="../Lookups/LOOK_Contracts.htm" class="MCXref xref">See "Contracts".</a></MadCap:conditionalText></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Field</td>
+                                                            <td>Name of the field where the well is located</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Country</td>
+                                                            <td>Country where the well is operating</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="">
+                                                            <td>Rig</td>
+                                                            <td>Name of the rig at the well site</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="">
+                                                            <td>Depth Units</td>
+                                                            <td>Default measurement unit used for depth</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="">
+                                                            <td>Start Date</td>
+                                                            <td>Date when drilling begins for the well</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Spud Date</td>
+                                                            <td>Date on which a machine capable of reaching total depth begins drilling a new well</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="">
+                                                            <td>End Date</td>
+                                                            <td>Date when drilling ended for the well</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="">
+                                                            <td>Client</td>
+                                                            <td>Name of the client company for the well<MadCap:conditionalText data-mc-conditions="Outputs.DC">. The list of available clients is defined on the <em>Lookups</em> &gt; <em>Clients</em> page. <a href="../Lookups/LOOK_Clients.htm" class="MCXref xref">See "Clients".</a></MadCap:conditionalText></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </article>
+                                            <h2><a name="UseTab"></a>Using the Well Management page</h2>
+                                            <p>The search box above the table on the <em><span class="mc-variable Snippets.PageName variable">Well Management</span></em> page allows you to filter the rows displayed. To view additional rows of data, click on the page numbers or arrows at the bottom of the table. To change the number of rows shown on each page, use the dropdown menu next to the page numbers.</p>
+                                            <p>The buttons on the <em>Well Management</em> page are used to add, edit, and remove wells.</p>
+                                            <table>
+                                                <caption>Buttons on the <em>Well Management</em> page</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Button</th>
+                                                        <th>Function</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../Images/Icons/Icon_fa-plus_20x20.png" title="Add Well button" alt="Add Well button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Adds a new well to the current server. <a href="#NewWell" class="MCXref xref">See "Creating a managed well".</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../Images/Icons/Icon_fa-edit_20x20.png" title="Edit button" alt="Edit button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Allows you to edit the selected well</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../Images/Icons/Icon_fa-trash_20x20.png" title="Delete button" alt="Delete button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Deletes the selected well from the server</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Outputs.DC">
+                                                        <td>
+                                                            <img src="../Images/Icons/Icon_fa-eye_20x20.png" title="View Status button" alt="View Status button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Indicates that the <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span> integration process has been initiated. Opens the <em>Monitor Integration</em> window, which allows you to view the status of the integration process. Only available for <span class="mc-variable App_Properties.ServerType variable">data center</span>s with IVAAP integration enabled.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Outputs.DC">
+                                                        <td>
+                                                            <img src="../Images/Icons/Icon_Monitor_29x20.png" title="Create Project/Groups button" alt="Create Project/Groups button" class="icon" style="width: 29;height: 20;" />
+                                                        </td>
+                                                        <td>Indicates that the <span class="mc-variable App_Properties.ViewerApp variable">CENTRO® Monitor</span> integration process has not been initiated. Opens the <em>Monitor Integration</em> window, which allows you to start the integration process. Only available for <span class="mc-variable App_Properties.ServerType variable">data center</span>s with IVAAP integration enabled.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CopyrightYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../QuickStart/QS_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../General/CENTRO_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

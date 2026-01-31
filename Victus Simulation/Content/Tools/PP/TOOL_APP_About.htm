@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=App Properties.ToolsScreenName%] |Geomechanics" data-mc-conditions="Outputs.MC2_Sim" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="The Pore Pressure tab analyzes the pressure acting on the formation fluids, using imported log data and the calculated shale and clay layers from the Lithology tab. On the Pore Pressure tab, you can import log data for drilling exponent (DXC), resistivity, sonic, and neutron porosity data." /><title>Pore pressure analysis</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/TopNav/TopNav.css" rel="stylesheet" type="text/css" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expanded-event="open.zf.drilldown closed.zf.drilldown" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" aria-label="Main navigation and search" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <nav data-mc-conditions="Outputs.Online">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="5" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <header>
+                                        <p><span class="mc-variable App_Properties.AppModule variable">Victus™ Simulation</span> Help Center</p>
+                                        <nav>
+                                            <form class="search" action="#">
+                                                <div class="search-bar search-bar-container needs-pie _Skins_Top_Nav_SearchBar mc-component">
+                                                    <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Tip: Use quotes to search for specific phrases" />
+                                                    <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                        <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                        </div>
+                                                        <div class="search-filter-content" id="sf-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-submit-wrapper" dir="ltr">
+                                                        <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </nav>
+                                    </header>
+                                    <section class="body">
+                                        <div role="main" id="mc-main-content">
+                                            <h1><a name="kanchor33"></a>Pore pressure analysis</h1>
+                                            <div class="sidebar" data-mc-conditions="Outputs.Online">
+                                                <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/MC2.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownsidebar"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_sidebar MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Related Topics</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <div class="MCHelpControl MCHelpControl-Related relatedTopics"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
+                                                            <ul class="MCHelpControlList MCRelatedTopicsControlList">
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../App Shell/Dashboards/Graphs/DASH_Graphs_Depth.htm">Depth graphs</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About pore pressure analysis</a>
+                                                    </p>
+                                                    <p><a href="#Config" class="sectionLink MCXref xref xrefsectionLink">Determining pore pressure</a>
+                                                    </p>
+                                                    <p><a href="#ImportLogs" class="sectionLink MCXref xref xrefsectionLink">Importing data</a>
+                                                    </p>
+                                                    <p><a href="#UseTab" class="sectionLink MCXref xref xrefsectionLink">Using the Pore Pressure tab</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <h2 data-mc-conditions="Outputs.Online"><a name="About"></a>About pore pressure analysis</h2>
+                                            <p data-mc-conditions="Snippets.Analysis_03">The <em>Pore Pressure</em> tab analyzes the pressure acting on the formation fluids, using imported log data and the calculated shale and clay layers from the <em>Lithology</em> tab. On the <em>Pore Pressure</em> tab, you can import log data for drilling exponent (DXC), resistivity, sonic, and neutron porosity data.</p>
+                                            <p class="inset"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Tools/PP/PorePressure/TOOL_APP_ChartTypes.png" data-mc-popup-alt="Charts on the Pore Pressure tab"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="943" data-mc-height="678" src="../../Images/Tools/PP/PorePressure/TOOL_APP_ChartTypes.png" alt="Charts on the Pore Pressure tab" title="Charts on the Pore Pressure tab" tabindex="" style="max-width: 340px;" /></a>
+                                            </p>
+                                            <p>There are four charts on the <em><span class="mc-variable Snippets.GUI_TabName variable">Pore Pressure</span></em> tab. The first three charts graph data from various sources, and the last chart is used to graph the results for the <em><span class="mc-variable Snippets.GUI_TabName variable">Pore Pressure</span></em> tab.</p>
+                                            <ul>
+                                                <li data-mc-conditions="Snippets.Analysis_03">The <em>Well Data</em> chart graphs the calculated shale and clay formation layers identified on the <em>Lithology</em> tab.</li>
+                                                <li>The <em>Offset Well</em> chart graphs imported log data from an offset well.</li>
+                                                <li>The <em>Current Well</em> chart graphs real-time data from the current well.</li>
+                                                <li data-mc-conditions="Snippets.Analysis_03">The <em>Results</em> chart shows the calculated pore pressures gradient, as well as the overburden and hydrostatic gradients from the <em>Overburden</em> tab.</li>
+                                            </ul>
+                                            <p class="clear">You'll need to add data for the <em>Offset Well</em> chart and the <em>Current Well</em> chart. If there is no log data for the current well available, you can import additional offset well data into the <em>Current Well</em> chart. However, the data in the <em>Current Well</em> chart is weighted more heavily in the calculated results than the data in the <em>Offset Well</em> chart. When both charts contain data, the data in the <em>Offset Well</em> chart may be completely disregarded in the results.</p>
+                                            <p class="left"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Tools/PP/PorePressure/TOOL_APP_Results.png" data-mc-popup-alt="Sample results from a pore pressure analysis"><img class="MCPopupThumbnail img imgthumb220px" data-mc-width="1011" data-mc-height="718" src="../../Images/Tools/PP/PorePressure/TOOL_APP_Results.png" alt="Sample results from a pore pressure analysis" title="Sample results from a pore pressure analysis" tabindex="" style="max-width: 220px;" /></a>
+                                            </p>
+                                            <p>There are two ways to view the results on the <em>Pore Pressure</em> tab: the gradient view and the pressure view. To switch between the gradient view and the pressure view, click the <em>Pressure/Gradient</em> button (<img src="../../Images/Icons/Icon_alphabetEP_17x17.png" class="icon" alt="Pressure/Gradient button" title="Pressure/Gradient button" style="width: 17;height: 17;" />) at the bottom of the <em>Results</em> chart.</p>
+                                            <ul alt="Pressure/Gradient button" title="Pressure/Gradient button" class="thumb220px">
+                                                <li>The gradient view shows the calculated pore pressure, overburden pressure, and hydrostatic pressure gradients.</li>
+                                                <li>The pressure view shows linear trends for pore pressure, lithostatic pressure, and hydrostatic pressure.</li>
+                                            </ul>
+                                            <h2 class="clear"><a name="kanchor34"></a><a name="Config"></a>Determining pore pressure</h2>
+                                            <p>To configure<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_03"> pore pressure</MadCap:conditionalText>:</p>
+                                            <p class="inset"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Tools/PP/PorePressure/TOOL_APP_Config.png" data-mc-popup-alt="Importing log data on the Pore Pressure tab"><img class="MCPopupThumbnail img imgthumb220px" data-mc-width="1128" data-mc-height="718" src="../../Images/Tools/PP/PorePressure/TOOL_APP_Config.png" alt="Importing log data on the Pore Pressure tab" title="Importing log data on the Pore Pressure tab" tabindex="" style="max-width: 220px;" /></a>
+                                            </p>
+                                            <ol>
+                                                <li value="1">Go to the <em><span class="mc-variable Snippets.GUI_TabName variable">Pore Pressure</span></em> tab on the <em><span class="mc-variable App_Properties.ToolsScreenName variable">Tools</span></em> &gt; <em>Geomechanics</em> page.</li>
+                                                <li value="2">If the experiment is not unlocked for editing, click the <em>Edit</em> button (<img src="../../Images/Icons/Icon_edit-item_17x17.png" title="Edit button" alt="Edit button" class="icon" style="width: 17;height: 17;" />) at the bottom of the screen.</li>
+                                                <li value="3">Import log data into the <em>Offset Well</em> and <em>Current Well</em> charts. <a href="#ImportLogs" class="MCXref xref" data-mc-variable-override="">See "Importing data".</a></li>
+                                                <li value="4" data-mc-conditions="Snippets.Analysis_03">Use the <em>Linear Trend Line</em> tool (<img src="../../Images/Icons/Icon_trendTool_17x17.png" alt="Linear Trend Line button" title="Linear Trend Line button" class="icon" style="width: 17;height: 17;" />) or the <em>Semi-Log Trend Line</em> tool (<img src="../../Images/Icons/Icon_semilogTrendTool_17x17.png" alt="Semi-Log Trend Line button" title="Semi-Log Trend Line button" class="icon" style="width: 17;height: 17;" />) to add a trend line to normalize the data in the <em>Offset Well</em> and <em>Current Well</em> charts. <a href="TOOL_APP_NormalizeTrend.htm" class="MCXref xref" data-mc-variable-override="">See "Trend lines".</a></li>
+                                                <li value="5">
+                                                    <p>When you are finished editing the experiment, click the <em>Save Changes</em> button (<img src="../../Images/Icons/Icon_save_17x17.png" title="Save Changes button" alt="Save Changes button" class="icon" style="width: 17;height: 17;" />).</p>
+                                                </li>
+                                            </ol>
+                                            <p data-mc-conditions="Snippets.Analysis_03">The calculated gradients for pore pressure, overburden pressure, and hydrostatic pressure will be updated in the <em>Results</em> chart. The imported data and trend lines will be saved to the experiment.</p>
+                                            <h2><a name="kanchor35"></a><a name="ImportLogs"></a>Importing data</h2>
+                                            <p data-mc-conditions="Snippets.Analysis_03">On the <em>Pore Pressure</em> tab, there are four types of log data you can use to calculate pore pressure: drilling exponent (DXC), resistivity, sonic, and neutron porosity.</p>
+                                            <p>You can import LAS and CSV files into the <span class="lowerCase mc-variable Snippets.TOOL_CalcType variable">Pore Pressure</span> charts. The import data must be formatted into vertical columns, with the column names in the first row. The options listed for the <em>Value axis</em> are automatically determined by <span class="mc-variable App_Properties.AppModule variable">Victus™ Simulation</span>, based on the column names in the first row of the import file.</p>
+                                            <p>To import <span class="lowerCase mc-variable Snippets.TOOL_CalcType variable">Pore Pressure</span> data:</p>
+                                            <p class="inset"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../Images/Tools/PP/PorePressure/TOOL_APP_ImportLog.png" data-mc-popup-alt="Options for importing log data"><img class="MCPopupThumbnail img imgthumb160px" data-mc-width="228" data-mc-height="521" src="../../Images/Tools/PP/PorePressure/TOOL_APP_ImportLog.png" alt="Options for importing log data" title="Options for importing log data" tabindex="" style="max-width: 160px;" /></a>
+                                            </p>
+                                            <ol>
+                                                <li value="1">
+                                                    <p>Select the experiment you want to edit, then click the <em>Edit</em> button (<img src="../../Images/Icons/Icon_edit-item_17x17.png" title="Edit button" alt="Edit button" class="icon" style="width: 17;height: 17;" />).</p>
+                                                </li>
+                                                <li value="2">Go to the chart you want to import data into, then click the <em>Import</em> button (<img src="../../Images/Icons/Icon_import_17x17.png" alt="Import button" title="Import button" class="icon" style="width: 17;height: 17;" />).</li>
+                                                <li value="3">Navigate to the file you want to import and click <em>Open</em>. A list of import options will appear on top of the graph. </li>
+                                                <li value="4">Select the options for the TVD data in the file you are importing.<ul><li>The <em>TVD axis</em> is the name of the column for TVD.</li><li>The <em>TVD unit</em> is the measurement unit used for TVD.</li></ul></li>
+                                                <li value="5">Select the options for the type of log data you want to import.<ul><li>The <em>Value axis</em> is the name of the column that contains the log data.</li><li>The <em>Log type</em> is type of log data you're importing<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_03"> (e.g. resistivity or neutron porosity)</MadCap:conditionalText>.</li></ul></li>
+                                                <li value="6">Select the options for the measurement unit.<ul><li>The <em>Value unit type</em> is the type of measurement unit used for the log data.</li><li>The <em>Value unit</em> is the measurement unit used for the log data.</li></ul></li>
+                                                <li value="7">Change the default line and symbol options as desired.</li>
+                                                <li value="8">Click the <em>OK</em> button (<img src="../../Images/Icons/Icon_select_17x17.png" class="icon" alt="OK button" title="OK button" style="width: 17;height: 17;" />) to save your changes.</li>
+                                            </ol>
+                                            <p>The log data will be imported into <span class="mc-variable App_Properties.AppModule variable">Victus™ Simulation</span>, and the data will be graphed in the selected chart. When you are finished editing the experiment, click the <em>Save Changes</em> button (<img src="../../Images/Icons/Icon_save_17x17.png" title="Save Changes button" alt="Save Changes button" class="icon" style="width: 17;height: 17;" />).</p>
+                                            <h2><a name="kanchor36"></a><a name="UseTab"></a>Using the Pore Pressure tab</h2>
+                                            <p>When you are editing an experiment, the toolbar at the bottom of the <em><span class="mc-variable Snippets.GUI_TabName variable">Pore Pressure</span></em> tab contains tools for refining the data in the charts. To unlock an experiment for editing, click the <em>Edit</em> button (<img src="../../Images/Icons/Icon_edit-item_17x17.png" title="Edit button" alt="Edit button" class="icon" style="width: 17;height: 17;" />).</p>
+                                            <table>
+                                                <caption>Toolbar on the <em><span class="mc-variable Snippets.GUI_TabName variable">Pore Pressure</span></em> tab</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Button</th>
+                                                        <th>Function</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td alt="Pointer button" title="Pointer button">
+                                                            <img src="../../Images/Icons/Icon_pointer_20x20.png" title="Pointer button" alt="Pointer button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Turns off the selected tool so that the mouse doesn't have any special functions</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_03">
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_trendTool_20x20.png" alt="Linear Trend Line button" title="Linear Trend Line button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Adds a linear trend line to the selected graph. Trend lines are used to normalize log data. <a href="TOOL_APP_NormalizeTrend.htm" class="MCXref xref" data-mc-variable-override="">See "Trend lines".</a></td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_03">
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_semilogTrendTool_20x20.png" alt="Semi-Log Trend Line button" title="Semi-Log Trend Line button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Adds an exponential trend line to the selected graph. Trend lines are used to normalize log data. <a href="TOOL_APP_NormalizeTrend.htm" class="MCXref xref" data-mc-variable-override="">See "Trend lines".</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_edit_20x20.png" class="icon" title="Edit button" alt="Edit button" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Allows you to edit the settings for the selected chart or an item on a chart</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_delete-Btn_20x20.png" title="Delete button" alt="Delete button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Deletes the selected item from a chart</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_delete-all_20x20.png" class="icon" alt="Delete All button" title="Delete All button" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Deletes all items from the selected chart</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_cancel-changes_20x20.png" title="Cancel Editing button" alt="Cancel Editing button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Locks the experiment for editing, without saving any changes</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="../../Images/Icons/Icon_save_20x20.png" title="Save Changes button" alt="Save Changes button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Locks the experiment for editing and saves all changes</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>Each chart also has its own set of toolbar buttons at the bottom of the chart.</p>
+                                            <table>
+                                                <caption>Chart toolbar on the <em><span class="mc-variable Snippets.GUI_TabName variable">Pore Pressure</span></em> tab</caption>
+                                                <col />
+                                                <col />
+                                                <thead>
+                                                    <tr>
+                                                        <th>Button</th>
+                                                        <th>Function</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr data-mc-conditions="Snippets.Analysis_02,Snippets.Analysis_03">
+                                                        <td alt="Pointer button" title="Pointer button">
+                                                            <img src="../../Images/Icons/Icon_utility_20x20.png" alt="Settings button" title="Settings button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Opens the calculation settings for the <em>Results</em> chart.<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_03"> <a href="TOOL_APP_CalcSettings.htm" class="MCXref xref" data-mc-variable-override="">See "Pore pressure calculation settings".</a></MadCap:conditionalText></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td alt="Pointer button" title="Pointer button">
+                                                            <img src="../../Images/Icons/Icon_import_20x20.png" alt="Import button" title="Import button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Imports log data into the <em>Offset Well</em> or <em>Current Well</em> charts.<MadCap:conditionalText data-mc-conditions="Snippets.Analysis_03"> <a href="#ImportLogs" class="MCXref xref" data-mc-variable-override="">See "Importing data".</a></MadCap:conditionalText></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td alt="Pointer button" title="Pointer button">
+                                                            <img src="../../Images/Icons/Icon_exportGraphs_20x20.png" class="icon" alt="Export Data button" title="Export Data button" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Exports the data for the selected chart into a CSV file</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_02,Snippets.Analysis_03">
+                                                        <td alt="Pointer button" title="Pointer button">
+                                                            <img src="../../Images/Icons/Icon_alphabetEP_20x20.png" class="icon" title="Pressure/Gradient button" alt="Pressure/Gradient button" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Switches between the gradient and pressure views in the <em>Results</em> chart.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Snippets.Analysis_03">
+                                                        <td alt="Pointer button" title="Pointer button">
+                                                            <img src="../../Images/Icons/Icon_options_20x20.png" title="Options button" alt="Options button" class="icon" style="width: 20;height: 20;" />
+                                                        </td>
+                                                        <td>Opens the list of available calculation methods for the imported data</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div>
+				© <span class="mc-variable App_Properties.CurrentYear variable">2025</span> Weatherford
+			</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="../../General/KB/KB_About.htm" title="Victus™ Simulation Knowledge Base" alt="Victus™ Simulation Knowledge Base">Knowledge Base</a>
+                                                </li>
+                                                <li><a href="../../QuickStart/QS_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                </li>
+                                                <li><a href="../../General/MC2_Support.htm" title="Support" alt="Support">Support</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
