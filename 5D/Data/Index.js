@@ -1,1 +1,0 @@
-define({numchunks:1,prefix:'Index_Chunk',terms:[{t:'Lease Lines',c:0,$:0},{t:'Site Data',c:0,$:0},{t:'Slot Data',c:0,$:0},{t:'Slot Templates',c:0,$:1}]});

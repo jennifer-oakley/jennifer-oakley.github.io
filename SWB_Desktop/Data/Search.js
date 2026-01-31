@@ -1,1 +1,0 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/General/SWB_About.htm'],s:['\u0027ll'],p:[['+',2]]});
