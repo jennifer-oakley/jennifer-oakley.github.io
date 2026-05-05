@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="" data-mc-conditions="Outputs.SWB Desktop" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Web Integration" data-mc-conditions="Outputs.SWB Desktop" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="description" content="This section guides you through the basic steps for using SWB Orchestrator with Surveyor's Workbench, including creating SWB Orchestrator jobs and runs, connecting runs to Surveyor's Workbench, and sending corrections from Surveyor's Workbench to SWB Orchestrator." /><title>Web Integration</title>
+        <meta name="description" content="The first step is to create the job in SWB Orchestrator. A job contains all of the runs for a well. A run is a drilling section of the well and the equivalent of an Surveyor's Workbench project. The Dashboard page in SWB Orchestrator lists all of the active runs for the RTOC center. From the Dashboard page, you can create new jobs, add runs to a job, assign rig users ..." /><title>Creating Orchestrator Jobs</title>
         <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
@@ -145,7 +145,7 @@
                                     </header>
                                     <section class="body">
                                         <div role="main" id="mc-main-content">
-                                            <h1>Web Integration</h1>
+                                            <h1 class="QuickStart" style="mc-auto-number-format: 'Step {Sn=1}: ';" data-mc-autonum="Step 1: "><span class="autonumber"><span>Step 1: </span></span>Creating Orchestrator Jobs</h1>
                                             <div class="sidebar" data-mc-conditions="Outputs.Online">
                                                 <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/SWB_Desktop.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
                                                 </ul>
@@ -153,45 +153,31 @@
                                                     <div class="MCDropDownBody dropDownBody">
                                                         <div class="MCHelpControl MCHelpControl-Related relatedTopics" style="mc-use-custom-sort-order: true;"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
                                                             <ul class="MCHelpControlList MCRelatedTopicsControlList">
-                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../SWB Web/Demos/VID_RTOCUser_Intro.htm">Demo: Introduction to SWB Orchestrator</a>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../SWB_Web/Demos/VID_RTOCUser_CreateJob.htm">Demo: Creating jobs in SWB Orchestrator</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
-                                                <div class="MCDropDownBody dropDownBody">
-                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About SWB Orchestrator</a>
-                                                    </p>
-                                                    <p><a href="#Basics" class="sectionLink MCXref xref xrefsectionLink">Basics of SWB Orchestrator</a>
-                                                    </p>
-                                                </div>
+                                            <p>The first step is to create the job in <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>. A job contains all of the runs for a well. A run is a drilling section of the well and the equivalent of an <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span> project. The <em>Dashboard</em> page<MadCap:conditionalText data-mc-conditions="Outputs.SWB Desktop"> in <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span></MadCap:conditionalText> lists all of the active runs for the RTOC center. From the <em>Dashboard</em> page, you can create new jobs, add runs to a job, assign rig users to a run, and upload data to a run.</p>
+                                            <p>To create a new job:</p>
+                                            <div class="right">
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../SWB_Web/Images/RTOC_User/DASH_AddJob_01.png" data-mc-popup-alt="Screenshot of the Create Job &amp; Run wizard, with numeric markers next to the Add Job section, the Add Runs Details section, and the Save &amp; Next button"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="1341" data-mc-height="820" src="../../SWB_Web/Images/RTOC_User/DASH_AddJob_01.png" alt="Screenshot of the Create Job &amp; Run wizard, with numeric markers next to the Add Job section, the Add Runs Details section, and the Save &amp; Next button" title="Screenshot of the Create Job &amp; Run wizard, with numeric markers next to the Add Job section, the Add Runs Details section, and the Save &amp; Next button" tabindex="" style="max-width: 340px;" /></a>
+                                                </p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../SWB_Web/Images/RTOC_User/DASH_AddJob_02.png" data-mc-popup-alt="Screenshot of the Create Job &amp; Run wizard, with numeric markers next to the User field and the Save button"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="1310" data-mc-height="820" src="../../SWB_Web/Images/RTOC_User/DASH_AddJob_02.png" alt="Screenshot of the Create Job &amp; Run wizard, with numeric markers next to the User field and the Save button" title="Screenshot of the Create Job &amp; Run wizard, with numeric markers next to the User field and the Save button" tabindex="" style="max-width: 340px;" /></a>
+                                                </p>
                                             </div>
-                                            <h2><a name="About"></a>About <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span></h2>
-                                            <p><span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span> is a web-based application allows the RTOC and the rig to easily share surveys and corrections. Rig engineers upload the raw survey data and FMS files to <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>, which can be downloaded by the RTOC. The RTOC uses the raw survey data and FMS files uploaded by rig engineers to perform MSA analysis and sag correction, then sends the corrections from <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span> to <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>.</p>
-                                            <p>This section guides you through the basic steps for using <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span> with <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>, including creating <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span> jobs and runs, connecting runs to <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>, and sending corrections from <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span> to <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>.</p>
-                                            <p>There are six basic steps for using <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span> with <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>:</p>
                                             <ol>
-                                                <li value="1">Create the job and run in <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>. <a href="WEB_AddJob.htm" class="MCXref xref">See "Creating Orchestrator Jobs".</a></li>
-                                                <li value="2">Connect the run to <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span> by creating a new Orchestrator project. <a href="WEB_NewProj.htm" class="MCXref xref">See "Connecting Runs to Surveyor's Workbench".</a></li>
-                                                <li value="3">Change the run mode in <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span> and <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>. <a href="WEB_RunMode.htm" class="MCXref xref">See "Changing the Run Mode".</a></li>
-                                                <li value="4">Run MSA and sag corrections in <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>. <a href="WEB_RunMSA.htm" class="multiple_first MCXref xref xrefmultiple_first">See "Running MSA Corrections"</a> and <a href="WEB_RunSag.htm" class="multiple_last MCXref xref xrefmultiple_last">"Running Sag Corrections".</a></li>
-                                                <li value="5">Send the corrections from <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span> to <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>. <a href="WEB_SendCorr.htm" class="MCXref xref">See "Sending Corrections".</a></li>
-                                                <li value="6">Close the run and add a new one if needed. <a href="WEB_CloseRun.htm" class="MCXref xref">See "Closing and Adding Runs".</a></li>
+                                                <li value="1">Go to the <em>Dashboard</em> page and click the <em>Create Job</em> button at the top of the screen.</li>
+                                                <li value="2">In the <em>Create Job &amp; Run</em> window that opens, enter the job details under the <em>Add Job</em> section.</li>
+                                                <li value="3">In the <em>Add Run Details</em> section, enter the run number and the size of the open hole section.</li>
+                                                <li value="4">Click the <em>Add Run</em> button.</li>
+                                                <li value="5">Click the <em>Save &amp; Next</em> button.</li>
+                                                <li value="6">On the <em>Assign Rig User(s)</em> screen, go to the <em>Users</em> field and select the users you want to assign to the job.</li>
+                                                <li value="7">Click the <em>Save</em> button to save your changes and create the job.</li>
                                             </ol>
-                                            <h2><a name="Basics"></a>Basics of <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span></h2>
-                                            <p class="right">
-                                            </p>
-                                            <p>The <em>Dashboard</em> page<MadCap:conditionalText data-mc-conditions="Outputs.SWB Desktop"> in <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span></MadCap:conditionalText> lists all of the active runs for the RTOC center. From the <em>Dashboard</em> page, you can create new jobs, add runs to a job, assign rig users to a run, and upload data to a run. A job contains all of the runs for a well. A run is a drilling section of the well and the equivalent of an <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span> project.</p>
-                                            <p>The table on the <em><span class="mc-variable App_Properties.PgName_Dashboard variable">Dashboard</span></em> page shows the status of the active runs, as well as other information about each run. The status of an active run is updated automatically when rig users are assigned to the job, survey data is received, or correction files are sent.</p>
-                                            <ul>
-                                                <li><em>Waiting For Surveys</em> – The rig users have been assigned to the job, but no survey data has been received.</li>
-                                                <li><em>SWB Processing</em> – The RTOC has received the surveys and is analyzing the data.</li>
-                                                <li>– The raw survey data was uploaded and attached to the run by a rig user. When a rig user uploads survey data, the run status will be automatically updated.</li>
-                                                <li>– The correction file was uploaded and attached to the run by an RTOC user. When an RTOC user uploads corrections for the run, the run status will be automatically updated.</li>
-                                            </ul>
-                                            <p>All files uploaded for a run are stored in the SWB file share. A folder will be created for the job, using the job number for the folder name. Each run will have its own folder within the folder for the job. When a new run is created, all of the survey and FMS files for the previous run will be copied the new run folder.</p>
+                                            <p>The new job will be created, and the first run will be listed on the <em>Dashboards</em> page. The run status will be set to <em>Waiting For Surveys</em> until the raw survey data is uploaded. After the raw survey data is received, you'll need to connect the run to <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>.<MadCap:conditionalText data-mc-conditions="Outputs.SWB Desktop"> <a href="WEB_NewProj.htm" class="MCXref xref">See "Connecting Runs to Surveyor's Workbench".</a></MadCap:conditionalText></p>
                                         </div>
                                     </section>
                                     <footer>

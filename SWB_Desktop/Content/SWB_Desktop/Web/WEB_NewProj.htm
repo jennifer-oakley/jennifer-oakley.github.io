@@ -4,8 +4,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="description" content="After you've finished processing the survey data and sent the corrections for a run, you can close the run in SWB Orchestrator. If there are additional runs for the well, you can add a new run to the same job." /><title>Closing and Adding Runs</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Connecting Runs to Surveyor's Workbench</title>
         <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
@@ -145,7 +144,7 @@
                                     </header>
                                     <section class="body">
                                         <div role="main" id="mc-main-content">
-                                            <h1 class="QuickStart" data-mc-autonum="Step 7: "><span class="autonumber"><span>Step 7: </span></span>Closing and Adding Runs</h1>
+                                            <h1 class="QuickStart" data-mc-autonum="Step 2: "><span class="autonumber"><span>Step 2: </span></span>Connecting Runs to <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span></h1>
                                             <div class="sidebar" data-mc-conditions="Outputs.Online">
                                                 <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/SWB_Desktop.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
                                                 </ul>
@@ -153,50 +152,30 @@
                                                     <div class="MCDropDownBody dropDownBody">
                                                         <div class="MCHelpControl MCHelpControl-Related relatedTopics" style="mc-use-custom-sort-order: true;"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
                                                             <ul class="MCHelpControlList MCRelatedTopicsControlList">
-                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../SWB Web/Demos/VID_RTOCUser_AddRun.htm">Demo: Closing and adding runs</a>
+                                                                <li class="MCHelpControlListItem MCRelatedTopicsControlListItem"><a class="MCHelpControlListItemLink MCRelatedTopicsControlListItemLink" href="../../SWB_Web/Demos/VID_RTOCUser_CreateWebProj.htm">Demo: Creating Orchestrator projects</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />In this article</a></span>
+                                            <p>After the raw survey data is received, you'll need to connect the run to <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>. When you load the raw survey data into <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>, the run status will be automatically updated in <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>.</p>
+                                            <p>To connect a <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span> project to <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>:</p>
+                                            <ol>
+                                                <li value="1">In <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>, go to the <em>Dashboard</em> page and copy the project ID for the run.</li>
+                                                <li value="2">In <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>, go to <em>File</em> &gt; <em>New Orchestrator Project</em>.</li>
+                                                <li value="3">In the <em>New Orchestrator Project</em> window that opens, enter a name for the project in the <em>SWB Project Name</em> field.</li>
+                                                <li value="4">In the <em>Project ID</em> field, paste the project number that you copied from <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>.</li>
+                                                <li value="5">In the <em>Orchestrator URL</em> field, select the URL for the RTOC.</li>
+                                                <li value="6">Click the <em>OK</em> button.</li>
+                                                <li value="7">In the window that opens, sign in with your RTOC account.</li>
+                                            </ol>
+                                            <p>The Orchestrator project will open in <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>. If you have the SWB file share mapped, click the <em>Load File</em> button to load the most recently uploaded survey. Otherwise, you can manually load the survey file.<MadCap:conditionalText data-mc-conditions="Outputs.SWB Desktop"> <a href="../Inputs/INP_RawData.htm" class="MCXref xref">See "Raw Survey Data".</a></MadCap:conditionalText></p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown dropDownnote"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_note MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Note</a></span>
                                                 <div class="MCDropDownBody dropDownBody">
-                                                    <p><a href="#About" class="sectionLink MCXref xref xrefsectionLink">About closing and adding runs</a>
-                                                    </p>
-                                                    <p><a href="#CloseRun" class="sectionLink MCXref xref xrefsectionLink">Closing a run</a>
-                                                    </p>
-                                                    <p><a href="#AddRun" class="sectionLink MCXref xref xrefsectionLink">Adding runs to a job</a>
-                                                    </p>
+                                                    <p>You must be connected to the Weatherford network in to connect to <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span> through <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>.</p>
                                                 </div>
                                             </div>
-                                            <h2><a name="About"></a>About closing and adding runs</h2>
-                                            <p>After you've finished processing the survey data and sent the corrections for a run, you can close the run in <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>. If there are additional runs for the well, you can add a new run to the same job.</p>
-                                            <ul>
-                                                <li><strong>Closing runs</strong> – When you close a run, the run will be moved to the <em>Archives</em> page in <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>. It will also be removed from the rig dashboard for the users assigned to the job.<MadCap:conditionalText data-mc-conditions="Outputs.SWB Desktop"> <a href="#CloseRun" class="MCXref xref" data-mc-variable-override="">See "Closing a run".</a></MadCap:conditionalText></li>
-                                                <li><strong>Adding runs</strong> – If there are additional runs for the well, you can add a new run at the same time that you close the previous run. When you add a new run, the survey files and FMS data from the previous run are copied to the new run's folder on the SWB file share.<MadCap:conditionalText data-mc-conditions="Outputs.SWB Desktop"> <a href="#AddRun" class="MCXref xref" data-mc-variable-override="">See "Adding runs to a job".</a></MadCap:conditionalText></li>
-                                            </ul>
-                                            <h2><a name="CloseRun"></a>Closing a run</h2>
-                                            <p>To close a run:</p>
-                                            <ol>
-                                                <li value="1">Go to the <em>Dashboard</em> page and click the <em>Edit Job</em> button (<img src="../../SWB Web/Images/Icons/Icon_pi-pencil_17x17.png" title="Edit Job button" alt="Edit Job button" class="icon" style="width: 17;height: 17;" />) in the row for the active run.</li>
-                                                <li value="2">Locate the run you want to edit in the <em>Add Runs Details</em> section. The active run will be highlighted in green.</li>
-                                                <li value="3">Go to the <em>Run Status</em> field and select the <em>Closed</em> option.</li>
-                                                <li value="4">Click the <em>Save</em> button to save your changes and close the run.</li>
-                                            </ol>
-                                            <p>The <span class="mc-variable Snippets.GUI_ItemType variable">run</span> will be moved from the <em>Dashboard</em> page to the <em>Archives</em> page.  The <span class="mc-variable Snippets.GUI_ItemType variable">run</span> will also be removed from the rig dashboard for the users assigned to the job.  The run status will be changed to <em>Run Closed</em>. If there are no more active runs for the job, the job will still be listed on the <em>Dashboard</em> page, but without any active runs.</p>
-                                            <h2><a name="AddRun"></a>Adding runs to a job</h2>
-                                            <p>To add a run to an existing job:</p>
-                                            <p class="right">
-                                            </p>
-                                            <ol>
-                                                <li value="1">Go to the <em>Dashboard</em> page and click the <em>Edit Job</em> button (<img src="../../SWB Web/Images/Icons/Icon_pi-pencil_17x17.png" title="Edit Job button" alt="Edit Job button" class="icon" style="width: 17;height: 17;" />) in the row for the active run.</li>
-                                                <li value="2">Go to the <em>Add Runs Details</em> section and enter the run number and the size of the open hole section. </li>
-                                                <li value="3">Click the <em>Add Run</em> button.</li>
-                                                <li value="4">Click the <em>Save</em> button to save your changes and create the run.</li>
-                                            </ol>
-                                            <p>In <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>, the new run will be added to the list of runs in the <em>Edit Job &amp; Run</em> window and the <em>Dashboard</em> page. The run status will be set to <em>Waiting For Surveys</em> until the raw survey data is uploaded, and the run mode will be set to <em>Calibration</em> mode. All of the survey and FMS files for the previous run will be copied to the run folder on the SWB file share.</p>
-                                            <p>When you add a new run, the survey files and FMS data from the previous run are copied to the new run's folder on the SWB file share. You'll also need to create a new <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span> project for the new run. <a href="WEB_NewProj.htm" class="MCXref xref">See "Connecting Runs to Surveyor's Workbench".</a></p>
                                         </div>
                                     </section>
                                     <footer>

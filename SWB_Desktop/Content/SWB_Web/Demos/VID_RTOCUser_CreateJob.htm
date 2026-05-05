@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Web Integration" data-mc-conditions="Outputs.SWB Desktop" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="sidebarPage _Skins_Top_Nav_MainSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Welcome|Interactive Demos|Web Integration" data-mc-conditions="Outputs.RTOC_User,Outputs.SWB Desktop" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Changing the Run Mode</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="This demonstration explains how to create a job with a run and assign users to the job." /><title>Demo: Creating jobs in SWB Orchestrator</title>
         <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
@@ -57,7 +58,7 @@
                                 </div>
                             </div>
                             <div class="title-bar-layout outer-row">
-                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                <div class="logo-wrapper"><a class="logo" href="../../SWB_Desktop/Home.htm" alt="Logo"></a>
                                 </div>
                                 <div class="navigation-wrapper nocontent">
                                     <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
@@ -116,8 +117,6 @@
                                             </div>
                                         </div>
                                     </nav>
-                                    <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/SWB_Desktop.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
-                                    </ul>
                                     <header>
                                         <p><span class="mc-variable App_Properties.AppFull variable">Surveyor's Workbench</span> Help Center</p>
                                         <nav>
@@ -146,24 +145,29 @@
                                     </header>
                                     <section class="body">
                                         <div role="main" id="mc-main-content">
-                                            <h1 class="QuickStart" data-mc-autonum="Step 3: "><span class="autonumber"><span>Step 3: </span></span>Changing the Run Mode</h1>
-                                            <p>A run is a drilling section of the well and the equivalent of an <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span> project. In addition to the run status, there are also two run modes:</p>
-                                            <ul>
-                                                <li>In <em>Calibration</em> mode, the RTOC is gathering data and waiting for a sufficient number surveys to run MSA analysis and sag corrections. When you load a survey file from the run into <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>, the run status will reset to <em>Waiting For Surveys</em>.</li>
-                                                <li>In <em>Real-time</em> mode, the RTOC has sufficient survey data to provide survey corrections. When you load a survey file from the run into <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>, the run status will change to <em>SWB&#160;Processing</em>.</li>
-                                            </ul>
-                                            <p>The default mode for all new runs is <em>Calibration</em> mode. To change the run mode to <em>Real-time</em> mode, the run mode must be changed in both <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span> and <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>.</p>
-                                            <p>To change the run mode:</p>
-                                            <p class="right"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../SWB Web/Images/RTOC_User/RUN_ChgMode.png" data-mc-popup-alt="Screenshot of the Edit Job &amp; Run window, with numeric markers next to the run listing, the Run Mode field, and the Save button"><img class="MCPopupThumbnail img imgthumb340px" data-mc-width="1345" data-mc-height="820" src="../../SWB Web/Images/RTOC_User/RUN_ChgMode.png" alt="Screenshot of the Edit Job &amp; Run window, with numeric markers next to the run listing, the Run Mode field, and the Save button" title="Screenshot of the Edit Job &amp; Run window, with numeric markers next to the run listing, the Run Mode field, and the Save button" tabindex="" style="max-width: 340px;" /></a>
+                                            <h1>Demo: Creating jobs in <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span></h1>
+                                            <div class="sidebar" data-mc-conditions="Outputs.Online">
+                                                <ul class="nocontent menu _Skins_Top_Nav_Menu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/SWB_Desktop.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownsidebar"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_sidebar MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Related Topics</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>
+                                                            <div class="MCHelpControl MCHelpControl-Related relatedTopics" data-mc-topics="" style="mc-use-custom-sort-order: true;" data-mc-display-type="list" data-mc-use-custom-sort-order="true"><span class="MCHelpControl-RelatedHotSpot_">Related Topics</span>
+                                                            </div>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>This demonstration explains how to create a job with a run and assign users to the job.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown dropDownnote"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_note MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Note</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Links to Tourials have been deliberately broken, due to NDA requirements.</p>
+                                                </div>
+                                            </div>
+                                            <p><iframe src="https://tours.datagration.com/pages/" scrolling="no"></iframe>
                                             </p>
-                                            <ol>
-                                                <li value="1">In <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>, click the <em>Calibration</em> button at the top of the screen. The button text will change to <em>Real Time</em>.</li>
-                                                <li value="2">In <span class="mc-variable App_Properties.AppWeb variable">SWB Orchestrator</span>, go to the <em>Dashboard</em> page and click the <em>Edit Job</em> button (<img src="../../SWB Web/Images/Icons/Icon_pi-pencil_17x17.png" title="Edit Job button" alt="Edit Job button" class="icon" style="width: 17;height: 17;" />) in the row for the run.</li>
-                                                <li value="3">Locate the run you want to edit in the <em>Add Runs Details</em> section. The active run will be highlighted in green.</li>
-                                                <li value="4">Go to the <em>Run Mode</em> field and select the <em>Real-time</em> option.</li>
-                                                <li value="5">Click the <em>Save</em> button to save your changes.</li>
-                                            </ol>
-                                            <p>The run mode will be changed to <em>Real-time</em> mode. The next time you load a survey into <span class="mc-variable App_Properties.AppDesktop variable">Surveyor's Workbench</span>, the run status will change to <em>SWB&#160;Processing</em>.</p>
+                                            <p><a href="https://tours.datagration.com/pages/" target="_blank">Open in full screen</a>
+                                            </p>
                                         </div>
                                     </section>
                                     <footer>
@@ -172,7 +176,7 @@
 			</div>
                                         <nav>
                                             <ul>
-                                                <li data-mc-conditions="Outputs.SWB Desktop"><a href="../QuickStart/QS_Desktop_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
+                                                <li data-mc-conditions="Outputs.SWB Desktop"><a href="../../SWB_Desktop/QuickStart/QS_Desktop_About.htm" title="Quick Start" alt="Quick Start">Quick Start</a>
                                                 </li>
                                                 <li><a href="../../General/SWB_Support.htm" title="Support" alt="Support">Support</a>
                                                 </li>
