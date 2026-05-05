@@ -1,0 +1,1 @@
+define({'FMS':{d:'Field Monitoring Station',l:''},'IFR':{d:'In-Field Reference',l:''},'MSA':{d:'Multi-Station Analysis',l:''}});
