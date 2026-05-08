@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWB Case Study — Jennifer Oakley</title>
+  <meta name="description" content="Case study: Surveyor's Workbench Help Center. Greenfield documentation for a modernizing survey correction platform — desktop, web, and everything in between." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://jennifer-oakley.github.io/swb-case-study.html" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">Jennifer <span>Oakley</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="resume.html">Résumé</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Get in touch</a></li>
+    </ul>
+  </nav>
+
+  <div class="cs-hero">
+    <div class="cs-hero-inner">
+      <p class="hero-eyebrow">Case Study · User Guide &amp; Help System</p>
+      <h1>Surveyor's Workbench<br>Help Center</h1>
+      <p class="cs-hero-sub">Greenfield documentation for a modernizing survey correction platform — built from scratch in two directions simultaneously, in a technical domain I had to learn from zero.</p>
+
+      <div class="cs-meta-row">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Client</span>
+          <span class="cs-meta-value">Weatherford International</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Industry</span>
+          <span class="cs-meta-value">Oil &amp; Gas / Drilling Software</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Role</span>
+          <span class="cs-meta-value">Sole Technical Writer</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Timeline</span>
+          <span class="cs-meta-value">~2 years (ongoing)</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Tools</span>
+          <span class="cs-meta-value">MadCap Flare, Tourial, SnagIt, Azure DevOps</span>
+        </div>
+      </div>
+
+      <div class="cs-disclaimer">
+        <strong>Note:</strong> The linked samples are sanitized excerpts of the SWB help system — not the complete user guides — and have been modified for NDA compliance. Screenshots have been removed; all other content is intact.
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-body">
+
+    <div class="cs-section">
+      <p class="section-label section-label--dark">Background</p>
+      <h2>Two documentation problems at once, in a domain I'd never touched.</h2>
+      <p>Surveyor's Workbench (SWB) is Weatherford's survey correction platform, used by Real-Time Operations Center (RTOC) engineers to apply Multi-Station Analysis (MSA) and sag corrections to raw MWD survey data — ensuring that borehole position and orientation measurements are as accurate as possible during active drilling operations. Getting these corrections right matters: they feed directly into well positioning, anti-collision calculations, and steering decisions.</p>
+      <p>When I came onto the project, the situation was this: SWB Desktop had been in use for years, supported by a 2015 field instruction document that covered some procedures and conceptual background but had no field definitions, hadn't been updated in nearly a decade, and wasn't a user guide in any meaningful sense. At the same time, a new web-based application — SWB Orchestrator — had just been developed as the first phase of a modernization effort, and had no documentation whatsoever.</p>
+      <p>Both problems needed solving. Simultaneously. In a technical domain I was starting from scratch in.</p>
+    </div>
+
+    <div class="cs-section">
+      <p class="section-label section-label--dark">The Domain Challenge</p>
+      <h2>Learning a completely new class of survey data — from the physics up.</h2>
+      <p>Surveys had been part of my work on CENTRO Engineer, but in a limited way — well setup data expressed as measured depth, inclination, and azimuth. Three values. Straightforward.</p>
+      <p>SWB operates on a fundamentally different class of survey data. Instead of processed inclination and azimuth values, it works with raw six-axis sensor readings: three magnetic field components (Bx, By, Bz) and three gravitational components (Gx, Gy, Gz). These are used to identify and correct for magnetic interference from the drill string, sensor misalignment, and the physical deflection of the BHA under gravity — the sag effect — all of which introduce error into borehole position calculations if left uncorrected.</p>
+
+      <div class="cs-callout">
+        <p class="cs-callout-title">What domain learning actually looks like</p>
+        <p>Understanding MSA correction well enough to document it meant learning why it's necessary (magnetic interference from the BHA corrupts raw survey data), how it works (iterative statistical optimization across multiple survey stations), what can go wrong (one bad survey can corrupt the entire solution), and what the outputs mean (corrected azimuth and inclination values with quantified uncertainty). None of this came from a manual. It came from developer conversations, SME sessions, the 2015 field instruction, and a lot of time with the software itself.</p>
+      </div>
+
+      <p>This is the part of technical writing that doesn't show up on a resume: the months of learning that happen before a single topic gets written. By the time the SWB documentation was complete, I understood survey correction well enough to explain it to an RTOC engineer who'd never used the software — which is exactly what the documentation needed to do.</p>
+    </div>
+
+    <div class="cs-section">
+      <p class="section-label section-label--dark">Information Architecture</p>
+      <h2>Five roles. Four guides. One Flare project.</h2>
+      <p>SWB Orchestrator presents a different user experience depending on the role assigned to your account. The five roles — Super User, RTOC Admin, RTOC User, Rig Engineer, and Rig User — each see a different interface with different capabilities. A single monolithic user guide would have been nearly useless: every user would spend most of their time reading content that didn't apply to them.</p>
+      <p>The solution was role-based user guides: separate help outputs for each role, where clicking Help opened the guide specific to your account type. In practice, this meant four guides — Super User and RTOC Admin have limited scope and lower user counts, so their documentation is appropriately scoped — with the primary depth invested in the RTOC User and Rig Engineer guides, which cover the core workflows the platform is built around.</p>
+      <p>The Rig User role presented a content reuse opportunity: Rig Users have identical access to Rig Engineers, but everything is read-only. Rather than maintaining a separate guide, I built the Rig Engineer guide and used MadCap Flare conditions to filter out any content that didn't apply to read-only users. One source, two outputs, no duplication.</p>
+
+      <div class="cs-stat-row">
+        <div class="cs-stat">
+          <span class="cs-stat-number">5</span>
+          <span class="cs-stat-desc">User roles, each with a distinct application experience</span>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat-number">4</span>
+          <span class="cs-stat-desc">Role-based user guides produced from a single Flare project</span>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat-number">~120</span>
+          <span class="cs-stat-desc">Topics across SWB Desktop and SWB Orchestrator combined</span>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat-number">~25</span>
+          <span class="cs-stat-desc">Tourial interactive demos produced and integrated into the help system</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-section">
+      <p class="section-label section-label--dark">Featured Work</p>
+      <h2>SWB Orchestrator: greenfield documentation for a brand-new application.</h2>
+      <p>SWB Orchestrator had no prior documentation — no field instruction, no internal wiki, nothing. Every topic was written from scratch, starting with a fundamental question: what does this application actually do, and in what order do users do it?</p>
+      <p>The answer required working through the complete workflow with developers and SMEs, then validating it hands-on. The result was a structured set of role-based guides covering the full RTOC User and Rig Engineer workflows: creating jobs and runs, uploading raw survey data, connecting runs to the desktop application, processing MSA and sag corrections, sending corrections back to the web, and managing the run lifecycle.</p>
+      <p>Determining the correct workflow was itself a documentation challenge. The integration between the web application and SWB Desktop is functional but not frictionless — there are sequencing dependencies between what the rig does, what the RTOC does, and what each application's status reflects at any given moment. Getting that sequence documented accurately required understanding it at a level beyond what any single SME had articulated.</p>
+
+      <hr class="cs-rule" />
+
+      <h2>SWB Desktop: from a 2015 field instruction to a complete user guide.</h2>
+      <p>The SWB Desktop guide had a different starting point than the Orchestrator guides: a 64-page field instruction document written in 2015 that covered the MSA and sag correction workflow in reasonable procedural depth, but contained no field definitions, hadn't been updated in nearly a decade, and wasn't structured for software documentation.</p>
+      <p>The field instruction was useful raw material — it provided solid conceptual background on MSA and sag correction, and its procedural content reflected how experienced RTOC engineers actually worked. But it needed to be transformed: restructured into topic-based help, supplemented with the field definitions and UI documentation that were entirely absent, updated for a decade of software changes, and extended to cover the new web integration workflows that didn't exist when the original document was written.</p>
+      <p>The web integration section — covering how RTOC users connect SWB Desktop to SWB Orchestrator, process corrections, and send results back to the web — was written entirely from scratch. It documents a workflow that was brand new to users who had operated the desktop application in isolation for years, and required enough understanding of both applications to explain how they interact.</p>
+
+      <hr class="cs-rule" />
+
+      <h2>Interactive demos: ~25 Tourial walkthroughs, end to end.</h2>
+      <p>In addition to the written documentation, I produced approximately 25 interactive Tourial demos covering the major workflows across both SWB Orchestrator and SWB Desktop. I determined which workflows warranted demo coverage, produced each demo, and integrated them into the help system — with the SWB Orchestrator workflows prioritized first, given that the web application was entirely new to users.</p>
+      <p>The demos were built within a provided template that established the visual style and intro/outro screens. Everything else — content selection, workflow sequencing, callout text, integration into the help system — was mine. All demos are embedded directly in the user guide, accessible inline alongside the relevant written procedures.</p>
+    </div>
+
+    <div class="cs-section">
+      <p class="section-label section-label--dark">A Strategic Decision</p>
+      <h2>One Flare project for both products — by design.</h2>
+      <p>SWB Desktop and SWB Orchestrator are separate applications, and I could have maintained them in separate Flare projects. I chose not to. The SWB modernization effort will eventually bring most or all of the Desktop functionality into the web application — which means the two products will converge over time, and so will their documentation.</p>
+      <p>Keeping both in a single Flare project makes that transition easier: shared content can be reused without cross-project complexity, and updates that affect both products can be maintained in one place. It also made it straightforward to add the web integration section to the Desktop guide — a section that bridges the two products — without duplicating content that already existed in the Orchestrator guides.</p>
+      <p>It's the kind of decision that doesn't save time today but pays dividends over the life of the project.</p>
+    </div>
+
+    <div class="cs-section">
+      <p class="section-label section-label--dark">Deliverables</p>
+      <h2>What the project produced.</h2>
+
+      <div class="cs-deliverables" style="grid-template-columns: 1fr 1fr;">
+        <div class="cs-deliverable">
+          <strong>SWB Orchestrator User Guides</strong>
+          <span>Role-based guides for RTOC User, Rig Engineer, Rig User, RTOC Admin, and Super User — written entirely from scratch</span>
+        </div>
+        <div class="cs-deliverable">
+          <strong>SWB Desktop User Guide</strong>
+          <span>Complete user guide built from a 2015 field instruction, including field definitions, UI documentation, and new web integration content</span>
+        </div>
+        <div class="cs-deliverable">
+          <strong>Web Integration Documentation</strong>
+          <span>End-to-end workflow documentation for the Desktop–Orchestrator integration, written from SME interviews and hands-on discovery</span>
+        </div>
+        <div class="cs-deliverable">
+          <strong>~25 Tourial Interactive Demos</strong>
+          <span>Interactive walkthroughs covering major workflows across both applications, integrated directly into the help system</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cs-cta">
+    <h2>See the samples, or let's talk.</h2>
+    <p>The linked help systems are sanitized excerpts. Screenshots have been removed; all other content is intact.</p>
+    <div class="cs-btn-row">
+      <a class="btn btn-primary" href="https://jennifer-oakley.github.io/SWB_Desktop/Content/SWB_Desktop/Home.htm" target="_blank" rel="noopener">View Desktop sample ↗</a>
+      <a class="btn btn-ghost" href="index.html#contact">Get in touch</a>
+      <a class="btn btn-ghost" href="index.html#work">← Back to portfolio</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left">Jennifer Oakley</div>
+    <ul class="footer-right">
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="resume.html">Résumé</a></li>
+      <li><a href="https://linkedin.com/in/jenniferoakleytx" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://medium.com/@jennifer.oakleytx" target="_blank" rel="noopener">Medium</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
