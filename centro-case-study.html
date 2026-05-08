@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CENTRO Engineer Case Study — Jennifer Oakley</title>
+  <meta name="description" content="Case study: CENTRO Engineer Help Center. A decade of documentation work on a real-time drilling engineering platform." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://jennifer-oakley.github.io/centro-case-study.html" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">Jennifer <span>Oakley</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="resume.html">Résumé</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Get in touch</a></li>
+    </ul>
+  </nav>
+
+  <div class="cs-hero">
+    <div class="cs-hero-inner">
+      <p class="hero-eyebrow">Case Study · User Guide &amp; Help System</p>
+      <h1>CENTRO Engineer<br>Help Center</h1>
+      <p class="cs-hero-sub">A decade of documentation work on a real-time drilling engineering platform — from inherited disaster to a complete, production-grade help system.</p>
+
+      <div class="cs-meta-row">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Client</span>
+          <span class="cs-meta-value">Weatherford International</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Industry</span>
+          <span class="cs-meta-value">Oil &amp; Gas / Drilling Software</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Role</span>
+          <span class="cs-meta-value">Sole Technical Writer</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Timeline</span>
+          <span class="cs-meta-value">10+ years (ongoing)</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Tools</span>
+          <span class="cs-meta-value">MadCap Flare, C#, Camtasia, SnagIt, TFS</span>
+        </div>
+      </div>
+
+      <div class="cs-disclaimer">
+        <strong>Note:</strong> The linked sample is a sanitized excerpt of the CENTRO Engineer help system — not the complete user guide — and has been modified for NDA compliance. Proprietary workflows, client data, and certain feature details have been omitted or generalized.
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-body">
+
+    <div class="cs-section">
+      <p class="section-label section-label--dark">Background</p>
+      <h2>The project that has outlasted <em>three product names</em> and two org restructures.</h2>
+      <p>CENTRO Engineer is Weatherford's real-time drilling engineering platform — a complex application used by drilling engineers and mud engineers in the field to monitor wellbore conditions, run hydraulics and mechanics analyses, plan wells, and manage data acquisition in real time. It is not software you pick up in an afternoon.</p>
+      <p>I was brought onto the project — then called MC2 — about ten years ago to work alongside an existing technical writer. It became clear within weeks that the existing documentation wasn't salvageable. I rewrote everything from scratch. I've owned the project ever since, through a full rename to OneSync, a split into separate products with separate dev teams, another rename to CENTRO Engineer and Victus, and a significant expansion of the product portfolio.</p>
+      <p>Through all of it, I was the sole source of documentation continuity.</p>
+    </div>
+
+    <div class="cs-section">
+      <p class="section-label section-label--dark">The Problem</p>
+      <h2>Documentation written for the <em>wrong audience</em>, using the wrong tools, in the wrong way.</h2>
+      <p>The Flare project I inherited was built on a template I had originally created for another project. The previous writer had it — but clearly didn't understand how to use Flare. There was no content reuse: no snippets, no variables, no conditions. File naming was inconsistent. The project was littered with unused topics and orphaned images. The architecture was, in a word, chaotic.</p>
+      <p>The content itself had a more fundamental problem: it misunderstood who it was for. Topics that should have explained <em>how to use the software</em> instead explained basic industry concepts to specialists who had spent careers mastering those concepts. One topic — for a module used by mud engineers to configure drilling fluids — contained a lengthy explanation of what a mud balance is and how it works. Written for mud engineers. Other topics contained nothing but a screenshot.</p>
+
+      <div class="cs-callout">
+        <p class="cs-callout-title">The core failure</p>
+        <p>The previous documentation didn't distinguish between what users <em>needed to know</em> and what the writer had <em>just learned</em>. That confusion — between domain education and software documentation — produces content that's useless to experts and still doesn't explain the software. It's the most common mistake an inexperienced technical writer makes when dropped into a specialized industry.</p>
+      </div>
+
+      <p>It took two years to rewrite every topic — while simultaneously keeping pace with active development on a product that was shipping new features throughout. At the end of it, not a single word from the original documentation remained.</p>
+    </div>
+
+    <div class="cs-section">
+      <p class="section-label section-label--dark">Scope &amp; Scale</p>
+      <h2>One Flare project. <em>Five applications.</em> Multiple output formats.</h2>
+      <p>At its most complex, the single Flare project I managed produced separate user guides for five distinct applications: MC2 Monitoring, MC2 Operation, MC2 Simulation, MC2 Planning, and MC2 Player — plus MC2 Management and, later, MC2 TPS. Each application had its own audience, its own workflows, and its own documentation requirements. All of it lived in one project, managed by one writer, using conditions and content reuse to keep outputs accurate and maintainable without duplicating effort.</p>
+      <p>As the product evolved, applications were renamed, combined, retired, and eventually split into separate products with separate codebases and separate Flare projects. I managed that transition — restructuring the content architecture as the products diverged — without losing documentation continuity for any of them.</p>
+
+      <div class="cs-stat-row">
+        <div class="cs-stat">
+          <span class="cs-stat-number">5+</span>
+          <span class="cs-stat-desc">Separate application outputs from a single Flare project at peak complexity</span>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat-number">~500</span>
+          <span class="cs-stat-desc">Context-sensitive help triggers currently active in the production help system</span>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat-number">17</span>
+          <span class="cs-stat-desc">Video tutorials produced, from equipment selection through final delivery</span>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat-number">10+</span>
+          <span class="cs-stat-desc">Years as sole documentation owner through three product names and two restructures</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-section">
+      <p class="section-label section-label--dark">Featured Work</p>
+      <h2>Context-sensitive help: <em>both sides</em> of the implementation.</h2>
+      <p>Most technical writers who "implement CSH" handle the Flare side: setting up the map file, assigning aliases, configuring the output. The other half — placing the triggers in the application code — typically falls to a developer.</p>
+      <p>I did both.</p>
+      <p>The application is built in C#. When we implemented context-sensitive help, I wasn't just responsible for the Flare configuration. I was also responsible for identifying where in the codebase each trigger needed to live and placing it there — in a codebase I was still learning at the time. That meant reading the application code well enough to understand which UI elements mapped to which help topics, and wiring them together correctly across every screen in the application.</p>
+      <p>The system launched with approximately 300 triggers. It now has around 500. Every new screen that ships requires a new trigger, implemented on both sides — still by me.</p>
+
+      <hr class="cs-rule" />
+
+      <h2>Video tutorials: a complete production program built from <em>a one-sentence directive</em>.</h2>
+      <p>The ask was simple: <em>"We want videos."</em> That was it. No scope, no format, no process, no equipment list, no guidance on content.</p>
+      <p>What followed was a program I built entirely from scratch: researching and selecting production software (Camtasia) and screen capture tools (SnagIt), determining what equipment was needed, establishing a production workflow, deciding which workflows were worth covering, scripting and recording each video, and then integrating the finished videos into the help system — including the CSS work required to embed and display them correctly within the Flare output.</p>
+      <p>The result was a library of 17 tutorial videos focused on setup and configuration workflows: the foundational tasks users need to complete before the software can do what it's designed to do. The kind of content that prevents support tickets from being filed in the first place.</p>
+    </div>
+
+    <div class="cs-section">
+      <p class="section-label section-label--dark">Deliverables</p>
+      <h2>What the project produced.</h2>
+
+      <div class="cs-deliverables">
+        <div class="cs-deliverable">
+          <strong>Help System</strong>
+          <span>Full online help with structured navigation, search, and multi-output delivery</span>
+        </div>
+        <div class="cs-deliverable">
+          <strong>Context-Sensitive Help</strong>
+          <span>~500 triggers implemented in both MadCap Flare and C# application code</span>
+        </div>
+        <div class="cs-deliverable">
+          <strong>Video Library</strong>
+          <span>17 tutorial videos covering key setup and configuration workflows</span>
+        </div>
+        <div class="cs-deliverable">
+          <strong>CSS Framework</strong>
+          <span>Custom stylesheet built from scratch for multi-output delivery</span>
+        </div>
+        <div class="cs-deliverable">
+          <strong>Content Architecture</strong>
+          <span>Snippet, variable, and condition strategy supporting 5+ simultaneous application outputs</span>
+        </div>
+        <div class="cs-deliverable">
+          <strong>Release Notes</strong>
+          <span>Ongoing release documentation tracking feature changes across the product portfolio</span>
+        </div>
+      </div>
+    </div>
+	
+<div class="cs-section">
+  <p class="section-label section-label--dark">Professional Recognition</p>
+  <h2>Speaking at the field's <em>premier conference</em>. Twice.</h2>
+  <p>The work on CENTRO Engineer wasn't just professionally formative — it generated ideas worth sharing with the broader technical communication community. I presented at the STC Technical Communication Summit in both 2018 and 2019, the largest annual conference for technical communicators in the world.</p>
+  <p>The 2018 talk grew directly out of the documentation architecture challenges I'd solved on this project: managing a single Flare project producing five separate application outputs, under active development, with strict naming conventions holding the whole system together. The 2019 talk extended that thinking into a broader framework for taxonomy design in technical communication.</p>
+
+  <div class="cs-deliverables" style="margin-top: 1.5rem; grid-template-columns: 1fr 1fr;">
+    <div class="cs-deliverable">
+      <strong>STC Summit 2018 · Orlando</strong>
+      <span>"A Method for the Madness: Managing Complex Documentation Projects" — published in the STC Summit proceedings (published as Jennifer Shumate)</span>
+    </div>
+    <div class="cs-deliverable">
+      <strong>STC Summit 2019 · Denver</strong>
+      <span>"Taxonomies for Technical Communication: Best Practices for Use in the Real World" — published in the STC Summit proceedings (published as Jennifer Shumate)</span>
+    </div>
+    <div class="cs-deliverable">
+      <strong>STC Senior Member</strong>
+      <span>Formal designation awarded for 10+ years of membership and professional contribution to the field</span>
+    </div>
+    <div class="cs-deliverable">
+      <strong>Chapter Treasurer · STC Houston</strong>
+      <span>Served approximately five years as treasurer for the Houston chapter</span>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="cs-cta">
+    <h2>See the sample, or let's talk.</h2>
+    <p>The linked help system is a sanitized excerpt. If you'd like to discuss the full scope of this project, I'm happy to.</p>
+    <div class="cs-btn-row">
+      <a class="btn btn-primary" href="https://jennifer-oakley.github.io/DES/Content/Home.htm" target="_blank" rel="noopener">View help system sample ↗</a>
+      <a class="btn btn-ghost" href="index.html#contact">Get in touch</a>
+      <a class="btn btn-ghost" href="index.html#work">← Back to portfolio</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left">Jennifer Oakley</div>
+    <ul class="footer-right">
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="resume.html">Résumé</a></li>
+      <li><a href="https://linkedin.com/in/jenniferoakleytx" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://medium.com/@jennifer.oakleytx" target="_blank" rel="noopener">Medium</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
