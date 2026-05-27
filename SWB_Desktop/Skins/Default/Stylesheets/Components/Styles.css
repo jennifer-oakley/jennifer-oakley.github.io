@@ -914,130 +914,7 @@ div.central-dropdown-content > a:hover
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
-ul.menu._Skins_Top_Nav_Menu.mc-component
-{
-	color: #ffffff;
-	font-size: 14px;
-	font-weight: normal;
-	font-style: normal;
-	line-height: 1.4em;
-	white-space: normal;
-	margin-left: 0px;
-	margin-right: 20px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 25px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 40px;
-	width: 17%;
-	height: auto;
-	max-height: 100%;
-	background: #181818 url('Images/NavBG_Large.png') no-repeat;
-	-pie-background: #181818 url('Skins/Default/Stylesheets/Components/Images/NavBG_Large.png') no-repeat;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component a
-{
-	color: #ffffff;
-	font-size: 14px;
-	font-weight: normal;
-	font-style: normal;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component li > a
-{
-	color: #ce1141;
-	font-weight: bold;
-	background-repeat: repeat;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 16px;
-	padding-right: 16px;
-	padding-top: 16px;
-	padding-bottom: 16px;
-	background: #333433 none;
-	-pie-background: #333433;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component ul > li > a
-{
-	color: #ffffff;
-	font-weight: normal;
-	background-repeat: repeat;
-	padding-left: 32px;
-	background: #333433 none;
-	-pie-background: #333433;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component ul ul > li > a
-{
-	background-repeat: repeat;
-	padding-left: 48px;
-	background: #333433 none;
-	-pie-background: #333433;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component ul ul ul > li > a
-{
-	background-repeat: repeat;
-	padding-left: 64px;
-	background: #333433 none;
-	-pie-background: #333433;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component ul ul ul ul > li > a
-{
-	background-repeat: repeat;
-	padding-left: 80px;
-	background: #333433 none;
-	-pie-background: #333433;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component li > a.selected
-{
-	color: #ffffff;
-	font-weight: bold;
-	background-repeat: repeat;
-	background: #29A4A8 none;
-	-pie-background: #29A4A8;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component li > a:hover
-{
-	color: #ffffff;
-	background-color: #2B857E;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component ul > li > a:hover
-{
-	background-color: #2B857E;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component ul ul > li > a:hover
-{
-	background-color: #2B857E;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component ul ul ul > li > a:hover
-{
-	background-color: #2B857E;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component ul ul ul ul > li > a:hover
-{
-	background-color: #2B857E;
-}
-
-ul.menu._Skins_Top_Nav_Menu.mc-component li > a.selected:hover
-{
-	font-weight: bold;
-	background-color: #29A4A8;
-}
-
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete ul
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete ul
 {
 	padding-left: 0px;
 	padding-right: 0px;
@@ -1054,7 +931,7 @@ ul.menu._Skins_Top_Nav_Menu.mc-component li > a.selected:hover
 	background-color: #ffffff;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li a
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li a
 {
 	color: #000000;
 	font-weight: normal;
@@ -1064,12 +941,12 @@ ul.menu._Skins_Top_Nav_Menu.mc-component li > a.selected:hover
 	padding-bottom: 7px;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-item a
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-item a
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-item
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-item
 {
 	margin-left: 2px;
 	margin-right: 2px;
@@ -1077,32 +954,32 @@ ul.menu._Skins_Top_Nav_Menu.mc-component li > a.selected:hover
 	margin-bottom: 2px;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-content a
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-content a
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-content
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-content
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-history a
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-history a
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-history
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-history
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-item.auto-result-selected a
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-item.auto-result-selected a
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-item.auto-result-selected
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-item.auto-result-selected
 {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
@@ -1111,82 +988,82 @@ ul.menu._Skins_Top_Nav_Menu.mc-component li > a.selected:hover
 	background-color: #ececec;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-content.auto-result-selected
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-content.auto-result-selected
 {
 	background-color: #ececec;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-history.auto-result-selected
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-history.auto-result-selected
 {
 	background-color: #ececec;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-description
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-description
 {
 	color: #888888;
 	font-size: 13px;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-description
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-description
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-description
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-description
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-icon
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-icon
 {
 	margin-right: 5px;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-icon
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-icon
 {
 	background: transparent url('Images/icon-topic.png') no-repeat center center;
 	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-topic.png') no-repeat center center;
 	background-size: contain;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-icon
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-icon
 {
 	background: transparent url('Images/icon-search.png') no-repeat center center;
 	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-search.png') no-repeat center center;
 	background-size: contain;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-phrase
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-phrase
 {
 	font-size: 16px;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-phrase
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-phrase
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-phrase
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-phrase
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-phrase .search-result-highlight
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-phrase .search-result-highlight
 {
 	font-weight: bold;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-phrase .search-result-highlight
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-phrase .search-result-highlight
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-phrase .search-result-highlight
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-phrase .search-result-highlight
 {
 	
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li .auto-result-remove
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li .auto-result-remove
 {
 	margin-left: 10px;
 	margin-right: 10px;
@@ -1199,139 +1076,138 @@ ul.menu._Skins_Top_Nav_Menu.mc-component li > a.selected:hover
 	background-size: contain;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-separator
+._Skins_SideNav_SearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-separator
 {
 	
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component
+.search-bar._Skins_SideNav_SearchBar.mc-component
 {
 	display: block;
 	width: 100%;
-	height: 30px;
-	margin-top: 0px;
+	height: 2em;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-field
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-field
 {
-	height: 30px;
-	border-left: solid 1px #7e7e7e;
-	border-right: solid 1px #7e7e7e;
-	border-top: solid 1px #7e7e7e;
-	border-bottom: solid 1px #7e7e7e;
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
-	border-bottom-left-radius: 3px;
-	color: #3D3D3D;
-	font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-	font-size: 12px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	height: 2em;
+	border-left: solid 1px var(--search-border-color);
+	border-right: solid 1px var(--search-border-color);
+	border-top: solid 1px var(--search-border-color);
+	border-bottom: solid 1px var(--search-border-color);
+	border-top-left-radius: var(--main-border-radius);
+	border-top-right-radius: var(--main-border-radius);
+	border-bottom-right-radius: var(--main-border-radius);
+	border-bottom-left-radius: var(--main-border-radius);
+	color: var(--skin-nav-selected-border);
+	font-family: var(--body-font-family);
+	font-size: 1em;
+	padding-left: 10px;
 	background-color: #ffffff;
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-filter
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-filter
 {
-	height: 30px;
-	border-top: solid 1px #7e7e7e;
-	border-bottom: solid 1px #7e7e7e;
-	border-left: solid 1px #7e7e7e;
-	border-right: solid 1px #7e7e7e;
+	height: 2em;
+	border-top: solid 1px var(--search-border-color);
+	border-bottom: solid 1px var(--search-border-color);
+	border-left: solid 0px var(--search-filter-border-color);
+	border-right: solid 0px var(--search-filter-border-color);
 	width: 45px;
-	background: #cE1141 url('Images/FilterOutline.png') no-repeat center center;
-	-pie-background: #cE1141 url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
+	background: #ffffff url('Images/FilterOutline.png') no-repeat center center;
+	-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-submit
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-submit
 {
-	height: 30px;
-	border-right: solid 1px #7e7e7e;
-	border-top: solid 1px #7e7e7e;
-	border-bottom: solid 1px #7e7e7e;
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
+	height: 2em;
+	border-right: solid 1px var(--search-border-color);
+	border-top: solid 1px var(--search-border-color);
+	border-bottom: solid 1px var(--search-border-color);
+	border-top-right-radius: var(--main-border-radius);
+	border-bottom-right-radius: var(--main-border-radius);
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-filter-content
+._Skins_SideNav_SearchBar.mc-component .search-filter-content
 {
-	top: 30px;
+	top: 2em;
 	color: #888888;
 	background-color: #ffffff;
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-filter-wrapper.open
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-filter-wrapper.open
 {
-	-pie-background: #cE1141 url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
+	-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
 	color: #888888;
 	background-color: #ffffff;
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-filter:hover
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-filter:hover
 {
-	background-color: #cE1141;
+	background-color: #ffffff;
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-filter.selected
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-filter.selected
 {
 	background: transparent url('Images/Filter.png') no-repeat center center;
 	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/Filter.png') no-repeat center center;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-filter-content ul li:hover
+._Skins_SideNav_SearchBar.mc-component .search-filter-content ul li:hover
 {
 	color: #000000;
 	background-color: #ffffff;
 }
 
-._Skins_Top_Nav_SearchBar.mc-component .search-filter-content ul li button:focus
+._Skins_SideNav_SearchBar.mc-component .search-filter-content ul li button:focus
 {
 	color: #000000;
 	background-color: #ffffff;
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-field::-webkit-input-placeholder
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-field::-webkit-input-placeholder
 {
-	color: #3D3D3D;
+	color: var(--skin-nav-selected-border);
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-field::-moz-placeholder
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-field::-moz-placeholder
 {
-	color: #3D3D3D;
+	color: var(--skin-nav-selected-border);
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-field:-moz-placeholder
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-field:-moz-placeholder
 {
-	color: #3D3D3D;
+	color: var(--skin-nav-selected-border);
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-field:-ms-input-placeholder
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-field:-ms-input-placeholder
 {
-	color: #3D3D3D;
+	color: var(--skin-nav-selected-border);
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-submit-wrapper
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-submit-wrapper
 {
-	font-size: 12px;
+	font-size: 1em;
 }
 
-.search-bar._Skins_Top_Nav_SearchBar.mc-component .search-filter-wrapper
+.search-bar._Skins_SideNav_SearchBar.mc-component .search-filter-wrapper
 {
-	font-size: 12px;
-	right: 40px;
+	font-size: 1em;
+	right: 56px;
 }
 
-.search-bar.search-bar-container._Skins_Top_Nav_SearchBar.mc-component .search-submit
+.search-bar.search-bar-container._Skins_SideNav_SearchBar.mc-component .search-submit
 {
-	width: 40px;
-	background: #CE1141 url('Images/Search_White_16x16.png') no-repeat center center;
-	-pie-background: #CE1141 url('Skins/Default/Stylesheets/Components/Images/Search_White_16x16.png') no-repeat center center;
+	width: 56px;
+	background: #var;
+	-pie-background: #var;
 }
 
-.search-bar.search-bar-container._Skins_Top_Nav_SearchBar.mc-component .search-submit:hover
+.search-bar.search-bar-container._Skins_SideNav_SearchBar.mc-component .search-submit:hover
 {
-	background-color: #CE1141;
+	background: var(--search-button-bgcolor-hover) url('Images/search_black_26.png') no-repeat center center;
+	-pie-background: var(--search-button-bgcolor-hover) url('Skins/Default/Stylesheets/Components/Images/search_black_26.png') no-repeat center center;
 }
 

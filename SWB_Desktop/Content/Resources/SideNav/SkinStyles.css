@@ -1,0 +1,564 @@
+/*<meta conditions="Imports.SideNav" />*/
+
+/* Overriding Flare's bullshit */
+
+button.button:hover,
+button.button:focus
+{
+	box-shadow: 0 5px 15px var(--main-box-shadow-color);
+}
+
+div.main-section
+{
+	background-color: var(--section-background-color);
+}
+
+div.title-bar-container
+{
+	max-width: 262px !important;
+}
+
+nav.title-bar
+{
+	border-right: solid 1px var(--main-border-color);
+}
+
+div.title-bar-layout a.logo
+{
+	width: 216px;
+	background: transparent url('Images/wft_logo_productName.png') no-repeat center left;
+}
+
+nav.sidenav-wrapper
+{
+	border-right: solid 1px var(--main-border-color);
+}
+
+div.body-container
+{
+	position: absolute;
+	top: 0;
+	left: 262px;
+	right: 0;
+	height: 100vh;
+	background-color: var(--section-background-color);
+}
+
+ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle
+{
+	border: none !important;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath d='M10 16L14 12L10 8' stroke='%23666D7A' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+ul.sidenav li.is-accordion-submenu-parent > a[aria-expanded='true'] > span.submenu-toggle-container > span.submenu-toggle
+{
+	transform: rotate(90deg);
+}
+
+ul.sidenav li a,
+ul.sidenav li a.selected
+{
+	font-weight: var(--link-font-weight);
+}
+
+ul.sidenav li a:hover
+{
+	font-weight: var(--hover-font-weight);
+}
+
+div.sidebar > ul.menu
+{
+	display: none;
+}
+
+div.MCDropDown_Closed
+{
+	background-color: #FFF !important;
+}
+
+div.dropDownnote,
+div.dropDowntip,
+div.dropDownwarning
+{
+	padding-left: 10px;
+	background-color: var(--element-background-color);
+}
+
+div.dropDownnote span.dropDownHead,
+div.dropDowntip span.dropDownHead,
+div.dropDownwarning span.dropDownHead
+{
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left: 32px;
+}
+
+div.dropDownnote span.dropDownHead
+{
+	background-image: url('Images/InfoCircle_24.png');
+}
+
+div.dropDowntip span.dropDownHead
+{
+	background-image: url('Images/Lightbulb_24.png');
+}
+
+div.dropDownwarning span.dropDownHead
+{
+	background-image: url('Images/ExclamationCircle_24.png');
+}
+
+div.dropDownnote div.dropDownBody,
+div.dropDowntip div.dropDownBody,
+div.dropDownwarning div.dropDownBody
+{
+	margin-left: -10px;
+}
+
+nav a
+{
+	color: inherit;
+}
+
+nav a:hover
+{
+	border-bottom: 0;
+}
+
+/* Header Styles */
+
+header
+{
+
+}
+
+header p
+{
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 140%;
+	margin: 10px 0;
+	text-transform: uppercase;
+}
+
+/* Footer Styles */
+
+footer
+{
+	font-size: 0.875em;
+	color: var(--sidebar-text-color);
+	clear: both;
+}
+
+footer nav ul
+{
+	font-weight: 400;
+}
+
+footer nav li a,
+footer nav li a:link
+{
+	color: var(--link-text-color);
+	padding: 0px 0.7em;
+	font-weight: var(--link-font-weight);
+}
+
+footer nav li:last-child a
+{
+	padding-right: 0;
+}
+
+footer nav li a:hover,
+footer nav li a:focus
+{
+	color: var(--link-text-color);
+	font-weight: var(--hover-font-weight);
+}
+
+/* Home Page styles */
+
+html.homePage
+{
+	mc-master-page: url('MasterPages/HomePage.flmsp');
+}
+
+html.homePage section.body
+{
+	width: 100%;
+	padding: 2% 8%;
+}
+
+html.homePage header
+{
+	width: 100%;
+	padding: 0;
+}
+
+html.homePage footer
+{
+	width: 100%;
+}
+
+section.backsplash h1
+{
+	color: inherit;
+	margin: 0.67em 0;
+}
+
+section.backsplash p
+{
+	margin: 1em 0;
+}
+
+section.launchpad-3col div,
+section.launchpad-2col div
+{
+	color: var(--card-text-color);
+	background-color: var(--card-background-color2);
+	border: 1px var(--card-border-color) solid;
+	border-radius: var(--main-border-radius);
+	padding: 10px;
+}
+
+section.launchpad-3col nav,
+section.launchpad-2col nav
+{
+	margin: 0 10px;
+}
+
+section.launchpad-3col div,
+section.launchpad-2col div div
+{
+	padding: 0 1em;
+	vertical-align: top;
+}
+
+section.launchpad-3col div:hover,
+section.launchpad-2col div:hover,
+section.launchpad-3col div:focus,
+section.launchpad-2col div:focus
+{
+	transform: translateY(-3px);
+	box-shadow: 0 8px 25px var(--main-box-shadow-color);
+}
+
+section.launchpad-3col h2,
+section.launchpad-2col h2
+{
+	font-size: 1em;
+	margin: 0.83em 0;
+}
+
+section.launchpad-3col p,
+section.launchpad-2col p
+{
+	font-size: 0.875em;
+	font-weight: 400;
+	margin: 1em 0;
+}
+
+section.launchpad-3col a,
+section.launchpad-2col a
+{
+	color: var(--card-text-color);
+}
+
+h1#results-heading
+{
+	color: var(--heading-text-color);
+	font-weight: var(--h1-font-weight);
+	margin-top: 0;
+}
+
+#resultList h3.title a,
+#resultList h3.title a:link,
+#resultList h3.title a:visited,
+#resultList h3.title a:hover,
+#resultList h3.title a:focus
+{
+	color: var(--link-text-color);
+}
+
+#resultList h3.title a:hover,
+#resultList h3.title a:focus
+{
+	text-decoration: none;
+	font-weight: var(--hover-font-weight);
+}
+
+#resultList > li
+{
+	margin-bottom: 2em;
+	line-height: var(--body-line-height);
+}
+
+span.SearchHighlight
+{
+	background-color: var(--highlight-background-color);
+}
+
+div.url
+{
+	display: none;
+}
+
+@media screen
+{
+	header
+	{
+		display: grid !important;
+		grid-auto-flow: column;
+		padding: 0;
+	}
+
+	footer
+	{
+		margin: 4em 0;
+		width: 75%;
+	}
+
+	footer nav
+	{
+		float: right;
+	}
+
+	footer div,
+	footer nav li
+	{
+		float: left;
+	}
+
+	footer nav li a,
+	footer nav li a:link
+	{
+		border-right: 1px solid var(--main-border-color);
+		display: block;
+	}
+
+	footer nav li:last-child a
+	{
+		border-right: 0;
+		padding-right: 0;
+	}
+
+	header p,
+	header aside,
+	header nav,
+	footer div,
+	footer nav li
+	{
+		float: left;
+	}
+
+	header
+	{
+		width: 75%;
+	}
+
+	section.backsplash
+	{
+		margin: 2.5em 0;
+		padding: 0 5em;
+		background: var(--element-background-color) url('Images/BackSplash.png') no-repeat scroll center center;
+		-o-background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		color: #FFF;
+		border-radius: var(--main-border-radius);
+	}
+
+	section.backsplash div
+	{
+		background-color: rgba(0, 0, 0, 0.75);
+		padding: 3em;
+		width: 26.5em;
+	}
+
+	section.backsplash h1
+	{
+		font-size: 2em;
+		line-height: 2em;
+	}
+
+	section.backsplash p
+	{
+		font-size: 1.125em;
+		line-height: 2em;
+	}
+
+	section.launchpad-3col,
+	section.launchpad-2col
+	{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+	}
+
+	section.launchpad-3col div,
+	section.launchpad-2col div
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	section.launchpad-3col a,
+	section.launchpad-2col a
+	{
+		display: block;
+	}
+
+	div.sidebar
+	{
+		float: right;
+		width: 23%;
+		position: absolute;
+		right: 0;
+		top: 75px;
+	}
+
+	div.MCDropDown_Open span.dropDownHead
+	{
+		background-color: var(--element-background-color);
+	}
+
+	span.MCTextPopupArrow
+	{
+		border-bottom-color: var(--popup-background-color);
+	}
+
+	a.MCBreadcrumbsLink,
+	a.MCBreadcrumbsLink:link,
+	a.MCBreadcrumbsLink:focus,
+	a.MCBreadcrumbsLink:hover
+	{
+		color: inherit;
+		font-weight: inherit;
+		border-bottom: 0;
+	}
+
+	a.MCPopupThumbnailLink,
+	a.MCPopupThumbnailLink:link,
+	a.MCPopupThumbnailLink:hover,
+	a.MCPopupThumbnailLink:focus
+	{
+		border-bottom: 0px;
+	}
+
+	div.MCPopupContainer,
+	div.MCPopupContainer2
+	{
+		background-color: var(--section-background-color);
+		border: solid 1px var(--main-border-color);
+		padding: 5px;
+		border-radius: var(--main-border-radius);
+		box-shadow: 2px 2px 4px var(--main-box-shadow-color);
+	}
+
+	div.sidebar div.MCHelpControl span
+	{
+		display: none;
+	}
+
+	div.right,
+	p.right img,
+	div.inset,
+	p.inset img
+	{
+		float: right;
+	}
+
+	div.left,
+	p.left img
+	{
+		float: left;
+	}
+
+	img.MCPopupThumbnail
+	{
+		padding-left: 30px;
+		background-position: left bottom;
+		background-repeat: no-repeat;
+	}
+
+	p.left img.MCPopupThumbnail
+	{
+		background-position: right bottom;
+		padding-left: 0;
+		padding-right: 30px;
+	}
+
+	img.MCPopupFullImage
+	{
+		vertical-align: middle;
+		border-radius: 0;
+	}
+	
+	#search-results-flex
+	{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 1279px)
+{
+	div.title-bar-container
+	{
+		max-width: 1279px !important;
+	}
+
+	div.body-container
+	{
+		position: relative;
+		left: 0px;
+	}
+
+	ul.off-canvas-list li a,
+	ul.off-canvas-list li a.selected,
+	ul.off-canvas-list li a:hover
+	{
+		font-weight: 500;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	header
+	{
+		display: block;
+		padding-bottom: 2em;
+		width: 100%;
+	}
+
+	header p
+	{
+		width: 100%;
+	}
+
+	header nav
+	{
+		width: 100%;
+	}
+
+	div.sidebar,
+	div.dropDown
+	{
+		float: none;
+		width: 100%;
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+
+	div.title-bar-container
+	{
+		max-width: 767px !important;
+	}
+}
+

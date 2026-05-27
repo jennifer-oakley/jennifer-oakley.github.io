@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MadCapSynonyms xml:lang="en-us">
     <!-- saved from url=(0016)http://localhost -->
-    <Groups />
-    <Directional />
+    <Groups>
+        <SynonymGroup>
+            <Word>diverter piping</Word>
+            <Word>vent line</Word>
+        </SynonymGroup>
+        <SynonymGroup Stem="true">
+            <Word Stem="bha">BHA</Word>
+            <Word Stem="bottomhole assembl">bottomhole assembly</Word>
+        </SynonymGroup>
+        <SynonymGroup Stem="true">
+            <Word Stem="dp">DP</Word>
+            <Word Stem="drillpip">drillpipe</Word>
+            <Word Stem="drill pip">drill pipe</Word>
+        </SynonymGroup>
+        <SynonymGroup Stem="true">
+            <Word Stem="drillstr">drillstring</Word>
+            <Word Stem="drill str">drill string</Word>
+            <Word Stem="drillstem">drillstem</Word>
+            <Word Stem="drill stem">drill stem</Word>
+        </SynonymGroup>
+        <SynonymGroup Stem="true">
+            <Word Stem="bop">BOP</Word>
+            <Word Stem="blowout prevent">blowout preventer</Word>
+        </SynonymGroup>
+    </Groups>
+    <Directional>
+        <DirectionalSynonym From="pressure differential" To="differential pressur" />
+        <DirectionalSynonym From="drill ahead" To="drillahead" />
+        <DirectionalSynonym From="down hole" To="downhol" />
+        <DirectionalSynonym From="annular space" To="annulus" />
+        <DirectionalSynonym Stem="true" From="bit" To="drill bit" FromStem="bit" />
+        <DirectionalSynonym Stem="true" From="drill string" To="drillstr" FromStem="drill str" />
+        <DirectionalSynonym Stem="true" From="well bore" To="wellbor" FromStem="well bor" />
+        <DirectionalSynonym Stem="true" From="borehole" To="wellbor" FromStem="borehol" />
+        <DirectionalSynonym Stem="true" From="development well" To="exploitation wel" FromStem="development wel" />
+        <DirectionalSynonym Stem="true" From="exploratory well" To="wildcat wel" FromStem="exploratory wel" />
+    </Directional>
 </MadCapSynonyms>

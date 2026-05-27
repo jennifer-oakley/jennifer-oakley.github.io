@@ -432,132 +432,100 @@
 
 .micro-response-1196811441 .xref
 {
-	color: #2AA4A8;
 	text-decoration: none;
+	color: blue;
+}
+
+.micro-response-1196811441 .xref:hover
+{
+	font-weight: 600;
 }
 
 .micro-response-1196811441 div.MCBreadcrumbsBox_0
 {
-	color: #F4D4DC;
-	background-color: #D11E49;
-	font-size: 0.625em;
-	font-weight: normal;
-	padding-top: 0.3em;
-	padding-right: 0;
-	padding-bottom: 0.3em;
-	padding-left: 5%;
-	margin: 0;
+	color: #666D7A;
+	font-size: 14px;
+	line-height: 160%;
 	border-bottom: 0;
+	padding: 0;
+	margin: 0;
+	clear: both;
 	border-bottom-width: 0;
 	border-bottom-style: solid;
 	border-bottom-color: black;
+	padding-bottom: 0;
 	margin-bottom: 0;
-}
-
-.micro-response-1196811441 .xref.xrefsectionLink
-{
-	font-weight: 500;
-	border: none;
 }
 
 .micro-response-1196811441 .dropDown
 {
 	margin: 1em 0;
-	border-color: #215853;
-	background-color: #1C7A91;
-	background: #1C7A91 linear-gradient(to right, #55937C 0%, #1C7A91 100%) repeat scroll 0% 0%;
-	color: #FFF;
+	border: 1px solid #D1D5DB;
+	color: #1F2A37;
 	font-size: 1em;
 	clear: right;
-}
-
-.micro-response-1196811441 .dropDown.dropDownnote
-{
-	color: #333;
-	background-color: #FFE433;
-	background: #FFE433 linear-gradient(to right, #FFE433 0%, #F2E424 100%) repeat scroll 0% 0%;
-	border-color: #E8D423;
+	border-radius: 8px;
+	overflow: hidden;
 }
 
 .micro-response-1196811441 .dropDownHotspot
 {
 	color: inherit;
+	display: block;
 	text-decoration: none;
 }
 
 .micro-response-1196811441 .dropDownHotspot:link
 {
 	color: inherit;
+	display: block;
 	text-decoration: none;
-}
-
-.micro-response-1196811441 .dropDownHotspot:hover
-{
-	border-bottom: 0;
-	color: inherit;
-}
-
-.micro-response-1196811441 .dropDownHotspot:focus
-{
-	border-bottom: 0;
-	color: inherit;
 }
 
 .micro-response-1196811441 .MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage.MCDropDownHotSpot_note
 {
-	background-position: left;
-	background-image: url('Chevron_Open_16x16.png');
-	padding-left: 16px;
-	padding-right: 0;
+	background-position: right;
+	background-image: url('Chevron_Open_24.png');
+	padding-right: 16px;
+	padding-left: 0;
 }
 
 .micro-response-1196811441 .MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage.MCDropDownHotSpot_note
 {
-	background-position: left;
-	background-image: url('Chevron_Closed_16x16.png');
-	padding-left: 16px;
-	padding-right: 0;
+	background-position: right;
+	background-image: url('Chevron_Closed_24.png');
+	padding-right: 16px;
+	padding-left: 0;
 }
 
 .micro-response-1196811441 .dropDownHead
 {
+	background-color: #fff;
 	padding: 0.5em;
-	color: inherit;
-	border-width: 2px;
-	border-color: inherit;
-	border-style: solid;
-	font-weight: 700;
 	text-decoration: none;
 }
 
 .micro-response-1196811441 .dropDownBody
 {
-	color: #333;
-	background: #FFF;
+	background-color: #fff;
 	padding: 0.5em 1em;
 	margin: 0;
-	border-top-width: 0;
-	border-bottom-width: 2px;
-	border-right-width: 2px;
-	border-left-width: 2px;
-	border-color: inherit;
-	border-style: solid;
 }
 
 .micro-response-1196811441 .MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
 {
-	background-position: left;
-	background-image: url('Chevron_Open_BW_16x16.png');
-	padding-left: 16px;
-	padding-right: 0;
+	background-position: right;
+	background-image: url('Chevron_Open_24.png');
+	padding-right: 16px;
+	padding-left: 0;
 }
 
 .micro-response-1196811441 .MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
 {
-	background-position: left;
-	background-image: url('Chevron_Closed_BW_16x16.png');
-	padding-left: 16px;
-	padding-right: 0;
+	background-position: right;
+	background-image: url('Chevron_Closed_24.png');
+	padding-right: 16px;
+	padding-left: 0;
 }
 
 .micro-response-1196811441 .MCHelpControl-Related .MCHelpControl-RelatedHotSpot_
@@ -594,26 +562,24 @@
 .micro-response-1196811441 .MCHelpControlList
 {
 	margin: 0;
-	text-indent: 0;
 	list-style: none;
 	padding: 0;
 }
 
 .micro-response-1196811441 .MCHelpControlListItem
 {
-	color: #FFF;
-	margin: 0;
-	border-bottom-color: rgba(255, 255, 255, 0.25);
+	margin: 0.25em 0;
+	line-height: 1.6em;
 }
 
 .micro-response-1196811441 .MCHelpControlListItem a
 {
-	font-weight: normal;
+	
 }
 
 .micro-response-1196811441 .MCHelpControlListItem a:link
 {
-	font-weight: normal;
+	
 }
 
 .micro-response-1196811441 .MCHelpControlListItem a:visited
@@ -738,61 +704,41 @@
 
 .micro-response-1196811441 .relatedTopics
 {
-	color: #CE1141;
-	font-weight: 900;
-	background: rgba(15, 15, 15, 0.8);
-	padding: 16px 0 0 0;
-	text-indent: 16px;
-	clear: left;
-	font-size: 1em;
-}
-
-.micro-response-1196811441 .dropDown.dropDownsidebar
-{
-	background: transparent;
+	color: #1484B4;
 	margin: 0;
-	border-color: rgba(255, 255, 255, 0.25);
-	color: #CE1141;
-	clear: both;
+	font-size: 1em;
 }
 
 .micro-response-1196811441 .MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage.MCDropDownHotSpot_sidebar
 {
-	background-position: left;
-	background-image: url('Collapse_BW_16x16.png');
-	padding-left: 0px;
-	padding-right: 0;
+	background-position: right;
+	background-image: url('Chevron_Open_24.png');
+	padding-right: 16px;
+	padding-left: 0;
 }
 
 .micro-response-1196811441 .MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage.MCDropDownHotSpot_sidebar
 {
-	background-position: left;
-	background-image: url('Expand_BW_16x16.png');
-	padding-left: 0px;
-	padding-right: 0;
-}
-
-.micro-response-1196811441 .dropDown.dropDownwarning
-{
-	background-color: #E51707;
-	background: #E51707 linear-gradient(to right, #E51707 0%, #FC0543 100%) repeat scroll 0% 0%;
-	border-color: #CF0015;
+	background-position: right;
+	background-image: url('Chevron_Closed_24.png');
+	padding-right: 16px;
+	padding-left: 0;
 }
 
 .micro-response-1196811441 .MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage.MCDropDownHotSpot_warning
 {
-	background-position: left;
-	background-image: url('Chevron_Open_BW_16x16.png');
-	padding-left: 16px;
-	padding-right: 0;
+	background-position: right;
+	background-image: url('Chevron_Open_24.png');
+	padding-right: 16px;
+	padding-left: 0;
 }
 
 .micro-response-1196811441 .MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage.MCDropDownHotSpot_warning
 {
-	background-position: left;
-	background-image: url('Chevron_Closed_BW_16x16.png');
-	padding-left: 16px;
-	padding-right: 0;
+	background-position: right;
+	background-image: url('Chevron_Closed_24.png');
+	padding-right: 16px;
+	padding-left: 0;
 }
 
 .micro-response-1196811441 .img
@@ -800,47 +746,37 @@
 	vertical-align: text-bottom;
 }
 
-.micro-response-1196811441 .dropDown.dropDowntip
-{
-	color: #333;
-	background-color: #24B568;
-	background: #24B568 linear-gradient(to right, #24B568 0%, #1ECCA1 100%) repeat scroll 0% 0%;
-	border-color: #189E68;
-}
-
 .micro-response-1196811441 .MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage.MCDropDownHotSpot_tip
 {
-	background-position: left;
-	background-image: url('Chevron_Open_16x16.png');
-	padding-left: 16px;
-	padding-right: 0;
+	background-position: right;
+	background-image: url('Chevron_Open_24.png');
+	padding-right: 16px;
+	padding-left: 0;
 }
 
 .micro-response-1196811441 .MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage.MCDropDownHotSpot_tip
 {
-	background-position: left;
-	background-image: url('Chevron_Closed_16x16.png');
-	padding-left: 16px;
-	padding-right: 0;
+	background-position: right;
+	background-image: url('Chevron_Closed_24.png');
+	padding-right: 16px;
+	padding-left: 0;
 }
 
 .micro-response-1196811441 .glossaryTerm
 {
-	color: #2AA4A8;
-	border-bottom: 0;
+	color: #1484B4;
 	font-weight: bold;
 }
 
 .micro-response-1196811441 .glossaryTerm:link
 {
-	color: #2AA4A8;
-	border-bottom: 0;
+	color: #1484B4;
 	font-weight: bold;
 }
 
 .micro-response-1196811441 .glossaryTerm:hover
 {
-	color: #CE1141;
+	font-weight: 600;
 }
 
 .micro-response-1196811441 .MCTextPopup_Open.MCTextPopupHotSpot_
@@ -859,12 +795,13 @@
 
 .micro-response-1196811441 .popupBody
 {
-	background-color: #2AA4A8;
+	background-color: var(--popup-background-color);
 	font-size: 0.875em;
-	color: #FFF;
+	border-radius: var(--main-border-radius);
+	color: var(--sidebar-text-color);
+	max-width: 340px;
 	padding: 10px;
 	width: auto;
-	max-width: 220px;
 	border: solid 1px #000000;
 	margin: 0px;
 }

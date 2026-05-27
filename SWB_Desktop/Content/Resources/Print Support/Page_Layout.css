@@ -1,4 +1,5 @@
-﻿
+﻿/*<meta conditions="Imports.PrintSupport" />*/
+
 @media print
 {
 	.pgbreak
@@ -7,7 +8,7 @@
 		page-break-after: avoid;
 		margin-top: 0;
 	}
-	
+
 	.noPgBreak
 	{
 		page-break-before: avoid;
@@ -138,7 +139,7 @@
 	#print h1,
 	#print h2
 	{
-        margin-top: 0;
+		margin-top: 0;
 		mc-heading-level: 0;
 		page-break-before: always;
 	}

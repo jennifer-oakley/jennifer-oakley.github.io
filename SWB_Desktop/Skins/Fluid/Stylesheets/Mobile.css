@@ -6,16 +6,15 @@
 	{
 		background-position: center top;
 		background-repeat: no-repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: var(--section-background-color);
 	}
 
 	.title-bar-layout a.logo
 	{
-		width: 134px;
-		height: 55px;
-		background: transparent url('Images/Logo_134x55.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Logo_134x55.png') no-repeat center center;
+		width: 32px;
+		height: 32px;
+		background: transparent url('Images/wft_logo_black_32px.jpg') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/wft_logo_black_32px.jpg') no-repeat center center;
 	}
 
 	.search-bar .search-submit
@@ -208,32 +207,32 @@
 
 	ul.off-canvas-list li a:hover
 	{
-		background-color: #242424;
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.off-canvas-list ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.off-canvas-list ul ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.off-canvas-list ul ul ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.off-canvas-list ul ul ul ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.off-canvas-list li.js-drilldown-back > a:hover
 	{
-		background-color: #242424;
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	#resultList .glossary .term a:hover
@@ -298,7 +297,7 @@
 
 	.off-canvas-wrapper-inner nav.title-bar .outer-row
 	{
-		
+		max-width: 767px;
 	}
 
 	#knowledge-panel
@@ -416,12 +415,12 @@
 
 	.title-bar-layout .logo-wrapper
 	{
-		min-height: 55px;
+		min-height: 40px;
 	}
 
 	.menu-icon-container
 	{
-		min-height: 55px;
+		min-height: 40px;
 	}
 
 	.off-canvas-wrapper-inner .main-section > .outer-row
@@ -762,12 +761,12 @@
 
 	.off-canvas
 	{
-		background-color: #333333;
+		background-color: var(--skin-nav-bgcolor);
 	}
 
 	.off-canvas ul ul
 	{
-		background-color: #333333;
+		background-color: var(--skin-nav-bgcolor);
 	}
 
 	ul.off-canvas-list li a
@@ -802,33 +801,33 @@
 
 	ul.off-canvas-list li a.selected
 	{
-		
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.off-canvas-list ul > li > a.selected
 	{
-		
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.off-canvas-list ul ul > li > a.selected
 	{
-		
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.off-canvas-list ul ul ul > li > a.selected
 	{
-		
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.off-canvas-list ul ul ul ul > li > a.selected
 	{
-		
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	.title-bar .menu-icon span
 	{
-		background: transparent url('Images/Icon_CloseSidePane.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Icon_CloseSidePane.png') no-repeat center center;
+		background: transparent url('Images/openMenu.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/openMenu.png') no-repeat center center;
 	}
 
 	nav.title-bar .menu-icon
@@ -979,7 +978,7 @@
 
 	.search-filter-content
 	{
-		top: 0em;
+		top: 2em;
 		background-color: #ffffff;
 	}
 
@@ -997,7 +996,7 @@
 	.search-bar .search-filter.selected
 	{
 		background-repeat: no-repeat;
-		background: transparent url('Images/Filter.png') no-repeat center center;
+		background: transparent url('Images/icon-filter-selected.png') no-repeat center center;
 	}
 
 	.search-filter-content ul li:hover
@@ -1205,13 +1204,13 @@
 	.search-bar.search-bar-container .search-submit
 	{
 		background-repeat: no-repeat;
-		background: #bed230 url('Images/SearchIcon.png') no-repeat center center;
+		background: transparent url('Images/icon-search.png') no-repeat center center;
 	}
 
 	.search-bar.search-bar-container .search-submit:hover
 	{
 		background-repeat: no-repeat;
-		background-color: #bed230;
+		background-color: transparent;
 	}
 
 	.phrase-suggest

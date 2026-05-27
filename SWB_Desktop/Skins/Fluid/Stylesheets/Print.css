@@ -30,9 +30,7 @@
 	{
 		display: none;
 		background-repeat: no-repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
-		background-position: center top;
+		background-color: var(--section-background-color);
 	}
 
 	/* Side Navigation Menu styles */
@@ -40,7 +38,7 @@
 	.sidenav-wrapper
 	{
 		display: none;
-		background-color: #45494c;
+		background-color: var(--skin-nav-bgcolor);
 	}
 
 	.sidenav-wrapper ul.menu
@@ -227,27 +225,27 @@
 
 	ul.sidenav li a:hover
 	{
-		background-color: #303335;
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.sidenav ul > li > a:hover
 	{
-		background-color: #303335;
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.sidenav ul ul > li > a:hover
 	{
-		background-color: #303335;
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.sidenav ul ul ul > li > a:hover
 	{
-		background-color: #303335;
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.sidenav ul ul ul ul > li > a:hover
 	{
-		background-color: #303335;
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.navigation li > a:hover
@@ -419,8 +417,8 @@
 
 	.title-bar-layout a.logo
 	{
-		background: transparent url('Images/Logo_134x55.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Logo_134x55.png') no-repeat center center;
+		background: transparent url('Images/wft_logo_black_32px.jpg') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/wft_logo_black_32px.jpg') no-repeat center center;
 	}
 
 	.main-section > .outer-row
@@ -920,7 +918,7 @@
 	.search-bar .search-filter.selected
 	{
 		background-repeat: no-repeat;
-		background: transparent url('Images/Filter.png') no-repeat center center;
+		background: transparent url('Images/icon-filter-selected.png') no-repeat center center;
 	}
 
 	.search-filter-content
@@ -1113,13 +1111,13 @@
 	.search-bar.search-bar-container .search-submit
 	{
 		background-repeat: no-repeat;
-		background: #bed230 url('Images/SearchIcon.png') no-repeat center center;
+		background: transparent url('Images/icon-search.png') no-repeat center center;
 	}
 
 	.search-bar.search-bar-container .search-submit:hover
 	{
 		background-repeat: no-repeat;
-		background-color: #bed230;
+		background-color: transparent;
 	}
 
 	.phrase-suggest
@@ -1134,7 +1132,7 @@
 
 	.sidenav-container ul ul
 	{
-		background-color: #45494c;
+		background-color: var(--skin-nav-bgcolor);
 	}
 
 	.sidenav-container
@@ -1174,27 +1172,27 @@
 
 	ul.sidenav li a.selected
 	{
-		
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.sidenav ul > li > a.selected
 	{
-		
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.sidenav ul ul > li > a.selected
 	{
-		
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.sidenav ul ul ul > li > a.selected
 	{
-		
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	ul.sidenav ul ul ul ul > li > a.selected
 	{
-		
+		background-color: var(--skin-nav-hover-bgcolor);
 	}
 
 	.skip-to-content
@@ -1225,42 +1223,31 @@
 
 	ul.navigation ul
 	{
-		background-repeat: no-repeat;
-		background: #000000 none;
-		-pie-background: #000000;
+		background-repeat: repeat;
+		background-color: #686868;
 	}
 
 	ul.navigation ul ul
 	{
-		background-repeat: no-repeat;
-		background: #000000 none;
-		-pie-background: #000000;
+		background-repeat: repeat;
+		background-color: #686868;
 	}
 
 	ul.navigation ul ul ul
 	{
-		background-repeat: no-repeat;
-		background: #000000 none;
-		-pie-background: #000000;
+		background-repeat: repeat;
+		background-color: #686868;
 	}
 
 	ul.navigation ul ul ul ul
 	{
-		background-repeat: no-repeat;
-		background: #000000 none;
-		-pie-background: #000000;
+		background-repeat: repeat;
+		background-color: #686868;
 	}
 
 	ul.navigation li
 	{
-		background: transparent url('Images/MenuCaret_10x10.png') no-repeat;
-		background: url('Images/MenuCaret_10x10.png') no-repeat, -moz-linear-gradient(top, transparent 0%, transparent 100%);
-		background: url('Images/MenuCaret_10x10.png') no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
-		background: url('Images/MenuCaret_10x10.png') no-repeat, -webkit-linear-gradient(top, transparent 0%, transparent 100%);
-		background: url('Images/MenuCaret_10x10.png') no-repeat, -o-linear-gradient(top, transparent 0%,transparent 100%);
-		background: url('Images/MenuCaret_10x10.png') no-repeat, -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: url('Images/MenuCaret_10x10.png') no-repeat, linear-gradient(transparent 0%,transparent 100%);
-		-pie-background: url('Skins/Fluid/Stylesheets/Images/MenuCaret_10x10.png') no-repeat, linear-gradient(transparent, transparent);
+		
 	}
 
 	ul.navigation li > a
@@ -1270,8 +1257,8 @@
 
 	ul.navigation li:hover
 	{
-		background: transparent url('Images/MenuCaret_Hover_10x10.png') no-repeat;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/MenuCaret_Hover_10x10.png') no-repeat;
+		background-repeat: repeat;
+		background-color: transparent;
 	}
 
 	ul.navigation li.is-expanded > a
@@ -1281,30 +1268,26 @@
 
 	ul.navigation ul > li:hover
 	{
-		background-repeat: no-repeat;
-		background: transparent none;
-		-pie-background: transparent;
+		background-repeat: repeat;
+		background-color: #4b4b4b;
 	}
 
 	ul.navigation ul ul > li:hover
 	{
-		background-repeat: no-repeat;
-		background: #CE1141 none;
-		-pie-background: #CE1141;
+		background-repeat: repeat;
+		background-color: #4b4b4b;
 	}
 
 	ul.navigation ul ul ul > li:hover
 	{
 		background-repeat: repeat;
-		background: #CE1141 none;
-		-pie-background: #CE1141;
+		background-color: #4b4b4b;
 	}
 
 	ul.navigation ul ul ul ul > li:hover
 	{
 		background-repeat: repeat;
-		background: #CE1141 none;
-		-pie-background: #CE1141;
+		background-color: #4b4b4b;
 	}
 }
 
