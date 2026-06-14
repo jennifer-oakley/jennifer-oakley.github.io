@@ -224,8 +224,10 @@
                                             <ul>
                                                 <li><em>Waiting For Surveys</em> – The rig users have been assigned to the job, but no survey data has been received.</li>
                                                 <li><em>SWB Processing</em> – The RTOC has received the surveys and is analyzing the data.</li>
-                                                <li>– The raw survey data was uploaded and attached to the run by a rig user. When a rig user uploads survey data, the run status will be automatically updated.</li>
-                                                <li>– The correction file was uploaded and attached to the run by an RTOC user. When an RTOC user uploads corrections for the run, the run status will be automatically updated.</li>
+                                                <li>
+                                                    <MadCap:conditionalText data-mc-conditions="Outputs.RTOC_User,Outputs.SWB Desktop"><em>Survey Received</em> </MadCap:conditionalText>– The raw survey data was uploaded and attached to the run by a rig user. When a rig user uploads survey data, the run status will be automatically updated.</li>
+                                                <li>
+                                                    <MadCap:conditionalText data-mc-conditions="Outputs.RTOC_User,Outputs.SWB Desktop"><em>Correction Sent</em> </MadCap:conditionalText>– The correction file was uploaded and attached to the run by an RTOC user. When an RTOC user uploads corrections for the run, the run status will be automatically updated.</li>
                                             </ul>
                                             <p>All files uploaded for a run are stored in the SWB file share. A folder will be created for the job, using the job number for the folder name. Each run will have its own folder within the folder for the job. When a new run is created, all of the survey and FMS files for the previous run will be copied the new run folder.</p>
                                         </div>

@@ -1,0 +1,321 @@
+/*<meta conditions="Imports.SideNav" />*/
+
+@media screen
+{
+	header
+	{
+		display: grid !important;
+		grid-auto-flow: column;
+		padding: 0;
+		width: 75%;
+	}
+
+	footer
+	{
+		margin: 4em 0;
+		width: 75%;
+	}
+
+	footer nav
+	{
+		float: right;
+	}
+
+	footer div,
+	footer nav li
+	{
+		float: left;
+	}
+
+	footer nav li a,
+	footer nav li a:link
+	{
+		border-right: 1px solid var(--main-border-color);
+		display: block;
+	}
+
+	footer nav li:last-child a
+	{
+		border-right: 0;
+		padding-right: 0;
+	}
+
+	header p,
+	header aside,
+	header nav,
+	footer div,
+	footer nav li
+	{
+		float: left;
+	}
+
+	section.backsplash
+	{
+		margin: 2.5em 0;
+		padding: 0 5em;
+		background: var(--element-background-color) url('Images/BackSplash.png') no-repeat scroll center center;
+		-o-background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		color: #FFF;
+		border-radius: var(--main-border-radius);
+	}
+
+	section.backsplash div
+	{
+		background-color: rgba(0, 0, 0, 0.75);
+		padding: 3em;
+		width: 26.5em;
+	}
+
+	section.backsplash h1
+	{
+		font-size: 2em;
+		line-height: 2em;
+	}
+
+	section.backsplash p
+	{
+		font-size: 1.125em;
+		line-height: 2em;
+	}
+
+	section.launchpad-3col,
+	section.launchpad-2col
+	{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+	}
+
+	section.launchpad-3col div,
+	section.launchpad-2col div
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	section.launchpad-3col a,
+	section.launchpad-2col a
+	{
+		display: block;
+	}
+
+	html.homePage header p,
+	html.homePage header aside,
+	html.homePage header nav
+	{
+		max-width: none;
+	}
+
+	section.body
+	{
+		min-height: 350px;
+		overflow: auto;
+	}
+
+	div.sidebar
+	{
+		float: right;
+		width: 23%;
+		position: absolute;
+		right: 0;
+		top: 75px;
+	}
+
+	div.MCDropDown_Open span.dropDownHead
+	{
+		background-color: var(--element-background-color);
+	}
+
+	span.MCTextPopupArrow
+	{
+		border-bottom-color: var(--popup-background-color);
+	}
+
+	a.MCBreadcrumbsLink,
+	a.MCBreadcrumbsLink:link,
+	a.MCBreadcrumbsLink:focus,
+	a.MCBreadcrumbsLink:hover
+	{
+		color: inherit;
+		font-weight: inherit;
+		border-bottom: 0;
+	}
+
+	a.MCPopupThumbnailLink,
+	a.MCPopupThumbnailLink:link,
+	a.MCPopupThumbnailLink:hover,
+	a.MCPopupThumbnailLink:focus
+	{
+		border-bottom: 0px;
+	}
+
+	div.MCPopupContainer,
+	div.MCPopupContainer2
+	{
+		background-color: var(--section-background-color);
+		border: solid 1px var(--main-border-color);
+		padding: 5px;
+		border-radius: var(--main-border-radius);
+		box-shadow: 2px 2px 4px var(--main-box-shadow-color);
+	}
+
+	div.sidebar div.MCHelpControl span
+	{
+		display: none;
+	}
+
+	div.article-grid
+	{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+	}
+
+	div.article-card
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	div.article-card a
+	{
+		display: block;
+	}
+
+	img.MCPopupThumbnail
+	{
+		padding-left: 30px;
+		background-position: left bottom;
+		background-repeat: no-repeat;
+		background-image: url('Images/ZoomIn_24.png');
+		background-size: 24px;
+	}
+
+	p.left img.MCPopupThumbnail
+	{
+		background-position: right bottom;
+		padding-left: 0;
+		padding-right: 30px;
+	}
+
+	img.MCPopupFullImage
+	{
+		vertical-align: middle;
+		border-radius: 0;
+	}
+
+	div.right,
+	p.right img,
+	div.inset,
+	p.inset img
+	{
+		float: right;
+	}
+
+	div.left,
+	p.left img
+	{
+		float: left;
+	}
+
+	p.right,
+	div.right
+	{
+		margin-right: 0;
+		margin-left: 1.25em;
+		max-width: none;
+	}
+
+	section.videoList nav
+	{
+		display: grid;
+		grid-auto-flow: 1fr;
+		grid-gap: 20px;
+		grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+	}
+
+	section.videoList div
+	{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+/*	#search-results-flex
+	{
+		display: block;
+	}*/
+}
+
+@media only screen and (max-width: 1279px)
+{
+	div.title-bar-container
+	{
+		max-width: 1279px !important;
+	}
+
+	div.body-container
+	{
+		position: relative;
+		left: 0px;
+	}
+
+	ul.off-canvas-list li a,
+	ul.off-canvas-list li a.selected,
+	ul.off-canvas-list li a:hover
+	{
+		font-weight: 500;
+	}
+}
+
+@media screen and (max-width: 767px)
+{
+	header
+	{
+		display: block;
+		padding-bottom: 2em;
+		width: 100%;
+	}
+
+	header p
+	{
+		width: 100%;
+	}
+
+	header nav
+	{
+		width: 100%;
+	}
+
+	div.sidebar,
+	div.dropDown
+	{
+		float: none;
+		width: 100%;
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+
+	div.title-bar-container
+	{
+		max-width: 767px !important;
+	}
+
+	section.body
+	{
+		width: 100%;
+	}
+
+	div.figure,
+	div.inset,
+	div.right,
+	div.left,
+	img.MCPopupThumbnail
+	{
+		display: none;
+	}
+}
+

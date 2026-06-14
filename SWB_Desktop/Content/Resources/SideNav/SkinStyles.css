@@ -307,7 +307,7 @@ div.url
 {
 	display: none;
 }
-
+/*
 @media screen
 {
 	header
@@ -561,4 +561,5 @@ div.url
 		max-width: 767px !important;
 	}
 }
+*/
 

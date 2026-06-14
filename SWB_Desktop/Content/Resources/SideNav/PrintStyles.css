@@ -1,0 +1,115 @@
+/*<meta conditions="Imports.SideNav" />*/
+
+@media print
+{
+	header,
+	footer,
+	nav,
+	div.sidebar,
+	div.MCBreadcrumbsBox_0,
+	div.sidebar
+	{
+		display: none !important;
+	}
+
+	div.body-container
+	{
+		left: 0;
+	}
+
+	section.body
+	{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	h1
+	{
+		margin-top: 0;
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+	{
+		page-break-after: avoid;
+	}
+
+	ol,
+	ul
+	{
+		page-break-before: avoid;
+	}
+
+	table
+	{
+		width: 100%;
+	}
+
+	p.right img,
+	div.right img,
+	p.left img,
+	div.left img,
+	p.inset img,
+	div.inset img,
+	div.figure img
+	{
+		margin-bottom: 0;
+		vertical-align: top;
+	}
+
+	div.left,
+	p.left img
+	{
+		float: left;
+		clear: left;
+	}
+
+	div.inset,
+	p.inset img,
+	div.right,
+	p.right img
+	{
+		float: right;
+	}
+
+	div.figure,
+	div.inset,
+	p.inset,
+	div.left,
+	p.left,
+	div.right,
+	p.right
+	{
+		margin-top: -1em;
+		page-break-before: avoid;
+		page-break-after: avoid;
+		font-size: 0;
+	}
+
+	div.dropDown,
+	div.dropDownBody,
+	span.expandingBody
+	{
+		display: block !important;
+	}
+
+	div.dropDown span.dropDownHead
+	{
+		background-color: var(--element-background-color);
+	}
+
+	a.dropDownHotspot
+	{
+		padding: 0;
+	}
+
+	span.dropDownHead
+	{
+		padding: 0.25em 0;
+	}
+}
+

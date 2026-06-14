@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1" DescendantCount="87">
+    <TocEntry Title="Welcome" Link="/Content/General/SWB_About.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedResetPageLayout="true" ComputedFirstTopic="true" DescendantCount="40">
+        <TocEntry Title="Requirements" Link="/Content/General/SWB_SysReq.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Release Notes" Link="/Content/General/SWB_ReleaseNotes_RTOC.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Support" Link="/Content/General/SWB_Support.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Quick Start" Link="/Content/SWB_Desktop/QuickStart/QS_Desktop_About.htm" ComputedFirstTopic="false" DescendantCount="6">
+            <TocEntry Title="Create a new project" Link="/Content/SWB_Desktop/QuickStart/QS_Desktop_NewProj.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Enter job information" Link="/Content/SWB_Desktop/QuickStart/QS_Desktop_JobInfo.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Enter magnetic parameters" Link="/Content/SWB_Desktop/QuickStart/QS_Desktop_MagParams.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Import survey data" Link="/Content/SWB_Desktop/QuickStart/QS_Desktop_ImportData.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Run MSA corrections" Link="/Content/SWB_Desktop/QuickStart/QS_Desktop_RunMSA.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Run sag corrections" Link="/Content/SWB_Desktop/QuickStart/QS_Desktop_RunSag.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+        <TocEntry Title="Interactive Demos" Link="/Content/SWB_Desktop/Demos/VID_About.htm" ComputedFirstTopic="false" DescendantCount="29">
+            <TocEntry Title="Inputs" Link="/Content/SWB_Desktop/Demos/VID_INP.htm" ComputedFirstTopic="false" DescendantCount="6">
+                <TocEntry Title="Importing Survey Data" Link="/Content/SWB_Desktop/Demos/VID_INP_ImportData.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Mapping Survey Data" Link="/Content/SWB_Desktop/Demos/VID_INP_MapData.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Creating Preset Templates" Link="/Content/SWB_Desktop/Demos/VID_INP_CreatePreset.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Job Information" Link="/Content/SWB_Desktop/Demos/VID_INP_JobInfo.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Average Magnetic Parameters" Link="/Content/SWB_Desktop/Demos/VID_INP_MagParams.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Hole Section Parameters" Link="/Content/SWB_Desktop/Demos/VID_INP_SectionParams.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            </TocEntry>
+            <TocEntry Title="MSA Demos" Link="/Content/SWB_Desktop/Demos/VID_MSA.htm" ComputedFirstTopic="false" DescendantCount="3">
+                <TocEntry Title="MSA Raw Data" Link="/Content/SWB_Desktop/Demos/VID_MSA_RawData.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="FMS Data" Link="/Content/SWB_Desktop/Demos/VID_MSA_AddFMS.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="MSA Optimization" Link="/Content/SWB_Desktop/Demos/VID_MSA_Optimization.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            </TocEntry>
+            <TocEntry Title="Sag Analysis" Link="/Content/SWB_Desktop/Demos/VID_SAG.htm" ComputedFirstTopic="false" DescendantCount="5">
+                <TocEntry Title="Building BHAs" Link="/Content/SWB_Desktop/Demos/VID_SAG_BuildBHA.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Sag Only Analysis" Link="/Content/SWB_Desktop/Demos/VID_SAG_SagOnly.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Sag with MSA Analysis" Link="/Content/SWB_Desktop/Demos/VID_SAG_SagMSA.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Sag + AES Analysis" Link="/Content/SWB_Desktop/Demos/VID_SAG_Sag_AES.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Auto-Sag Projects" Link="/Content/SWB_Desktop/Demos/VID_SAG_AutoSAG.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            </TocEntry>
+            <TocEntry Title="Miscellaneous Demos" Link="/Content/SWB_Desktop/Demos/VID_Other.htm" ComputedFirstTopic="false" DescendantCount="4">
+                <TocEntry Title="Multi-Lateral Projects" Link="/Content/SWB_Desktop/Demos/VID_PROJ_MultiLateral.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Using the Plan Screen" Link="/Content/SWB_Desktop/Demos/VID_PLAN_UseTab.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Creating Custom PDF Reports" Link="/Content/SWB_Desktop/Demos/VID_RPT_PDF.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Creating Spectrum Output" Link="/Content/SWB_Desktop/Demos/VID_RPT_Spectrum.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            </TocEntry>
+            <TocEntry Title="Web Integration" Link="/Content/SWB_Desktop/Demos/VID_WEB.htm" ComputedFirstTopic="false" DescendantCount="6">
+                <TocEntry Title="Introduction to SWB Orchestrator" Link="/Content/SWB_Web/Demos/VID_RTOCUser_Intro.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Creating User Accounts" Link="/Content/SWB_Web/Demos/VID_RTOCUser_CreateUsers.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Creating Jobs" Link="/Content/SWB_Web/Demos/VID_RTOCUser_CreateJob.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Orchestrator Projects" Link="/Content/SWB_Web/Demos/VID_RTOCUser_CreateWebProj.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Sending Corrections" Link="/Content/SWB_Web/Demos/VID_RTOCUser_SendCorrections.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Adding and Closing Runs" Link="/Content/SWB_Web/Demos/VID_RTOCUser_AddRun.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            </TocEntry>
+        </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Interface" Link="/Content/SWB_Desktop/AppShell/GUI_About.htm" ComputedFirstTopic="false" DescendantCount="14">
+        <TocEntry Title="Quick Access" Link="/Content/SWB_Desktop/AppShell/GUI_QuickAccess.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Projects" Link="/Content/SWB_Desktop/AppShell/PROJ_About.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="4">
+            <TocEntry Title="Local Projects" Link="/Content/SWB_Desktop/AppShell/PROJ_Local.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Multi-Lateral Projects" Link="/Content/SWB_Desktop/AppShell/PROJ_MultiLateral.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Auto-Sag Projects" Link="/Content/SWB_Desktop/AppShell/PROJ_AutoSag.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Orchestrator Projects" Link="/Content/SWB_Desktop/AppShell/PROJ_Orchestrator.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+        <TocEntry Title="BHAs" Link="/Content/SWB_Desktop/AppShell/GUI_BHA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Settings" Link="/Content/SWB_Desktop/AppShell/STG_About.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="6">
+            <TocEntry Title="MSA Settings" Link="/Content/SWB_Desktop/AppShell/STG_MSA.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="General Settings" Link="/Content/SWB_Desktop/AppShell/STG_General.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Sag Settings" Link="/Content/SWB_Desktop/AppShell/STG_SAG.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Survey Settings" Link="/Content/SWB_Desktop/AppShell/STG_Survey.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Report Settings" Link="/Content/SWB_Desktop/AppShell/STG_Reports.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Graph Settings" Link="/Content/SWB_Desktop/AppShell/STG_Graph.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Inputs" Link="/Content/SWB_Desktop/Inputs/INP_About.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="3">
+        <TocEntry Title="Job Setup &amp; Details" Link="/Content/SWB_Desktop/Inputs/INP_JobInfo.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Magnetic Parameters" Link="/Content/SWB_Desktop/Inputs/INP_MagParams.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Raw Survey Data" Link="/Content/SWB_Desktop/Inputs/INP_RawData.htm" ComputedFirstTopic="false" DescendantCount="0" />
+    </TocEntry>
+    <TocEntry Title="Multi-Station Analysis" Link="/Content/SWB_Desktop/MSA/MSA_About.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="8">
+        <TocEntry Title="MSA Raw Data" Link="/Content/SWB_Desktop/MSA/MSA_RawData.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="FMS Data" Link="/Content/SWB_Desktop/MSA/MSA_FMS.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="MSA Optimization" Link="/Content/SWB_Desktop/MSA/MSA_Optimize.htm" ComputedFirstTopic="false" DescendantCount="5">
+            <TocEntry Title="Settings" Link="/Content/SWB_Desktop/MSA/MSA_Optimize_Config.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Combined Data" Link="/Content/SWB_Desktop/MSA/MSA_Optimize_CombinedData.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Corrected Data" Link="/Content/SWB_Desktop/MSA/MSA_Optimize_CorrData.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Corrected Survey" Link="/Content/SWB_Desktop/MSA/MSA_Optimize_CorrSurvey.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="QC and Graphs" Link="/Content/SWB_Desktop/MSA/MSA_Optimize_QC.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Sag Analysis" Link="/Content/SWB_Desktop/Sag/SAG_About.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="3">
+        <TocEntry Title="Setup" Link="/Content/SWB_Desktop/Sag/SAG_Config.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Results" Link="/Content/SWB_Desktop/Sag/SAG_Analysis.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Auto-Sag Projects" Link="/Content/SWB_Desktop/Sag/SAG_AutoSAG.htm" ComputedFirstTopic="false" DescendantCount="0" />
+    </TocEntry>
+    <TocEntry Title="Plan" Link="/Content/SWB_Desktop/PLAN_About.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="0" />
+    <TocEntry Title="Reports" Link="/Content/SWB_Desktop/Reports/RPT_About.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="4">
+        <TocEntry Title="Survey Reports" Link="/Content/SWB_Desktop/Reports/RPT_Survey.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="PDF Reports" Link="/Content/SWB_Desktop/Reports/RPT_PDF.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Spectrum Output" Link="/Content/SWB_Desktop/Reports/RPT_Spectrum.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Corrections" Link="/Content/SWB_Desktop/Reports/RPT_Corrections.htm" ComputedFirstTopic="false" DescendantCount="0" />
+    </TocEntry>
+    <TocEntry Title="Web Integration" Link="/Content/SWB_Desktop/Web/WEB_About.htm" ComputedFirstTopic="false" DescendantCount="7">
+        <TocEntry Title="Creating Orchestrator Jobs" Link="/Content/SWB_Desktop/Web/WEB_AddJob.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Connecting Runs to Surveyor's Workbench" Link="/Content/SWB_Desktop/Web/WEB_NewProj.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Changing the Run Mode" Link="/Content/SWB_Desktop/Web/WEB_RunMode.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Running MSA Corrections" Link="/Content/SWB_Desktop/Web/WEB_RunMSA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Running Sag Corrections" Link="/Content/SWB_Desktop/Web/WEB_RunSag.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Sending Corrections" Link="/Content/SWB_Desktop/Web/WEB_SendCorr.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Closing and Adding Runs" Link="/Content/SWB_Desktop/Web/WEB_CloseRun.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" ComputedFirstTopic="false" DescendantCount="0" />
+    </TocEntry>
+</CatapultToc>

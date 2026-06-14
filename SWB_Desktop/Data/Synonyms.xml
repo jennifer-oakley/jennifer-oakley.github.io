@@ -8,16 +8,16 @@
         </SynonymGroup>
         <SynonymGroup Stem="true">
             <Word Stem="bha">BHA</Word>
-            <Word Stem="bottomhole assembl">bottomhole assembly</Word>
+            <Word Stem="bottomhol assembl">bottomhole assembly</Word>
         </SynonymGroup>
         <SynonymGroup Stem="true">
             <Word Stem="dp">DP</Word>
             <Word Stem="drillpip">drillpipe</Word>
-            <Word Stem="drill pip">drill pipe</Word>
+            <Word Stem="drill pipe">drill pipe</Word>
         </SynonymGroup>
         <SynonymGroup Stem="true">
             <Word Stem="drillstr">drillstring</Word>
-            <Word Stem="drill str">drill string</Word>
+            <Word Stem="drill string">drill string</Word>
             <Word Stem="drillstem">drillstem</Word>
             <Word Stem="drill stem">drill stem</Word>
         </SynonymGroup>
@@ -27,15 +27,15 @@
         </SynonymGroup>
     </Groups>
     <Directional>
-        <DirectionalSynonym From="pressure differential" To="differential pressur" />
+        <DirectionalSynonym From="pressure differential" To="differenti pressur" />
         <DirectionalSynonym From="drill ahead" To="drillahead" />
         <DirectionalSynonym From="down hole" To="downhol" />
         <DirectionalSynonym From="annular space" To="annulus" />
         <DirectionalSynonym Stem="true" From="bit" To="drill bit" FromStem="bit" />
-        <DirectionalSynonym Stem="true" From="drill string" To="drillstr" FromStem="drill str" />
-        <DirectionalSynonym Stem="true" From="well bore" To="wellbor" FromStem="well bor" />
+        <DirectionalSynonym Stem="true" From="drill string" To="drillstr" FromStem="drill string" />
+        <DirectionalSynonym Stem="true" From="well bore" To="wellbor" FromStem="well bore" />
         <DirectionalSynonym Stem="true" From="borehole" To="wellbor" FromStem="borehol" />
-        <DirectionalSynonym Stem="true" From="development well" To="exploitation wel" FromStem="development wel" />
-        <DirectionalSynonym Stem="true" From="exploratory well" To="wildcat wel" FromStem="exploratory wel" />
+        <DirectionalSynonym Stem="true" From="development well" To="exploit well" FromStem="develop well" />
+        <DirectionalSynonym Stem="true" From="exploratory well" To="wildcat well" FromStem="exploratori well" />
     </Directional>
 </MadCapSynonyms>

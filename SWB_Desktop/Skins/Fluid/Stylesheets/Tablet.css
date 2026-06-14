@@ -476,19 +476,19 @@
 
 	.micro-content-proxy.faq .micro-content-expanded .micro-content-drop-down-button
 	{
-		background: transparent url('Images/arrow-up.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/arrow-up.png') no-repeat center center;
+		background: transparent url('Images/Chevron_Closed_24.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Chevron_Closed_24.png') no-repeat center center;
 	}
 
 	.micro-content-proxy.faq .micro-content-collapsed .micro-content-drop-down-button
 	{
-		background: transparent url('Images/arrow-down.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/arrow-down.png') no-repeat center center;
+		background: transparent url('Images/Chevron_Open_24.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Chevron_Open_24.png') no-repeat center center;
 	}
 
 	.micro-content-proxy.faq .micro-content
 	{
-		background-position: center center;
+		background-color: #ffffff;
 	}
 
 	.micro-content-proxy.faq
@@ -518,7 +518,7 @@
 
 	.micro-content-proxy.faq .micro-response
 	{
-		
+		background-color: #ffffff;
 	}
 
 	.micro-content-proxy.faq.micro-content-truncated-mode .micro-response

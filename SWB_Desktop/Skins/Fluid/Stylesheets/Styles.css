@@ -861,7 +861,16 @@ div.central-dropdown-content > a:hover
 
 .featured-snippets-container
 {
-	
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-left: solid 1px var(--main-border-color);
+	border-right: solid 1px var(--main-border-color);
+	border-top: solid 1px var(--main-border-color);
+	border-bottom: solid 1px var(--main-border-color);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
 }
 
 .central-dropdown:hover
@@ -882,7 +891,7 @@ div.central-dropdown-content > a:hover
 
 #knowledge-panel
 {
-	width: 26%;
+	width: 35%;
 	order: 1;
 	display: block;
 }
@@ -894,7 +903,14 @@ div.central-dropdown-content > a:hover
 
 .knowledge-panel-container
 {
-	
+	border-left: solid 1px var(--main-border-color);
+	border-right: solid 1px var(--main-border-color);
+	border-top: solid 1px var(--main-border-color);
+	border-bottom: none 1px var(--main-border-color);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
 }
 
 #knowledge-panel-middle
@@ -1041,24 +1057,38 @@ div.central-dropdown-content > a:hover
 
 .micro-content-proxy.faq .micro-content-expanded .micro-content-drop-down-button
 {
-	background: transparent url('Images/arrow-up.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/arrow-up.png') no-repeat center center;
+	background: transparent url('Images/Chevron_Closed_24.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Chevron_Closed_24.png') no-repeat center center;
 }
 
 .micro-content-proxy.faq .micro-content-collapsed .micro-content-drop-down-button
 {
-	background: transparent url('Images/arrow-down.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/arrow-down.png') no-repeat center center;
+	background: transparent url('Images/Chevron_Open_24.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Chevron_Open_24.png') no-repeat center center;
 }
 
 .micro-content-proxy.faq .micro-content
 {
-	margin-bottom: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	background-position: center center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-left: solid 1px var(--main-border-color);
+	border-right: solid 1px var(--main-border-color);
+	border-top: solid 1px var(--main-border-color);
+	border-bottom: solid 1px var(--main-border-color);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	-webkit-box-shadow: 0px 0px 0px #cccccc;
+	-moz-box-shadow: 0px 0px 0px #cccccc;
+	box-shadow: 0px 0px 0px #cccccc;
+	-webkit-box-shadow: 0px 0px 0px #cccccc;
+	-moz-box-shadow: 0px 0px 0px #cccccc;
+	background-color: #ffffff;
 }
 
 .micro-content-proxy.faq
@@ -1068,9 +1098,9 @@ div.central-dropdown-content > a:hover
 
 .micro-content-proxy.faq .micro-content-phrase span
 {
-	color: #606060;
-	font-size: 1.3em;
-	font-weight: bold;
+	color: var(--dropdown-head-color);
+	font-size: 1em;
+	font-weight: normal;
 	text-decoration: none;
 }
 
@@ -1086,14 +1116,18 @@ div.central-dropdown-content > a:hover
 
 .micro-content-proxy.faq .proxy-title
 {
-	font-size: 1.5em;
-	font-weight: bold;
-	padding-bottom: 10px;
+	color: var(--heading-text-color);
+	font-family: Var(--body-font-family);
+	font-size: 1.3em;
+	font-weight: 600;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	padding-bottom: 0px;
 }
 
 .micro-content-proxy.faq .micro-response
 {
-	
+	background-color: #ffffff;
 }
 
 .micro-content-proxy.faq.micro-content-truncated-mode .micro-response
